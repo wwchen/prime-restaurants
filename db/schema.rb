@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120726040725) do
+ActiveRecord::Schema.define(:version => 20120726050833) do
+
+  create_table "promotions", :force => true do |t|
+    t.string   "detail"
+    t.boolean  "bogo"
+    t.integer  "restaurant_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "promotions", ["restaurant_id"], :name => "index_promotions_on_restaurant_id"
 
   create_table "restaurants", :force => true do |t|
     t.string   "name"
