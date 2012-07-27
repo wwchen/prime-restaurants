@@ -1,6 +1,7 @@
 require 'action_controller'
 
 class Restaurant < ActiveRecord::Base
+# ignoring promotions relationship for now
 #  has_and_belongs_to_many :promotions
   attr_accessible :name, :street, :city, :state, :zip, :phone, :lat, :lng
 

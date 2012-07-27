@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Identifier:</b>
+  <%= @yelp_info.identifier %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @yelp_info.name %>
+</p>
+
+<p>
+  <%= link_to 'Mobile URL', @yelp_info.mobile_url %><br />
+  <%= link_to 'URL', @yelp_info.url %><br />
+  <%= image_tag @yelp_info.photo_url %><br />
+  <%= image_tag @yelp_info.rating_img_url %>
+</p>
+
+<p>
+  <b>Review Count:</b>
+  <%= @yelp_info.review_count%>
+</p>
+
+
+
+<%= link_to 'Edit', edit_yelp_info_path(@yelp_info) %> |
+<%= link_to 'Back', yelp_infos_path %>

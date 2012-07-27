@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120726231819) do
+ActiveRecord::Schema.define(:version => 20120727174404) do
 
   create_table "promotions", :force => true do |t|
     t.string   "detail"
@@ -34,6 +34,18 @@ ActiveRecord::Schema.define(:version => 20120726231819) do
     t.string   "phone"
     t.float    "lat"
     t.float    "lng"
+  end
+
+  create_table "yelp_infos", :force => true do |t|
+    t.string   "identifier",     :null => false
+    t.string   "name"
+    t.string   "rating_img_url"
+    t.integer  "review_count"
+    t.string   "mobile_url"
+    t.string   "url"
+    t.string   "photo_url"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
 end

@@ -20,6 +20,16 @@
   <%= @restaurant.phone %>
 </p>
 
+<p>
+  <b>Created at:</b>
+  <%= @restaurant.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @restaurant.updated_at %>
+</p>
+
 <%= @yelp_params %><br />
 Name:<%= @yelp['businesses'][0]['name'] %><br />
 Number of results: <%= @yelp['businesses'].length %><br />
