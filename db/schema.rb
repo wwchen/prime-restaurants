@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120726050833) do
+ActiveRecord::Schema.define(:version => 20120726231819) do
 
   create_table "promotions", :force => true do |t|
     t.string   "detail"
@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(:version => 20120726050833) do
     t.string   "state"
     t.string   "zip"
     t.string   "phone"
+    t.float    "lat"
+    t.float    "lng"
   end
 
 end
