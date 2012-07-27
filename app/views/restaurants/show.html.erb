@@ -20,6 +20,13 @@
   <%= @restaurant.phone %>
 </p>
 
+<%= @yelp_params %><br />
+Name:<%= @yelp['businesses'][0]['name'] %><br />
+Number of results: <%= @yelp['businesses'].length %><br />
+<%= image_tag @yelp['businesses'][0]['rating_img_url'] %>
+<%= @yelp['businesses'][0]['review_count'] %> reviews<br />
+<%= @yelp %>
+
 <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=600x300&markers=#{@restaurant.lat}%2C#{@restaurant.lng}&sensor=false" %><br />
 <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
 <%= link_to 'Back', restaurants_path %>
