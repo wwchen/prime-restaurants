@@ -39,4 +39,5 @@ gem 'jquery-rails'
 
 gem 'therubyracer'
 gem 'geocoder'
-gem 'yelp'
+gem 'oauth'
+gem 'json'

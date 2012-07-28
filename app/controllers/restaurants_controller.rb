@@ -1,3 +1,5 @@
+require 'yelp'
+
 class RestaurantsController < ApplicationController
   # GET /restaurants
   # GET /restaurants.json
@@ -14,17 +16,21 @@ class RestaurantsController < ApplicationController
   # GET /restaurants/1.json
   def show
     @restaurant = Restaurant.find(params[:id])
-    yelp_client = Yelp::Client.new
-    yelp_request = Yelp::Review::Request::Location.new(
-      :term => @restaurant.name.split[0...2].join(' '),
-      :address => @restaurant.street,
-      :state => @restaurant.state,
-      :zipcode => @restaurant.zip,
-      :radius => 1,
-      :yws_id => "ZsDl3VYSd_fXBl-6lRY1RQ")
-    @yelp = yelp_client.search(yelp_request)
-    @yelp_params = yelp_request.to_yelp_params
-
+# NOTE deprecated
+#    yelp_client = Yelp::Client.new
+#    yelp_request = Yelp::Review::Request::Location.new(
+#      :term => @restaurant.name.split[0...2].join(' '),
+#      :address => @restaurant.street,
+#      :state => @restaurant.state,
+#      :zipcode => @restaurant.zip,
+#      :radius => 1,
+#      :yws_id => "ZsDl3VYSd_fXBl-6lRY1RQ")
+#    @yelp = yelp_client.search(yelp_request)
+#    @yelp_params = yelp_request.to_yelp_params
+   
+    #@yelp = Yelp.retrieve(Yelp::Request.id("DlpXJIMvS7TTgF7HReADEA"))
+    location = [@restaurant.street, @restaurant.zip].join(', ')
+    @yelp = Yelp::Business.retrieve(Yelp::Request.location({:radius_filter=>5,:category_filter=>nil,:location=>location,:term=>@restaurant.name.split[0...2].join(' ')}))
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @restaurant }
