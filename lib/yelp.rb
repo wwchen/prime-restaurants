@@ -46,23 +46,41 @@ module Yelp
   end
 
   module Business
-    def self.result_count(response)
-      return response['total'].to_i if response.has_key?('total')
-      return 1
-    end
-
     def self.retrieve(query)
       puts "Yelp query is #{query}"
       JSON.parse(Yelp.access_token.get(query).body)
     end
 
-    def self.review_count(response)
-      return if result_count(response) < 1
-      response = response['businesses'][0] if response.has_key?('businesses')
-      response['review_count']
+    def self.result_count(response)
+      return response['total'].to_i if response.has_key?('total')
+      return 1
     end
 
-    def self.name(response)
+    # returns the nth result. If n is too large, the last result will be returned
+    def self.get_result(response, n=1)
+      return if result_count(response) < 1
+      return response unless response.has_key?('businesses')
+
+      max_index = [n, result_count(response)].max-1
+      return response['businesses'][max_index]
+    end
+
+    def self.info(response, n=1)
+      result = get_result(response, n)
+      return if result.nil?
+      # based on http://www.yelp.com/developers/documentation/v2/search_api
+      {:name           => result['name'],
+       :identifier     => result['id'],
+       :rating_img_url => result['rating_img_url'],
+       :review_count   => result['review_count'],
+       :mobile_url     => result['mobile_url'],
+       :url            => result['url'],
+       :image_url      => result['image_url'],
+      }
+    end
+
+    def self.fetch_info(query, n=1)
+      info(retrieve(query),n)
     end
   end
 

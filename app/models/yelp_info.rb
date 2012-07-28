@@ -1,4 +1,6 @@
 class YelpInfo < ActiveRecord::Base
+  belongs_to :restaruant
+
   attr_accessible :identifier, :name, :mobile_url, :photo_url, :rating_img_url, :review_count, :url
 
   validates :identifier,     :presence => true, :uniqueness => true

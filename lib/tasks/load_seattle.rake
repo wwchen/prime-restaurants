@@ -11,6 +11,7 @@ namespace :db do
       #  rescue
       #    next
       #  end
+      end
     else
       puts "You didn't specify a path to the PSV (pipe separated values) file."
       puts "Use \"rake db:load_seattle path=<path_to_file>\" in the future."
