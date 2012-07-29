@@ -6,7 +6,8 @@ require 'app_config'
 module Yelp
   mattr_accessor :consumer, :access_token
 
-  self.consumer = OAuth::Consumer.new(AppConfig::yelp_consumer_key, AppConfig::yelp_consumer_secret, {:site => "http://#{AppConfig::yelp_api_host}"})
+  self.consumer = OAuth::Consumer.new(AppConfig::yelp_consumer_key, AppConfig::yelp_consumer_secret,
+                                      {:site => "http://#{AppConfig::yelp_api_host}"})
   self.access_token = OAuth::AccessToken.new(consumer, AppConfig::yelp_token, AppConfig::yelp_token_secret)
 
   module Request
@@ -38,11 +39,16 @@ module Yelp
 
   module Business
     def self.retrieve(query)
-      puts "Yelp query is #{query}"
+      Rails.logger.info "Yelp query is #{query}"
+      Rails.logger.info "Fetching Yelp data.."
       JSON.parse(Yelp.access_token.get(query).body)
     end
 
     def self.result_count(response)
+      if response.has_key?('error')
+        Rails.logger.error "Error: #{response['error']['text']}"
+        return -1
+      end
       return response['total'].to_i if response.has_key?('total')
       return 1
     end

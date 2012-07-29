@@ -12,9 +12,4 @@ class YelpInfo < ActiveRecord::Base
   #validates :review_count,   :inclusion => { :in => 0..10000 }
 
 #  after_validation :fetch_info, :if => :identifier_changed?
-#
-#private
-#  def fetch_info
-#    self[:url] = "http://yahoo.com"
-#  end
 end
