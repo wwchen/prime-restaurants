@@ -3,7 +3,7 @@ require 'action_controller'
 class Restaurant < ActiveRecord::Base
 # ignoring promotions relationship for now
 #  has_and_belongs_to_many :promotions
-  has_one :yelp_info, :dependent => :destroy
+  has_one :yelp_info, :dependent => :destroy#, :inverse_of => :restaurant
   attr_accessible :name, :street, :city, :state, :zip, :phone, :lat, :lng
 
   validates :name,   :presence => true, :uniqueness => { :scope => :street }
@@ -16,8 +16,8 @@ class Restaurant < ActiveRecord::Base
 #                                  :with => /[(]?\d{3}[\)-]?\s*?\d{3}[-. ]?\d{4}/ }
 
   geocoded_by :address, :latitude => :lat, :longitude => :lng
-  after_validation :geocode, :if => :street_changed? or :city_changed? or :state_changed? or :zip_changed?
   before_validation :formatting
+  after_validation :geocode, :if => :street_changed? or :city_changed? or :state_changed? or :zip_changed?
   after_validation :trim
   before_save :fetch_yelp
 
@@ -36,8 +36,7 @@ class Restaurant < ActiveRecord::Base
 
   def fetch_yelp
     info = Yelp::Business.fetch_info(Yelp::Request.location({:location => address}))
-    #self[:name] = info.to_s
-    #self.yelp_info.create(info) unless info.nil?
-    #YelpInfo.create(info)
+    #self.yelp_info = YelpInfo.create(info) unless info.nil?
+    self.create_yelp_info(info)
   end
 end

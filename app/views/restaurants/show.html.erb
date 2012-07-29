@@ -30,9 +30,13 @@
   <%= @restaurant.updated_at %>
 </p>
 
+<p>
+  <b>Yelp info:</b>
+  <%= @restaurant.yelp_info.identifier unless @restaurant.yelp_info.nil? %>
+</p>
+
 <%= @yelp.class %>
 <%= @yelp.length %>
-<%= Yelp::Business.info(@yelp)[:review_count] %> reviews<br />
 <%= @yelp %>
 
 <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=600x300&markers=#{@restaurant.lat}%2C#{@restaurant.lng}&sensor=false" %><br />
