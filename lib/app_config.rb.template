@@ -1,0 +1,8 @@
+module AppConfig
+  mattr_accessor :yelp_consumer_key, :yelp_consumer_secret, :yelp_token, :yelp_token_secret, :yelp_api_host
+  @@yelp_consumer_key = ''
+  @@yelp_consumer_secret = ''
+  @@yelp_token = ''
+  @@yelp_token_secret = ''
+  @@yelp_api_host = 'api.yelp.com'
+end

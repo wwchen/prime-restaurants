@@ -1,18 +1,13 @@
 require 'rubygems'
 require 'oauth'
 require 'json'
+require 'app_config'
 
 module Yelp
-  mattr_accessor :consumer_key, :consumer_secret, :token, :token_secret, :api_host
   mattr_accessor :consumer, :access_token
-  consumer_key = 'thFnLxyA-GO_aFdPGlM_Xg'
-  consumer_secret = 'kbBbIk53rPb99YppF3Q7H9vtlxc'
-  token = 'XkDhYHxCfqa8UK7n2koGwZ-wnM_F_Ptb'
-  token_secret = 'fcWuQPwQgEww8k-zyQ5Y27P7O8I'
-  api_host = 'api.yelp.com'
 
-  self.consumer = OAuth::Consumer.new(consumer_key, consumer_secret, {:site => "http://#{api_host}"})
-  self.access_token = OAuth::AccessToken.new(consumer, token, token_secret)
+  self.consumer = OAuth::Consumer.new(AppConfig::yelp_consumer_key, AppConfig::yelp_consumer_secret, {:site => "http://#{AppConfig::yelp_api_host}"})
+  self.access_token = OAuth::AccessToken.new(consumer, AppConfig::yelp_token, AppConfig::yelp_token_secret)
 
   module Request
     def self.geopoint(latitude, longitude)
@@ -30,14 +25,10 @@ module Yelp
                 :location => nil}.merge(params)
       #params[:location] = URI::encode(params[:location].gsub(/\s+/, '+')) unless params[:location].nil?
       params[:cll] = "#{params[:latitude]},#{params[:longitude]}" unless params[:latitude].nil? or params[:longitude].nil?
+      params[:latitude] = params[:longitude] = nil
       params.delete_if{ |k,v| v.nil? }
       return "/v2/search?#{params.to_query}"
     end
-
-#    def self.location(location, term = nil, category_filter = "restaurants", latitude = nil, longitude = nil)
-#      cll_param = "&cll=#{latitude},#{longitude}" unless latitude.nil? or longitude.nil?
-#      return "/v2/search?location=#{location}&term=#{URI::encode(term)}#{cll_param}"
-#    end
 
     def self.id(id)
       return "/v2/business/#{id}"
