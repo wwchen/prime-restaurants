@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120728211342) do
+ActiveRecord::Schema.define(:version => 20120728293135) do
 
   create_table "promotions", :force => true do |t|
     t.string   "detail"
@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(:version => 20120728211342) do
     t.integer  "review_count"
     t.string   "mobile_url"
     t.string   "url"
-    t.string   "photo_url"
+    t.string   "image_url"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
     t.integer  "restaurant_id"
