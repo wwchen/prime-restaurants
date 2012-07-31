@@ -1,0 +1,2 @@
+module YelpCategoriesHelper
+end
