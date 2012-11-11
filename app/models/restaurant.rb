@@ -1,4 +1,5 @@
 require 'action_controller'
+require 'yelp'
 
 class Restaurant < ActiveRecord::Base
 # ignoring promotions relationship for now
@@ -17,7 +18,7 @@ class Restaurant < ActiveRecord::Base
 
   geocoded_by :address, :latitude => :lat, :longitude => :lng
   before_validation :formatting
-  after_validation :geocode, :if => :street_changed? or :city_changed? or :state_changed? or :zip_changed?
+  after_validation :geocode, :if => :street_changed? or :city_changed? or :state_changed? or :zip_changed? # or :lat_empty?
   after_validation :trim
   before_save :fetch_yelp
 
