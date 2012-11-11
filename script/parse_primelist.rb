@@ -1,17 +1,28 @@
 #!/usr/bin/env ruby
 
+if ARGV.count < 2
+  puts "Usage: ./parse_primelist.rb <filename> <output-type>"
+  puts "Output type: json, txt, psv"
+  exit
+end
+
 require 'htmlentities'
 require 'json'
 require 'sqlite3'
-require 'geocoder'
-require 'redis'
 
-Geocoder::Configuration.lookup = :yahoo
-#Geocoder::Configuration.cache = Redis.new
-Geocoder::Configuration.timeout = 10
+geocode = false
 
 in_filename = ARGV[0]
 out_filename = ARGV[1] #txt json sqlite3 psv
+
+if geocode
+  require 'geocoder'
+  require 'redis'
+
+  Geocoder::Configuration.lookup = :yahoo
+  #Geocoder::Configuration.cache = Redis.new
+  Geocoder::Configuration.timeout = 10
+end
 
 ## Functions
 def strip_html(code)
@@ -19,8 +30,7 @@ def strip_html(code)
 end
 
 # Open the file
-in_file = open(in_filename)
-content = in_file.read
+content = open(in_filename).read
 
 # Match everything between <!-- VENDOR INFO --> and <!-- END OF VENDOR INFO -->
 vendors = content.scan(/<!-- VENDOR INFO -->(.*?)<!-- END OF VENDOR INFO -->/m).flatten!
@@ -38,17 +48,19 @@ vendors.each { |vendor|
   telephone = /[(]?\d{3}[\)-]?\s*?\d{3}[-. ]?\d{4}/.match(address).to_s
   address.sub!(/#{Regexp.escape(telephone)}/, '').strip!
 
-  # retrieving a formatted address
-  geo = Geocoder.search(address)[0]
-  address = geo.formatted_address if geo.respond_to?("formatted_address")
-  address = geo.address if address.nil?
-  city = geo.city
-  state = geo.state_code
-  zip = geo.postal_code
-  #street = [geo.address_components_of_type("street_number")[0]['long_name'], geo.address_components_of_type("route")[0]['long_name']].join(' ')
-  street = address.sub(/(.*),?#{city}.*$/, '\1').strip
-  lat = geo.latitude
-  lng = geo.longitude
+  if geocode
+    # retrieving a formatted address
+    geo = Geocoder.search(address)[0]
+    address = geo.formatted_address if geo.respond_to?("formatted_address")
+    address = geo.address if address.nil?
+    city = geo.city
+    state = geo.state_code
+    zip = geo.postal_code
+    #street = [geo.address_components_of_type("street_number")[0]['long_name'], geo.address_components_of_type("route")[0]['long_name']].join(' ')
+    street = address.sub(/(.*),?#{city}.*$/, '\1').strip
+    lat = geo.latitude
+    lng = geo.longitude
+  end
 
   # third div is promotion details
   promotions = Array.new
@@ -56,7 +68,11 @@ vendors.each { |vendor|
     promotions.push HTMLEntities.new.decode(strip_html(promo))
   }
    
-  restaurants.push(Hash["name"=>name, "address"=>address, "street"=>street, "city"=>city, "state"=>state, "zip"=>zip, "lat"=>lat, "lng"=>lng, "telephone"=>telephone, "promotions"=>promotions])
+  if geocode
+    restaurants.push(Hash["name"=>name, "address"=>address, "street"=>street, "city"=>city, "state"=>state, "zip"=>zip, "lat"=>lat, "lng"=>lng, "telephone"=>telephone, "promotions"=>promotions])
+  else
+    restaurants.push(Hash["name"=>name, "address"=>address, "telephone"=>telephone, "promotions"=>promotions])
+  end
 }
 ensure
 restaurants.uniq!
