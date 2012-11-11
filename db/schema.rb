@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(:version => 20120731083244) do
   create_table "yelp_categories", :force => true do |t|
     t.integer  "yelp_infos_id"
     t.string   "name"
+    t.string   "display_name"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end

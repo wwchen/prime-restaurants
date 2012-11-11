@@ -7,6 +7,7 @@ class CreateYelpCategories < ActiveRecord::Migration
     create_table :yelp_categories do |t|
       t.references :yelp_infos
       t.string     :name
+      t.string     :display_name
       t.timestamps
     end
   end
