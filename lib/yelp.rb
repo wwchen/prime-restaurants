@@ -6,7 +6,8 @@ require 'app_config'
 module Yelp
   mattr_accessor :consumer, :access_token
 
-  self.consumer = OAuth::Consumer.new(AppConfig::yelp_consumer_key, AppConfig::yelp_consumer_secret, {:site => "http://#{AppConfig::yelp_api_host}"})
+  self.consumer = OAuth::Consumer.new(AppConfig::yelp_consumer_key, AppConfig::yelp_consumer_secret,
+                                      {:site => "http://#{AppConfig::yelp_api_host}"})
   self.access_token = OAuth::AccessToken.new(consumer, AppConfig::yelp_token, AppConfig::yelp_token_secret)
 
   module Request
@@ -15,15 +16,15 @@ module Yelp
     end
     
     def self.location(params)
-      params = {:location => nil,
-                :category_filter => "restaurants",
-                :radius_filter => 1,
-                :limit => nil,
-                :term => nil,
-                :latitude => nil,
-                :longitude => nil,
-                :location => nil}.merge(params)
-      #params[:location] = URI::encode(params[:location].gsub(/\s+/, '+')) unless params[:location].nil?
+#      params = {:location => nil,
+#                :category_filter => "restaurants",
+#                :radius_filter => 1,
+#                :limit => nil,
+#                :term => nil,
+#                :latitude => nil,
+#                :longitude => nil,
+#                :location => nil}.merge(params)
+#      params[:location] = URI::encode(params[:location].gsub(/\s+/, '+')) unless params[:location].nil?
       params[:cll] = "#{params[:latitude]},#{params[:longitude]}" unless params[:latitude].nil? or params[:longitude].nil?
       params[:latitude] = params[:longitude] = nil
       params.delete_if{ |k,v| v.nil? }
@@ -36,42 +37,55 @@ module Yelp
 
   end
 
-  module Business
-    def self.retrieve(query)
-      puts "Yelp query is #{query}"
-      JSON.parse(Yelp.access_token.get(query).body)
+  class Response
+    attr_accessor :response, :businesses
+
+    def initialize(response)
+      @response = response
+      @businesses = @response['businesses'] if count > 0
     end
 
-    def self.result_count(response)
-      return response['total'].to_i if response.has_key?('total')
-      return 1
+    def count
+      if @response.has_key?('error') or @response.nil?
+        Rails.logger.error "A search query has not been submitted yet"  if @response.nil?
+        Rails.logger.error "Error: #{response['error']['text']}"        if @response.has_key?('error')
+        return 0
+      end
+      return response['total'].to_i
     end
 
-    # returns the nth result. If n is too large, the last result will be returned
-    def self.get_result(response, n=1)
-      return if result_count(response) < 1
-      return response unless response.has_key?('businesses')
-
-      max_index = [n, result_count(response)].max-1
-      return response['businesses'][max_index]
+    def get_first_result
+      return @businesses.first unless @businesses.nil?
     end
 
-    def self.info(response, n=1)
-      result = get_result(response, n)
-      return if result.nil?
-      # based on http://www.yelp.com/developers/documentation/v2/search_api
-      {:name           => result['name'],
-       :identifier     => result['id'],
-       :rating_img_url => result['rating_img_url'],
-       :review_count   => result['review_count'],
-       :mobile_url     => result['mobile_url'],
-       :url            => result['url'],
-       :image_url      => result['image_url'],
-      }
+    def self.get_last_result
+      return get_result(@response, @businesses[count-1]) unless @businesses.nil?
     end
 
-    def self.fetch_info(query, n=1)
-      info(retrieve(query),n)
+    def self.get_nth_result(n)
+      return get_result(@response, n-1) unless @businesses.nil?
+    end
+
+    private
+      # returns the nth result. If n is too large, the last result will be returned
+      def self.get_result(n=1)
+        return if @response.nil?
+        index = [n, result_count(@response)].min-1
+        return response['businesses'][index]
+      end
+  end
+
+  class Search
+    attr_accessor :query, :response, :businesses
+
+    def initialize(query = nil)
+      @query = query.strip
+    end
+
+    def request
+      Rails.logger.info "Yelp query is #{query}"
+      Rails.logger.info "Fetching Yelp data.."
+      Response.new(JSON.parse(Yelp.access_token.get(@query).body))
     end
   end
 

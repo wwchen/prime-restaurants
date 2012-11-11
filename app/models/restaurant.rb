@@ -36,8 +36,13 @@ class Restaurant < ActiveRecord::Base
   end
 
   def fetch_yelp
-    info = Yelp::Business.fetch_info(Yelp::Request.location({:location => address}))
+    info = Yelp::Search.new(Yelp::Request.location(:location => address)).request.get_first_result
     #self.yelp_info = YelpInfo.create(info) unless info.nil?
+    #self.create_yelp_info(info.get_first_result, :without_protection => true)
+    info.delete_if { |k,v| not %(id, name, image_url, mobile_url, url, rating_img_url, review_count).include?(k) }
+    info[:identifier] = info['id']
+    info.delete('id') and info.delete('rating')
+    puts info
     self.create_yelp_info(info)
   end
 end
