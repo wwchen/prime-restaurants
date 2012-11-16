@@ -1,52 +1,65 @@
 #!/usr/bin/env ruby
 
+##
+# Usage
+##
 if ARGV.count < 2
-  puts "Usage: ./parse_primelist.rb <filename> <output-type>"
-  puts "Output type: json, txt, psv"
+  puts "Usage: ./parse_primelist.rb <filename> <output-name.ext>"
+  puts "Output extensions: json, txt, psv"
   exit
 end
 
-require 'htmlentities'
-require 'json'
-require 'sqlite3'
+##
+# Functions
+##
+def normalize(str)
+  str.split(/[[:space:]]+/).join(' ').strip.delete("^\u{0000}-\u{007F}")
+end
 
-geocode = false
-
-in_filename = ARGV[0]
+##
+# Script
+##
+in_filename  = ARGV[0]
 out_filename = ARGV[1] #txt json sqlite3 psv
 
+require 'rubygems'
+require 'nokogiri'
+require 'json'    if /\.json$/i.match(out_filename)
+
+geocode = /\.psv$/i.match(out_filename)
 if geocode
   require 'geocoder'
   require 'redis'
 
-  Geocoder::Configuration.lookup = :yahoo
+  #Geocoder::Configuration.lookup = :yahoo
   #Geocoder::Configuration.cache = Redis.new
   Geocoder::Configuration.timeout = 10
 end
 
-## Functions
-def strip_html(code)
-  HTMLEntities.new.decode(code.gsub(/<.*?>/m, ' ')).gsub(/\s+/, ' ').strip
+
+
+
+
+content = Nokogiri::HTML(open(in_filename))
+vendors = content.xpath('//*[@id="Form1"]/table/tr[1]/td').css('table')
+# vendors = content.xpath('//*[@id="Form1"]/table/tbody/tr[1]/td').css('table')
+# vendors = vendors.count == 0? content.xpath('//*[@id="Form1"]/table/tr[1]/td').css('table')
+if vendors.count == 0
+  $stderr.puts "Can't find any vendors -- is it the right html?"
+  exit
 end
-
-# Open the file
-content = open(in_filename).read
-
-# Match everything between <!-- VENDOR INFO --> and <!-- END OF VENDOR INFO -->
-vendors = content.scan(/<!-- VENDOR INFO -->(.*?)<!-- END OF VENDOR INFO -->/m).flatten!
 
 restaurants = Array.new
 begin
 vendors.each { |vendor| 
-  vendor.gsub!('&nbsp;', '')
-  vendor_info = vendor.scan(/<div.*?>.+?<\/div>/m)
-  # first div is name
-  name = strip_html(vendor_info[0])
+  vendor_info = vendor.css('font')
+  name =  normalize(vendor_info[0].text)
+  promo = vendor_info.css('li').collect { |i| i.text }
+  info =  vendor_info.collect { |i| i.text }[1...-1]
 
-  # second div is address and telephone number
-  address = strip_html(vendor_info[1])
-  telephone = /[(]?\d{3}[\)-]?\s*?\d{3}[-. ]?\d{4}/.match(address).to_s
-  address.sub!(/#{Regexp.escape(telephone)}/, '').strip!
+  telephone = /[(]?\d{3}[\)-]?\s*?\d{3}[-. ]?\d{4}/.match(info[-1]).to_s
+  address = normalize info[0...-1].join(', ')
+  address = normalize info.join(', ') if telephone.empty?
 
   if geocode
     # retrieving a formatted address
@@ -60,61 +73,47 @@ vendors.each { |vendor|
     street = address.sub(/(.*),?#{city}.*$/, '\1').strip
     lat = geo.latitude
     lng = geo.longitude
+  else
+    # splitting address
+    addr_components = address.split(',')
+    if addr_components.count < 3
+      puts "#{name} failed"
+      next
+    else
+      address = addr_components[-3].to_s.strip
+      city    = addr_components[-2].to_s.strip
+      state   = /[a-z]{2}/i.match(addr_components[-1]).to_s.strip
+      zip     = /[0-9]{5}/i.match(addr_components[-1]).to_s.strip
+    end
   end
 
-  # third div is promotion details
-  promotions = Array.new
-  vendor_info[2].scan(/<li.*?>.+?<\/li>/).each { |promo|
-    promotions.push HTMLEntities.new.decode(strip_html(promo))
-  }
-   
   if geocode
-    restaurants.push(Hash["name"=>name, "address"=>address, "street"=>street, "city"=>city, "state"=>state, "zip"=>zip, "lat"=>lat, "lng"=>lng, "telephone"=>telephone, "promotions"=>promotions])
+    restaurants.push(Hash["name"=>name, "address"=>address, "street"=>street, "city"=>city, "state"=>state, "zip"=>zip, "lat"=>lat, "lng"=>lng, "telephone"=>telephone, "promotions"=>promo])
+  elsif (defined? zip).nil?
+    restaurants.push(Hash["name"=>name, "address"=>address, "telephone"=>telephone, "promotions"=>promo])
   else
-    restaurants.push(Hash["name"=>name, "address"=>address, "telephone"=>telephone, "promotions"=>promotions])
+    restaurants.push(Hash["name"=>name, "address"=>address, "city"=>city, "state"=>state, "zip"=>zip, "telephone"=>telephone, "promotions"=>promo])
   end
 }
 ensure
 restaurants.uniq!
 
-# output
-case out_filename
-  when /\.(txt|json|psv)$/i
-    File.open(out_filename, 'w') { |f|
-      if out_filename =~ /\.txt$/i
-        restaurants.each { |restaurant|
-          f.write("#{restaurant["name"]}\n#{restaurant["address"]}\n#{restaurant["telephone"]}\n#{restaurant["promotions"]}\n\n")
-        }
-      elseif out_filename =~ /\.json$/i
-        f.write(JSON.generate(restaurants))
-      else
-        restaurants.each { |res|
-          f.write("#{res['name']}|#{res['street']}|#{res['city']}|#{res['state']}|#{res['zip']}|#{res['telephone']}|#{res['lat']}|#{res['lng']}\n")
-        }
-      end
-      f.flush
+##
+# Output
+##
+File.open(out_filename, 'w:UTF-8') { |f|
+  case out_filename
+  when /\.txt$/i
+    restaurants.each { |restaurant|
+      f.write(restaurant.collect{|i| i[1]}.join("\n") + "\n\n")
     }
-  when /\.sqlite3$/i
-    db = SQLite3::Database.new(out_filename)
-    db.execute("create table restaurants( id INTEGER PRIMARY KEY, name TEXT, telephone TEXT, address TEXT,
-                 promo1 TEXT, promo2 TEXT, promo3 TEXT, promo4 TEXT, promo5 TEXT, lat REAL, lng REAL)")
+  when /\.json$/i
+    f.write(JSON.generate(restaurants))
+  when /\.psv$/i
     restaurants.each { |res|
-      res['promotions'].each_with_index { |promo, i|
-        res["promo#{i+1}"] = promo.gsub(/"/,"'")
-      }
-      res.delete('promotions')
-      db.execute("insert into restaurants (#{res.keys.join(', ')}) values (\"#{res.values.join('", "')}\")")
+      f.write("#{res['name']}|#{res['street']}|#{res['city']}|#{res['state']}|#{res['zip']}|#{res['telephone']}|#{res['lat']}|#{res['lng']}\n")
     }
-#    count = 0
-#    restaurants.each { |res|
-#      count += 1
-#      db.execute("insert into restaurants (name, address, telephone) values 
-#                  ('#{res['name']}', '#{res['address']}', '#{res['telephone']}')")
-#      min = [res['promotions'].length-1, 4].min.abs
-#      0.upto(min) { |i|
-#        promo = "#{res['promotions'][i]}".gsub(/'/,'"')
-#        db.execute("update restaurants set promo#{i+1} = '#{promo}' where id=#{count}")
-#      }
-#    }
   end
+  f.flush
+}
 end #begin..ensure..end
