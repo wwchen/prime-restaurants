@@ -15,3 +15,8 @@
 /tmp
 
 /lib/app_config.rb
+
+/script/*.html
+/script/*.psv
+/script/*.txt
+/script/*.json
