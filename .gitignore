@@ -20,3 +20,7 @@
 /script/*.psv
 /script/*.txt
 /script/*.json
+
+.DS_Store
+*.swp
+*.suo
