@@ -12,7 +12,7 @@ class Restaurant < ActiveRecord::Base
   validates :city,   :presence => true
   validates :state,  :presence => true
   validates :zip,    :presence => true, :length => { :is => 5 }
-  validates :phone,  :length => { :is => 14 }
+#  validates :phone,  :length => { :is => 14 }
 #                     :format => { :message => "must be a valid telephone number.",
 #                                  :with => /[(]?\d{3}[\)-]?\s*?\d{3}[-. ]?\d{4}/ }
 
