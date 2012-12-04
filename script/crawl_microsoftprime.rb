@@ -6,10 +6,9 @@ require 'optparse'
 agent = Mechanize.new
 agent.follow_meta_refresh = true
 region = -1
-out_filename = ARGV.count < 1? 'restaurants.html' : ARGV[0]
 
 OptionParser.new do |opts|
-  opts.banner = "Usage: ./crawl_microsoftprime.rb <output-filename> <region-number>"
+  opts.banner = "Usage: ./crawl_microsoftprime.rb [-r] <output-filename>"
 
   opts.on("-l", "--list-regions", "List all available regions") do |v|
     page = agent.get 'http://microsoftprime.com'
@@ -19,7 +18,7 @@ OptionParser.new do |opts|
     end
     exit
   end
-  opts.on('-r', '--region', 'Region value to crawl') do |v|
+  opts.on("-r", "--region [ID]", String, "Region value to crawl") do |v|
     region = v
   end
   opts.on_tail("-h", "--help", "Show help") do
@@ -32,8 +31,9 @@ OptionParser.new do |opts|
   end
 end.parse!
 
+out_filename = ARGV.count < 1? 'restaurants.html' : ARGV[-1]
 if ARGV.count < 1
-  puts "No filename specified, using default filename, " + out_filename if ARGV.count < 1
+  puts "No filename specified, using default filename, " + out_filename
 end
 
 page = agent.get 'http://microsoftprime.com/'

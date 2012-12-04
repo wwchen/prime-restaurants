@@ -1,11 +1,30 @@
 #!/usr/bin/env ruby
+require 'optparse'
+require 'rubygems'
+require 'nokogiri'
+
 
 ##
 # Usage
 ##
-if ARGV.count < 2
-  puts "Usage: ./parse_primelist.rb <filename> <output-name.ext>"
-  puts "Output extensions: json, txt, psv"
+$out_filetype = ""
+OptionParser.new do |opts|
+  opts.banner = "Usage: ./parse_primelist.rb -t [TYPE] <filename>"
+  opts.on("-t", "--type [TYPE]", [:json, :txt, :psv], "Select output type (json, txt, psv)") do |v|
+    $out_filetype = v
+  end
+  opts.on_tail("-h", "--help", "Show help") do
+    puts opts
+    exit
+  end
+  opts.on_tail("-V", "--version", "Show version") do
+    puts OptionParser::Version.join('.')
+    exit
+  end
+end.parse!
+
+if ARGV.count < 1
+  puts "No input filename!"
   exit
 end
 
@@ -20,12 +39,9 @@ end
 # Script
 ##
 in_filename  = ARGV[0]
-out_filename = ARGV[1] #txt json sqlite3 psv
+out_filename = /.*\..*?/.match(in_filename).to_s + $out_filetype
 
-require 'rubygems'
-require 'nokogiri'
-require 'json'    if /\.json$/i.match(out_filename)
-
+require 'json'    if /json$/i.match($out_filetype)
 geocode = /\.psv$/i.match(out_filename)
 if geocode
   require 'geocoder'
