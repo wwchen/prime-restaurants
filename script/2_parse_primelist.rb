@@ -2,6 +2,7 @@
 require 'optparse'
 require 'rubygems'
 require 'nokogiri'
+require 'json'
 
 
 ##
@@ -41,7 +42,6 @@ end
 in_filename  = ARGV[0]
 out_filename = /.*\..*?/.match(in_filename).to_s + $out_filetype
 
-require 'json'    if /json$/i.match($out_filetype)
 geocode = /\.psv$/i.match(out_filename)
 if geocode
   require 'geocoder'
