@@ -2,8 +2,7 @@ require 'action_controller'
 # require 'yelp'
 
 class Restaurant < ActiveRecord::Base
-# ignoring promotions relationship for now
-#  has_and_belongs_to_many :promotions
+  has_and_belongs_to_many :promotions
 #  has_one :yelp_info, :dependent => :destroy#, :inverse_of => :restaurant
   attr_accessible :name, :street, :city, :state, :zip, :phone, :lat, :lng
 

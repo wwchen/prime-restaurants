@@ -11,22 +11,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121216013036) do
+ActiveRecord::Schema.define(:version => 20121216065327) do
 
   create_table "promotions", :force => true do |t|
-    t.string   "detail"
-    t.boolean  "bogo"
-    t.integer  "restaurant_id"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
-  end
-
-  add_index "promotions", ["restaurant_id"], :name => "index_promotions_on_restaurant_id"
-
-  create_table "restaurants", :force => true do |t|
-    t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "detail",     :null => false
+  end
+
+  create_table "promotions_restaurants", :id => false, :force => true do |t|
+    t.integer "promotion_id"
+    t.integer "restaurant_id"
+  end
+
+  add_index "promotions_restaurants", ["promotion_id", "restaurant_id"], :name => "index_promotions_restaurants_on_promotion_id_and_restaurant_id"
+  add_index "promotions_restaurants", ["restaurant_id", "promotion_id"], :name => "index_promotions_restaurants_on_restaurant_id_and_promotion_id"
+
+  create_table "restaurants", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "name"
     t.string   "street"
     t.string   "city"
     t.string   "state"
