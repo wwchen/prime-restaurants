@@ -1,4 +1,4 @@
-require 'yelp'
+#require 'yelp'
 
 class RestaurantsController < ApplicationController
   # GET /restaurants

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120731083244) do
+ActiveRecord::Schema.define(:version => 20121216013036) do
 
   create_table "promotions", :force => true do |t|
     t.string   "detail"
@@ -34,46 +34,6 @@ ActiveRecord::Schema.define(:version => 20120731083244) do
     t.string   "phone"
     t.float    "lat"
     t.float    "lng"
-  end
-
-  create_table "yelp_categories", :force => true do |t|
-    t.integer  "yelp_infos_id"
-    t.string   "name"
-    t.string   "display_name"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
-  end
-
-  create_table "yelp_categories_yelp_categories", :id => false, :force => true do |t|
-    t.integer "yelp_category_id"
-    t.integer "yelp_info_id"
-  end
-
-  create_table "yelp_infos", :force => true do |t|
-    t.string   "identifier"
-    t.string   "name"
-    t.string   "rating_img_url"
-    t.integer  "review_count"
-    t.string   "mobile_url"
-    t.string   "url"
-    t.string   "image_url"
-    t.datetime "created_at",           :null => false
-    t.datetime "updated_at",           :null => false
-    t.integer  "restaurant_id"
-    t.string   "query_string"
-    t.boolean  "is_claimed"
-    t.boolean  "is_closed"
-    t.string   "display_phone"
-    t.integer  "rating"
-    t.string   "rating_img_url_small"
-    t.string   "rating_img_url_large"
-    t.string   "snippet_text"
-    t.string   "scolumn"
-    t.string   "nippet_image_url"
-    t.float    "latitude"
-    t.float    "longitude"
-    t.string   "display_address"
-    t.integer  "yelp_categories_id"
   end
 
 end

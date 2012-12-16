@@ -29,11 +29,12 @@
   <b>Updated at:</b>
   <%= @restaurant.updated_at %>
 </p>
-
+<!--
 <p>
   <b>Yelp info:</b>
   <%= link_to 'Show me more!', @restaurant.yelp_info unless @restaurant.yelp_info.nil? %>
 </p>
+-->
 
 <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=600x300&markers=#{@restaurant.lat}%2C#{@restaurant.lng}&sensor=false" %><br />
 <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |

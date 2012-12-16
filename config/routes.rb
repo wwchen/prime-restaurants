@@ -1,8 +1,7 @@
 Prime::Application.routes.draw do
-  resources :yelp_categories
-
   resources :restaurants
-  resources :yelp_infos
+#  resources :yelp_categories
+#  resources :yelp_infos
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
