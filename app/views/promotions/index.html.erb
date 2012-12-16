@@ -2,13 +2,18 @@
 
 <table>
   <tr>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>id</th>
+    <th>detail</th>
+    <th>created at</th>
+    <th>restaurants</th>
   </tr>
 
 <% @promotions.each do |promotion| %>
   <tr>
+    <td><%= promotion.id %></td>
+    <td><%= promotion.detail %></td>
+    <td><%= promotion.created_at %></td>
+    <td><%= promotion.restaurant.count %></td>
     <td><%= link_to 'Show', promotion %></td>
     <td><%= link_to 'Edit', edit_promotion_path(promotion) %></td>
     <td><%= link_to 'Destroy', promotion, method: :delete, data: { confirm: 'Are you sure?' } %></td>

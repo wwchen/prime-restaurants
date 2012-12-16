@@ -1,5 +1,19 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <b>ID:</b>
+  <%= @promotion.id %>
+</p>
+
+<p>
+  <b>Detail:</b>
+  <%= @promotion.detail %>
+</p>
+
+<p>
+  <b><%= pluralize(@promotion.restaurant.count, 'Restaurant') %>:</b><br>
+  <%= @promotion.restaurant.map { |r| link_to r.name, r }.join("<br>").html_safe %>
+</p>
 
 <%= link_to 'Edit', edit_promotion_path(@promotion) %> |
 <%= link_to 'Back', promotions_path %>

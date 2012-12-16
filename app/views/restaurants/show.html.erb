@@ -30,6 +30,11 @@
   <%= @restaurant.updated_at %>
 </p>
 
+<p>
+<b>Promotions:</b><br>
+  <%= @restaurant.promotions.map { |p| p.detail }.join('<br>').html_safe %>
+</p>
+
 <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?zoom=14&size=600x300&markers=#{@restaurant.lat}%2C#{@restaurant.lng}&sensor=false" %><br />
 <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
 <%= link_to 'Back', restaurants_path %>

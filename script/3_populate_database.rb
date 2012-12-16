@@ -17,14 +17,16 @@ json = JSON.parse(File.read(File.expand_path("../#{fname}", __FILE__)))
 
 json.each do |res|
   begin
-    db_id = Restaurant.where(:name => res['name'], :street => res['address'], :zip => res['zip'])
-    if db_id.empty?
-      Restaurant.create!( :name   => res['name'],
-                          :street => res['address'],
-                          :city   => res['city'],
-                          :state  => res['state'],
-                          :zip    => res['zip'],
-                          :phone  => res['telephone'])
+    restaurant = Restaurant.find_or_create_by_name_and_street_and_zip(
+                    :name   => res['name'],
+                    :street => res['address'],
+                    :city   => res['city'],
+                    :state  => res['state'],
+                    :zip    => res['zip'],
+                    :phone  => res['telephone'])
+    res['promotions'].each do |promo|
+      promotion = Promotion.find_or_create_by_detail(promo)
+      restaurant.promotions << promotion
     end
   rescue
     next

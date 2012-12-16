@@ -1,5 +1,6 @@
 Prime::Application.routes.draw do
   resources :restaurants
+  resources :promotions
 #  resources :yelp_categories
 #  resources :yelp_infos
 
