@@ -40,7 +40,8 @@ end
 # Script
 ##
 in_filename  = ARGV[0]
-out_filename = /.*\..*?/.match(in_filename).to_s + $out_filetype
+out_filename = /.*\..*?/.match(in_filename).to_s + $out_filetype.to_s
+puts "Outputting to #{out_filename}"
 
 geocode = /\.psv$/i.match(out_filename)
 if geocode
@@ -71,6 +72,7 @@ vendors.each { |vendor|
   vendor_info = vendor.css('font')
   name =  normalize(vendor_info[0].text)
   promo = vendor_info.css('li').collect { |i| i.text }
+  promo = [vendor_info.css('font[color=red]').text] if promo.empty?
   info =  vendor_info.collect { |i| i.text }[1...-1]
 
   telephone = /[(]?\d{3}[\)-]?\s*?\d{3}[-. ]?\d{4}/.match(info[-1]).to_s
