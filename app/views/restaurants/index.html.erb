@@ -14,6 +14,7 @@
   </tr>
 
 <% @restaurants.each do |restaurant| %>
+  <% next if restaurant.state != 'WA' %>
   <tr>
     <td><%= restaurant.id %></td>
     <td><%= restaurant.name %></td>

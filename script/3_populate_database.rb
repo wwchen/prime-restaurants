@@ -24,6 +24,7 @@ json.each do |res|
                     :state  => res['state'],
                     :zip    => res['zip'],
                     :phone  => res['telephone'])
+    restaurant.promotions.clear
     res['promotions'].each do |promo|
       promotion = Promotion.find_or_create_by_detail(promo)
       restaurant.promotions << promotion
