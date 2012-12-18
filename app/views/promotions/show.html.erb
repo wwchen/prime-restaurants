@@ -11,6 +11,16 @@
 </p>
 
 <p>
+  <b>Created at:</b>
+  <%= @promotion.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @promotion.updated_at %>
+</p>
+
+<p>
   <b><%= pluralize(@promotion.restaurant.count, 'Restaurant') %>:</b><br>
   <%= @promotion.restaurant.map { |r| link_to r.name, r }.join("<br>").html_safe %>
 </p>

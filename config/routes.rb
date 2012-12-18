@@ -1,8 +1,8 @@
 Prime::Application.routes.draw do
   resources :restaurants
   resources :promotions
-#  resources :yelp_categories
-#  resources :yelp_infos
+
+  match '/restaurants/state/:state' => 'restaurants#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

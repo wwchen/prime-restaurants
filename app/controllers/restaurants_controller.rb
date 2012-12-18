@@ -1,10 +1,12 @@
-#require 'yelp'
-
 class RestaurantsController < ApplicationController
   # GET /restaurants
   # GET /restaurants.json
   def index
-    @restaurants = Restaurant.all
+    if params[:state]
+      @restaurants = Restaurant.where(:state => params[:state].upcase)
+    else
+      @restaurants = Restaurant.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb
