@@ -37,8 +37,10 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
-gem 'therubyracer'
-gem 'geocoder'
-gem 'redis'
+#gem 'therubyracer'   # not sure what this is for
+#gem 'libv8'
+
+gem 'geocoder'  # for geocoding
+gem 'redis'     # for caching
 gem 'oauth'
 gem 'json'
