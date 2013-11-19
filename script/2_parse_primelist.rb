@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 require 'optparse'
-require 'rubygems'
 require 'nokogiri'
 require 'json'
 
@@ -8,11 +7,11 @@ require 'json'
 ##
 # Usage
 ##
-$out_filetype = ""
+options = {}
 OptionParser.new do |opts|
   opts.banner = "Usage: ./parse_primelist.rb -t [TYPE] <filename>"
-  opts.on("-t", "--type [TYPE]", [:json, :txt, :psv], "Select output type (json, txt, psv)") do |v|
-    $out_filetype = v
+  opts.on("-t", "--type [json|txt|psv]", "Select output type") do |v|
+    options[:filetype] = v
   end
   opts.on_tail("-h", "--help", "Show help") do
     puts opts
@@ -39,24 +38,32 @@ end
 ##
 # Script
 ##
-in_filename  = ARGV[0]
-out_filename = /.*\..*?/.match(in_filename).to_s + $out_filetype.to_s
-puts "Outputting to #{out_filename}"
+in_filename  = ARGV.shift
+out_filename = in_filename
 
-geocode = /\.psv$/i.match(out_filename)
-if geocode
-  require 'geocoder'
-  require 'redis'
-
-  #Geocoder::Configuration.lookup = :yahoo
-  #Geocoder::Configuration.cache = Redis.new
-  Geocoder::Configuration.timeout = 10
+## Sanity check on filenames
+unless File.exists? in_filename
+  puts "#{in_filename} doesn't exist. Exiting.."
+  exit
+end
+if options[:filetype].nil?
+  print "Output filetype not specified. Defaulting to json, ok? [Yn] "
+  ans = gets
+  if ans =~ /[Yy]/
+    options[:filetype] = 'json'
+  else
+    puts "Exiting.."
+    exit
+  end
 end
 
+index = in_filename.rindex '.'
+out_filename = out_filename[0..index-1] unless index.nil?
+out_filename += '.' + options[:filetype]
+puts "Outputting to #{out_filename}"
 
 
-
-
+## Parse
 content = Nokogiri::HTML(open(in_filename))
 vendors = content.xpath('//*[@id="Form1"]/table/tr[1]/td').css('table')
 # vendors = content.xpath('//*[@id="Form1"]/table/tbody/tr[1]/td').css('table')
@@ -68,30 +75,17 @@ end
 
 restaurants = Array.new
 begin
-vendors.each { |vendor| 
-  vendor_info = vendor.css('font')
-  name =  normalize(vendor_info[0].text)
-  promo = vendor_info.css('li').collect { |i| i.text }
-  promo = [vendor_info.css('font[color=red]').text] if promo.empty?
-  info =  vendor_info.collect { |i| i.text }[1...-1]
+  vendors.each { |vendor| 
+    vendor_info = vendor.css('font')
+    name  = normalize(vendor_info[0].text)
+    promo = vendor_info.css('li').collect { |i| i.text }
+    promo = [vendor_info.css('font[color=red]').text] if promo.empty?
+    info  = vendor_info.collect { |i| i.text }[1...-1]
 
-  telephone = /[(]?\d{3}[\)-]?\s*?\d{3}[-. ]?\d{4}/.match(info[-1]).to_s
-  address = normalize info[0...-1].join(', ')
-  address = normalize info.join(', ') if telephone.empty?
+    telephone = /[(]?\d{3}[\)-]?\s*?\d{3}[-. ]?\d{4}/.match(info[-1]).to_s
+    address = normalize info[0...-1].join(', ')
+    address = normalize info.join(', ') if telephone.empty?
 
-  if geocode
-    # retrieving a formatted address
-    geo = Geocoder.search(address)[0]
-    address = geo.formatted_address if geo.respond_to?("formatted_address")
-    address = geo.address if address.nil?
-    city = geo.city
-    state = geo.state_code
-    zip = geo.postal_code
-    #street = [geo.address_components_of_type("street_number")[0]['long_name'], geo.address_components_of_type("route")[0]['long_name']].join(' ')
-    street = address.sub(/(.*),?#{city}.*$/, '\1').strip
-    lat = geo.latitude
-    lng = geo.longitude
-  else
     # splitting address
     addr_components = address.split(',')
     if addr_components.count < 3
@@ -103,35 +97,32 @@ vendors.each { |vendor|
       state   = /[a-z]{2}/i.match(addr_components[-1]).to_s.strip
       zip     = /[0-9]{5}/i.match(addr_components[-1]).to_s.strip
     end
-  end
 
-  if geocode
-    restaurants.push(Hash["name"=>name, "address"=>address, "street"=>street, "city"=>city, "state"=>state, "zip"=>zip, "lat"=>lat, "lng"=>lng, "telephone"=>telephone, "promotions"=>promo])
-  elsif (defined? zip).nil?
-    restaurants.push(Hash["name"=>name, "address"=>address, "telephone"=>telephone, "promotions"=>promo])
-  else
-    restaurants.push(Hash["name"=>name, "address"=>address, "city"=>city, "state"=>state, "zip"=>zip, "telephone"=>telephone, "promotions"=>promo])
-  end
-}
+    if (defined? zip).nil?
+      restaurants.push(Hash["name"=>name, "address"=>address, "telephone"=>telephone, "promotions"=>promo])
+    else
+      restaurants.push(Hash["name"=>name, "address"=>address, "city"=>city, "state"=>state, "zip"=>zip, "telephone"=>telephone, "promotions"=>promo])
+    end
+  }
 ensure
-restaurants.uniq!
+  restaurants.uniq!
 
-##
-# Output
-##
-File.open(out_filename, 'w:UTF-8') { |f|
-  case out_filename
-  when /\.txt$/i
-    restaurants.each { |restaurant|
-      f.write(restaurant.collect{|i| i[1]}.join("\n") + "\n\n")
-    }
-  when /\.json$/i
-    f.write(JSON.generate(restaurants))
-  when /\.psv$/i
-    restaurants.each { |res|
-      f.write("#{res['name']}|#{res['street']}|#{res['city']}|#{res['state']}|#{res['zip']}|#{res['telephone']}|#{res['lat']}|#{res['lng']}\n")
-    }
-  end
-  f.flush
-}
+  ##
+  # Output
+  ##
+  File.open(out_filename, 'w:UTF-8') { |f|
+    case out_filename
+    when /\.txt$/i
+      restaurants.each { |restaurant|
+        f.write(restaurant.collect{|i| i[1]}.join("\n") + "\n\n")
+      }
+    when /\.json$/i
+      f.write(JSON.generate(restaurants))
+    when /\.psv$/i
+      restaurants.each { |res|
+        f.write("#{res['name']}|#{res['street']}|#{res['city']}|#{res['state']}|#{res['zip']}|#{res['telephone']}}\n")
+      }
+    end
+    f.flush
+  }
 end #begin..ensure..end
