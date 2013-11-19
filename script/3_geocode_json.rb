@@ -3,10 +3,25 @@
 require 'json'
 require 'geocoder'
 require 'optparse'
-require 'colorize'
 
 Geocoder::Configuration.timeout = 10
 Geocoder::Configuration.lookup = :google
+
+class String
+  # colorization
+  def colorize(color_code)
+    "\e[#{color_code}m#{self}\e[0m"
+  end
+  def red
+    colorize(31)
+  end
+  def green
+    colorize(32)
+  end
+  def yellow
+    colorize(33)
+  end
+end
 
 out_fname = nil
 OptionParser.new do |opts|
@@ -34,15 +49,16 @@ unless out_fname
   exit unless ans =~ /[yY]/
 end
 
-
 json.each_index do |i|
   info = json[i]
   address = "%s, %s, %s %s" % [info['address'], info['city'], info['state'], info['zip']]
   id = i + 1
   begin
     result = Geocoder.search(address).first
-    puts ("\u2717 %d: %s" % [id, info['name']]).red
-    sleep(3) if result.nil?
+    if result.nil?
+      puts ("\u2717 %d: %s" % [id, info['name']]).red
+      sleep(3)
+    end
   end while result.nil?
 
   json[i]['formatted_address'] = result.address #result.formatted_address
