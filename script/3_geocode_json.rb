@@ -9,6 +9,7 @@ Geocoder::Configuration.lookup = :google
 
 out_fname = nil
 OptionParser.new do |opts|
+  opts.banner = "Usage: ./geocode_json.rb -o <output> <filename>"
   opts.on('-o', '--output <filename>', 'Write output to <filename> instead of stdout') do |v|
     out_fname = v.strip
   end
@@ -19,7 +20,7 @@ OptionParser.new do |opts|
 end.parse!
 
 if ARGV.count < 1
-  puts "Usage: ./geocode_json.rb <filename>"
+  puts "No filename specified. See help with -h flag"
   exit
 end
 
