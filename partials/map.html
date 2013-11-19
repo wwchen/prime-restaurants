@@ -1,0 +1,6 @@
+<input ng-model="query">
+<ul>
+  <li ng-repeat="restaurant in restaurants | filter: query">
+    {{restaurant.id}} : {{restaurant.name}} - {{restaurant.formatted_address}}
+  </li>
+</ul>
