@@ -3,6 +3,7 @@
 require 'json'
 require 'geocoder'
 require 'optparse'
+require 'colorize'
 
 Geocoder::Configuration.timeout = 10
 Geocoder::Configuration.lookup = :google
@@ -40,7 +41,7 @@ json.each_index do |i|
   id = i + 1
   begin
     result = Geocoder.search(address).first
-    puts "\u2717 %d: %s" % [id, info['name']]
+    puts ("\u2717 %d: %s" % [id, info['name']]).red
     sleep(3) if result.nil?
   end while result.nil?
 
@@ -48,7 +49,7 @@ json.each_index do |i|
   json[i]['lat'] = result.latitude
   json[i]['lng'] = result.longitude
   json[i]['id']  = id
-  puts "\u2713 %d: %s" % [id, info['name']]
+  puts ("\u2713 %d: %s" % [id, info['name']]).green
 end
 
 if out_fname
