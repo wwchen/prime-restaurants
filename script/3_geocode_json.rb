@@ -51,12 +51,12 @@ end
 
 json.each_index do |i|
   info = json[i]
+  msg = "%d: %s" % [i+1, info['name']]
   address = "%s, %s, %s %s" % [info['address'], info['city'], info['state'], info['zip']]
-  id = i + 1
   begin
     result = Geocoder.search(address).first
     if result.nil?
-      puts ("\u2717 %d: %s" % [id, info['name']]).red
+      puts "\u2717 #{msg}".red
       sleep(3)
     end
   end while result.nil?
@@ -64,8 +64,7 @@ json.each_index do |i|
   json[i]['formatted_address'] = result.address #result.formatted_address
   json[i]['lat'] = result.latitude
   json[i]['lng'] = result.longitude
-  json[i]['id']  = id
-  puts ("\u2713 %d: %s" % [id, info['name']]).green
+  puts "\u2713 #{msg}".green
 end
 
 if out_fname
