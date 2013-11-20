@@ -2,10 +2,10 @@ var filters = angular.module('primeFilters', []);
 
 filters.filter('showMap', function() {
   return function(coord) {
-    console.log(coord);
     if(!coord || !coord.lat || !coord.lng) {
       return;
     }
+    console.log("Show map filter called: " + JSON.stringify(coord));
     var pos = new google.maps.LatLng(coord.lat, coord.lng);
     var mapOptions = {
       zoom: 14,
@@ -21,6 +21,7 @@ filters.filter('showMap', function() {
 
 filters.filter('addMarker', function() {
   return function(coord, mapObj) {
+    console.log("Add marker filter called");
     var pos = new google.maps.LatLng(coord.lat, coord.lng);
     var marker = new google.maps.Marker({
       position: pos,
