@@ -62,8 +62,9 @@ json.each_index do |i|
   end while result.nil?
 
   json[i]['formatted_address'] = result.address #result.formatted_address
-  json[i]['lat'] = result.latitude
-  json[i]['lng'] = result.longitude
+  json[i]['coordinates'] = {}
+  json[i]['coordinates']['lat'] = result.latitude
+  json[i]['coordinates']['lng'] = result.longitude
   puts "\u2713 #{msg}".green
 end
 
