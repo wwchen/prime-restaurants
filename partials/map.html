@@ -1,6 +1,13 @@
-<input ng-model="query">
-<ul>
-  <li ng-repeat="restaurant in restaurants | filter: query">
-    {{restaurant.id}} : {{restaurant.name}} - {{restaurant.formatted_address}}
-  </li>
-</ul>
+<div style="height: 100%; width: 30vw; float: left; position: fixed; overflow-y: scroll">
+  <input ng-model="query">
+  <ul>
+    <li ng-repeat="restaurant in restaurants | filter: query">
+      <a href="#restaurant/{{restaurant.id}}">{{restaurant.name}}</a>
+      {{ restaurant.coordinates | addMarker:map }}
+    </li>
+  </ul>
+</div>
+
+<div style="height: 100vh; width: 70vw; float: right">
+  <div id="map-canvas" style="min-width: 100%; min-height: 100%"></div>
+</div>

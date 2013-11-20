@@ -1,9 +1,10 @@
 var primeApp = angular.module('primeApp', [
   'ngRoute',
   'primeControllers',
+  'primeFilters',
 ]);
 
-primeApp.config(['$routeProvider', function($routeProvider) {
+primeApp.config(function($routeProvider) {
   $routeProvider.
     when('/map', {
       templateUrl: 'partials/map.html',
@@ -16,4 +17,4 @@ primeApp.config(['$routeProvider', function($routeProvider) {
     otherwise({
       redirectTo: '/map'
     });
-}]);
+});
