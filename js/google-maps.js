@@ -16,19 +16,32 @@
     };
 
     function link(scope, element, attrs) {
-      scope.$parent.maps = scope.$parent.maps || {};
+      console.log("googleMaps scope, element, attrs");
+      console.log(scope); console.log(element); console.log(attrs);
 
-      var map = new google.maps.Map(element[0], {
-        zoom: parseInt(scope.zoom),
-        //center: new google.maps.LatLng(scope.center.lat, scope.center.lng)
-        center: new google.maps.LatLng(47.626117, -122.332817)
+      var canvas = attrs.canvasId;
+      // check for mandatory parameters
+      if(!canvas) {
+        console.error("Mandatory attributes not configured for initializing a Google Maps canvas");
+        return;
+      }
+
+      var maps = scope.$parent.maps || {};
+      scope.$watch('center', function(center) {
+        if(center) {
+          var map = new google.maps.Map(element[0], {
+            zoom: parseInt(scope.zoom),
+            center: new google.maps.LatLng(center.lat, center.lng)
+            //center: new google.maps.LatLng(47.626117, -122.332817)
+          });
+          maps[canvas] = map;
+        }
+        scope.$parent.maps = maps;
       });
-      scope.$parent.maps[attrs.canvasId] = map;
 
       element.on('$destroy', function() {
-        map = null;
+        scope.$parent.maps[canvas] = null;
       });
-      console.log(map);
     };
   });
 
@@ -42,19 +55,42 @@
     }
 
     function link(scope, element, attrs) {
-      var map = scope.$parent.maps[attrs.canvas];
-      //var coord = scope.coord;
-      var coord = scope.$parent.restaurant.coordinates; 
-      console.log(scope.$parent.restaurant.name);
-      console.log(coord);
-      var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(coord.lat, coord.lng),
-        map: map
-      });
-      element.on('$destroy', function() {
-        console.log('destroyed');
-        marker.setMap(null);
-      });
+      //console.log("marker scope, element, attrs");
+      //console.log(scope); console.log(element); console.log(attrs);
+
+      var canvas = attrs.canvas;
+      if(!canvas) {
+        console.error("Mandatory attributes not configured for initializing a Google Maps canvas");
+        return;
+      }
+
+      var map = scope.$parent.maps[canvas];
+      // the map canvas hasn't been initialized yet.. watch the pot until it boils
+      if(!map) {
+        var watch = scope.$parent.$watch('maps', function(maps) {
+          map = maps[canvas];
+          if(map) {
+            watch();
+            createMarker();
+          }
+        });
+      }
+      else {
+        createMarker();
+      }
+
+      function createMarker() {
+        //var coord = scope.coord;
+        var coord = scope.$parent.restaurant.coordinates; 
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(coord.lat, coord.lng),
+          map: map
+        });
+        element.on('$destroy', function() {
+          console.log('marker destroyed');
+          marker.setMap(null);
+        });
+      }
     };
   });
 
