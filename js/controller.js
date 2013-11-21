@@ -5,12 +5,7 @@ primeControllers.controller('PrimeListCtrl',
   function($scope, $http) {
     $http.get('js/restaurants.json').success(function(data) {
       $scope.restaurants = data;
-      var element = document.getElementById('map-canvas');
-      var options = {
-        zoom: 10,
-        center: new google.maps.LatLng(47.626117, -122.332817)
-      }
-      $scope.map = new google.maps.Map(element, options);
+      $scope.seattle = {lat: 47.626117, lng:-122.332817};
     });
   });
 

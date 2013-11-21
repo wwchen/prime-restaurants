@@ -2,6 +2,7 @@ var primeApp = angular.module('primeApp', [
   'ngRoute',
   'primeControllers',
   'primeFilters',
+  'googleMaps'
 ]);
 
 primeApp.config(function($routeProvider) {

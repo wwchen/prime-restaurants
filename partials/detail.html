@@ -9,6 +9,7 @@
   <li ng-repeat="promo in restaurant.promotions">{{promo}}</li>
 </ul>
 
-{{ restaurant.coordinates | showMap }}
+<!-- {{ restaurant.coordinates | showMap }} -->
 
-<div id="map-canvas" style="min-width: 100%; min-height: 200px"></div>
+<google-maps canvas-id="canvas"></google-maps>
+<marker lat="{{ restaurant }}" lng="-122.332817" canvas="canvas"></marker>

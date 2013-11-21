@@ -1,13 +1,13 @@
+<div style="height: 100vh; width: 70vw; float: right">
+  <google-maps canvas-id='mapCanvas' zoom=10 center='seattle'></google-maps>
+</div>
+
 <div style="height: 100%; width: 30vw; float: left; position: fixed; overflow-y: scroll">
   <input ng-model="query">
   <ul>
     <li ng-repeat="restaurant in restaurants | filter: query">
       <a href="#restaurant/{{restaurant.id}}">{{restaurant.name}}</a>
-      {{ restaurant.coordinates | addMarker:map }}
+      <marker coordinates='restaurant' canvas='mapCanvas'></marker>
     </li>
   </ul>
-</div>
-
-<div style="height: 100vh; width: 70vw; float: right">
-  <div id="map-canvas" style="min-width: 100%; min-height: 100%"></div>
 </div>

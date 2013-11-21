@@ -9,9 +9,9 @@
     <script src="js/demo-app.js"></script>
   </head>
   <body style="margin: 0 auto" ng-controller="demoCtrl">
-    <div style="height: 50vh; width: 100vw">
-      <google-maps id="a" canvas-id="mapCanvas"></google-maps>
+  <div style='height: 50vh'>
+    <google-maps canvas-id="mapCanvas" zoom=10 center="coord"></google-maps>
     </div>
-    <marker id="m" lat="47.626117" lng="-122.332817" canvas="mapCanvas"></marker>
+    <marker id="m" coordinate="mcoord" canvas="mapCanvas"></marker>
   </body>
 </html>
