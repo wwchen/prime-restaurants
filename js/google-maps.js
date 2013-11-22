@@ -39,8 +39,10 @@
         scope.$parent.maps = maps;
       });
 
+      console.log("canvas created");
       element.on('$destroy', function() {
         scope.$parent.maps[canvas] = null;
+        console.log("canvas destroyed");
       });
     };
   });
@@ -86,9 +88,10 @@
           position: new google.maps.LatLng(coord.lat, coord.lng),
           map: map
         });
+        console.log('marker created');
         element.on('$destroy', function() {
-          console.log('marker destroyed');
           marker.setMap(null);
+          console.log('marker destroyed');
         });
       }
     };
