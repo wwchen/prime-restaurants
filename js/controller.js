@@ -15,5 +15,6 @@ primeControllers.controller('PrimeDetailCtrl',
       var id = $routeParams.id;
       var restaurants = data;
       $scope.restaurant = $filter('filter')(restaurants, {id : id}, true)[0];
+      $scope.seattle = {lat: 47.626117, lng:-122.332817};
     });
   });

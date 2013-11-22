@@ -11,5 +11,7 @@
 
 <!-- {{ restaurant.coordinates | showMap }} -->
 
-<google-maps canvas-id="canvas"></google-maps>
-<marker lat="{{ restaurant }}" lng="-122.332817" canvas="canvas"></marker>
+<div style="width: 100vw; height: 200px">
+  <google-maps canvas-id="canvas" zoom=10 center='restaurant.coordinates'></google-maps>
+</div>
+<marker coordinates='restaurant.coordinates' canvas="canvas"></marker>
