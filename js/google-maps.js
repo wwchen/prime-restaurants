@@ -12,39 +12,51 @@
         center: '=',
         zoom: '@'
       },
-      link: link
-    };
-
-    function link(scope, element, attrs) {
-      //console.log("googleMaps scope, element, attrs");
-      //console.log(scope); console.log(element); console.log(attrs);
-
-      var canvas = attrs.canvasId;
-      var zoom = parseInt(attrs.zoom);
-      // check for mandatory parameters
-      if(!canvas || !zoom) {
-        console.error("Mandatory attributes not configured for initializing a Google Maps canvas");
-        return;
-      }
-
-      var maps = scope.$parent.maps || {};
-      scope.$watch('center', function(center) {
-        if(center) {
-          var map = new google.maps.Map(element[0], {
-            zoom: zoom,
-            center: new google.maps.LatLng(center.lat, center.lng)
-            //center: new google.maps.LatLng(47.626117, -122.332817)
-          });
-          maps[canvas] = map;
+      controller: function($scope, $element, $attrs) {
+        var canvas = $attrs.canvasId;
+        var zoom = parseInt($attrs.zoom);
+        // check for mandatory parameters
+        if(!canvas || !zoom) {
+          console.error("Mandatory attributes not configured for initializing a Google Maps canvas");
+          return;
         }
-        scope.$parent.maps = maps;
-      });
 
-      console.log("canvas created");
-      element.on('$destroy', function() {
-        scope.$parent.maps[canvas] = null;
-        console.log("canvas destroyed");
-      });
+        var maps = $scope.$parent.maps || {};
+        $scope.$watch('center', function(center) {
+          if(center) {
+            var map = new google.maps.Map($element[0], {
+              zoom: zoom,
+              center: new google.maps.LatLng(center.lat, center.lng)
+            });
+            maps[canvas] = map;
+
+            google.maps.event.addListener(map, 'dragend', function() {
+              console.log('fire!');
+            });
+            google.maps.event.addListener(map, 'zoom_changed', function() {
+              console.log('fire!');
+            });
+          }
+          $scope.$parent.maps = maps;
+        });
+
+        // destructor
+        $element.on('$destroy', function() {
+          $scope.$parent.maps[canvas] = null;
+          console.log("canvas destroyed");
+        });
+
+        $element.on('focusout', function() {
+          console.log('scroll');
+        });
+
+        $element.on('mousedown', function(e) {
+          console.log(e);
+          console.log('mousedown');
+        });
+
+        console.log("canvas created");
+      }
     };
   });
 

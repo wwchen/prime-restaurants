@@ -19,13 +19,20 @@ filters.filter('showMap', function() {
   };
 });
 
-filters.filter('addMarker', function() {
-  return function(coord, mapObj) {
-    console.log("Add marker filter called");
-    var pos = new google.maps.LatLng(coord.lat, coord.lng);
-    var marker = new google.maps.Marker({
-      position: pos,
-      map: mapObj
-    });
+//  | restaurantInMapView:this.maps['mapCanvas']
+filters.filter('restaurantInMapView', function() {
+  return function(input, map) {
+    var filtered = [];
+    if(input && map) {
+      $.each(input, function(i, restaurant) {
+        var coords = restaurant.coordinates;
+        var latlng = new google.maps.LatLng(coords.lat, coords.lng);
+        if(map.getBounds() && map.getBounds().contains(latlng)) {
+          filtered.push(restaurant);
+        }
+      });
+      return filtered;
+    }
+    return input
   };
 });
