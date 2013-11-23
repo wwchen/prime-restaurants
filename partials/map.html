@@ -1,9 +1,12 @@
-<div style="height: 100%; width: 30vw; float: left; position: fixed; overflow-y: scroll">
-  <input ng-model="query">
+<div id="listPane" style="height: 100%; width: 30vw; float: left; position: fixed; overflow-y: scroll">
+  <h3>Restuarants that accept Prime discounts!</h3>
+  <h5>Site built with <a href="http://angular.org">AngularJS</a></h5>
+  Filter: <input ng-model="query">
   <ul>
-    <li ng-repeat="restaurant in restaurants | filter: query">
+    <li id="{{restaurant.id}}" ng-repeat="restaurant in restaurants | filter: query">
       <a href="#restaurant/{{restaurant.id}}">{{restaurant.name}}</a>
-      <marker coordinates='restaurant' canvas='mapCanvas'></marker>
+      <marker coordinates='restaurant' canvas='mapCanvas'
+      click='moveToTop(anchor)' ng-init="anchor = restaurant.id"></marker>
     </li>
   </ul>
 </div>

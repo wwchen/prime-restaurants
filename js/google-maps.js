@@ -52,7 +52,9 @@
     return {
       restrict: 'E',
       scope: {
-        coord: '=coordinates'
+        coord: '=coordinates',
+        click: '&',
+        hover: '&'
       },
       link: link
     }
@@ -84,6 +86,7 @@
           if(length > 0 && maps[canvas]) { createMarker(); watch(); }
       });
 
+
       function createMarker() {
         var map = scope.$parent.maps[canvas];
         var coord = scope.$parent.restaurant.coordinates; 
@@ -93,6 +96,11 @@
         });
         console.log('marker created');
 
+        // events
+        google.maps.event.addListener(marker, 'click', scope.click);
+        google.maps.event.addListener(marker, 'click', scope.hover);
+
+        // destroy
         element.on('$destroy', function() {
           marker.setMap(null);
           console.log('marker destroyed');
