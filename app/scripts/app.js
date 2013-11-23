@@ -12,6 +12,10 @@ angular.module('primeRestaurantsApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/restaurant/:id', {
+        templateUrl: 'views/detail.html',
+        controller: 'DetailCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
