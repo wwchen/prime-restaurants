@@ -9,9 +9,12 @@ primeControllers.controller('PrimeListCtrl',
     });
 
     $scope.moveToTop = function(anchor) {
-      console.log("Moving list to " + anchor);
-      $('#listPane').animate({
-        scrollTop: $('#' + anchor).position().top
+      var container = $('#listContainer');
+      var scroll = container.scrollTop() + $('#' + anchor).position().top;
+      console.log("Moving list to " + anchor + " by " + scroll);
+
+      container.animate({
+        scrollTop: scroll
       }, 500);
     }
   });
