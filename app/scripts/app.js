@@ -4,7 +4,8 @@ angular.module('primeRestaurantsApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'google-maps'
 ])
   .config(function ($routeProvider) {
     $routeProvider

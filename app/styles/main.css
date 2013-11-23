@@ -1,0 +1,6 @@
+body
+  { margin: 0 auto; }
+
+.angular-google-map-container,
+.angular-google-map
+  { height: 100% }
