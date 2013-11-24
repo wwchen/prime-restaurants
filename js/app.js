@@ -1,11 +1,10 @@
-var primeApp = angular.module('primeApp', [
+angular.module('primeRestaurantsApp', [
   'ngRoute',
   'primeControllers',
-  'primeFilters',
   'googleMaps'
-]);
+])
 
-primeApp.config(function($routeProvider) {
+.config(function($routeProvider) {
   $routeProvider.
     when('/map', {
       templateUrl: 'partials/map.html',
