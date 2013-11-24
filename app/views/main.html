@@ -3,13 +3,16 @@
   <h5>Site built with <a href="http://angular.org">AngularJS</a></h5>
   Filter: <input ng-model="query">
   <ul>
-    <li id="{{restaurant.id}}" ng-repeat="restaurant in restaurants | filter: query">
+    <li id="{{restaurant.id}}" ng-repeat="restaurant in (filteredRestaurants = (restaurants | filter: query))">
       <a href="#restaurant/{{restaurant.id}}">{{restaurant.name}}</a>
     </li>
   </ul>
 </div>
 
 <div style="height: 100vh; width: 70vw; float: right">
-  <google-map center='seattle' zoom=14></google-map>
+  <!-- <google-map center='seattle' zoom='map.zoom' events='map.events' markers='map.markers' ></google-map> -->
+  <google-map center='seattle' zoom='map.zoom' events='map.events' draggable=true dragging='map.dragging'>
+    <marker ng-repeat='m in filteredRestaurants' coords='m.coordinates'></marker>
+  </google-map>
 </div>
 
