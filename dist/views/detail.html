@@ -1,0 +1,13 @@
+<h1>{{restaurant.name}}</h1>
+<p>{{restaurant.formatted_address}}</p>
+<p>{{restaurant.telephone}}</p>
+
+<ul>
+  <li ng-repeat="promo in restaurant.promotions">{{promo}}</li>
+</ul>
+
+<div style="width: 100vw; height: 200px">
+  <google-map center="restaurant" zoom="map.zoom">
+    <marker coords="restaurant"></marker>
+  </google-map>
+</div>
