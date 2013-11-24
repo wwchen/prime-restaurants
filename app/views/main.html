@@ -12,7 +12,7 @@
 <div style="height: 100vh; width: 70vw; float: right">
   <!-- <google-map center='seattle' zoom='map.zoom' events='map.events' markers='map.markers' ></google-map> -->
   <google-map center='seattle' zoom='map.zoom' events='map.events' draggable=true dragging='map.dragging'>
-    <marker ng-repeat='m in filteredRestaurants' coords='m.coordinates' click='moveToTop(m.id)'></marker>
+    <marker ng-repeat='m in filteredRestaurants' coords='m' click='moveToTop(m.id)' hover='lo()'></marker>
   </google-map>
 </div>
 

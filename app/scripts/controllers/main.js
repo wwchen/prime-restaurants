@@ -17,6 +17,10 @@ angular.module('primeRestaurantsApp')
       console.log($scope);
     });
 
+    $scope.log = function() {
+      console.log('hello');
+    };
+
     $scope.moveToTop = function(anchor) {
       var container = $('#listContainer');
       var scroll = container.scrollTop() + $('#' + anchor).position().top;
@@ -25,5 +29,5 @@ angular.module('primeRestaurantsApp')
       container.animate({
         scrollTop: scroll
       }, 500);
-    }
+    };
   });
