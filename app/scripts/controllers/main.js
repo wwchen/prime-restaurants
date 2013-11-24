@@ -1,20 +1,28 @@
 'use strict';
 
 angular.module('primeRestaurantsApp')
-  .controller('MainCtrl', function ($scope, $http) {
+  .controller('MainCtrl', function ($scope, $http, $filter) {
     angular.extend($scope, {
-      seattle: { latitude: 47.626117, longitude: -122.332817 },
+      filteredRestaurants: [],
       map: {
-        center: $scope.seattle,
+        center: { latitude: 47.626117, longitude: -122.332817 },
         zoom: 10,
         events: {
-        }
+        },
+        markers: []
       },
     });
 
     $http.get('data/restaurants.json').success(function (restaurants) {
       $scope.restaurants = restaurants;
       console.log($scope);
+
+      // filter and save the results when user types to query
+      $scope.$watch('query', function (newValue, oldValue) {
+        var filtered = $filter('filter')($scope.restaurants, newValue);
+        $scope.filteredRestaurants = filtered;
+        console.log('query: ' + newValue);
+      });
     });
 
     $scope.log = function() {
@@ -30,4 +38,5 @@ angular.module('primeRestaurantsApp')
         scrollTop: scroll
       }, 500);
     };
+
   });
