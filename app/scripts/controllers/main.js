@@ -14,7 +14,16 @@ angular.module('primeRestaurantsApp')
 
     $http.get('data/restaurants.json').success(function (restaurants) {
       $scope.restaurants = restaurants;
-
       console.log($scope);
     });
+
+    $scope.moveToTop = function(anchor) {
+      var container = $('#listContainer');
+      var scroll = container.scrollTop() + $('#' + anchor).position().top;
+      console.log('Moving list to ' + anchor + ' by ' + scroll);
+
+      container.animate({
+        scrollTop: scroll
+      }, 500);
+    }
   });
