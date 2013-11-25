@@ -1,123 +1,97 @@
-(function() {
-  "use strict";
+"use strict";
 
-  var module = angular.module('googleMaps', []);
+angular.module('googleMaps', [])
 
-  module.directive('googleMaps', function() {
-    return {
-      restrict: 'E', // only match element name
-      replace: true,
-      template: '<div style="width: 100%; height: 100%"></div>',
-      scope: {
-        center: '=',
-        zoom: '@'
-      },
-      controller: function($scope, $element, $attrs) {
-        var canvas = $attrs.canvasId;
-        var zoom = parseInt($attrs.zoom);
-        // check for mandatory parameters
-        if(!canvas || !zoom) {
-          console.error("Mandatory attributes not configured for initializing a Google Maps canvas");
-          return;
-        }
+.directive('googleMaps', function() {
+  return {
+    restrict: 'E', // only match element name
+    replace: true,
+    transclude: true,
+    template: '<div style="width: 100%; height: 100%" ng-transclude></div>',
+    scope: {
+      center: '=',
+      zoom: '='
+    },
+    controller: function ($scope, $element, $attrs) {
+      this.getMap = function() {
+        return $scope.map;
+      };
+    },
+    link: function ($scope, $element, $attrs) {
 
-        var maps = $scope.$parent.maps || {};
-        $scope.$watch('center', function(center) {
-          if(center) {
-            var map = new google.maps.Map($element[0], {
-              zoom: zoom,
-              center: new google.maps.LatLng(center.lat, center.lng)
-            });
-            maps[canvas] = map;
-
-            google.maps.event.addListener(map, 'dragend', function() {
-              console.log('fire!');
-            });
-            google.maps.event.addListener(map, 'zoom_changed', function() {
-              console.log('fire!');
-            });
-          }
-          $scope.$parent.maps = maps;
-        });
-
-        // destructor
-        $element.on('$destroy', function() {
-          $scope.$parent.maps[canvas] = null;
-          console.log("canvas destroyed");
-        });
-
-        $element.on('focusout', function() {
-          console.log('scroll');
-        });
-
-        $element.on('mousedown', function(e) {
-          console.log(e);
-          console.log('mousedown');
-        });
-
-        console.log("canvas created");
+      var DEFAULT_OPTS = {
+        center: new google.maps.LatLng(0, 0),
+        zoom: 10
       }
-    };
-  });
 
-  module.directive('marker', function() {
-    return {
-      restrict: 'E',
-      scope: {
-        coord: '=coordinates',
-        click: '&',
-        hover: '&'
-      },
-      link: link
-    }
-
-    function link(scope, element, attrs) {
-      //console.log("marker scope, element, attrs");
-      //console.log(scope); console.log(element); console.log(attrs);
-
-      var canvas = attrs.canvas;
-      if(!canvas) {
+      // check for mandatory parameters
+      /*
+      if(!angular.isDefined($scope.center) || 
+         !angular.isDefined($scope.zoom)) {
         console.error("Mandatory attributes not configured for initializing a Google Maps canvas");
         return;
       }
+      */
 
-      // the map canvas hasn't been initialized yet.. watch the pot until it boils
-      var watch = scope.$parent.$watch(
-        // NOTE hackish. background info: maps is an object, but it starts off as undefined.
-        // The watcher gets invoked when it changes from undefined to object, but not after a new
-        // key is inserted to the object -- the watcher is invoked by reference. There is a boolean
-        // to check equality by value, however it runs into an infinite loop with this maps
-        // object... This leaves me with one option -- making my own watch expression. I return the
-        // size of the object, -1 for undefined
-        function() {
-          var maps = scope.$parent.maps;
-          return maps ? Object.keys(maps).length : -1;
-        },
-        function(length) {
-          var maps = scope.$parent.maps;
-          if(length > 0 && maps[canvas]) { createMarker(); watch(); }
+      var map = new google.maps.Map($element[0], DEFAULT_OPTS);
+      $scope.map = map;
+
+      $scope.$watch('center', function(center) {
+        if(!center || !center.lat || !center.lng) { return; }
+        map.setCenter(new google.maps.LatLng(center.lat, center.lng));
+        console.log('new center set');
       });
 
+      $scope.$watch('zoom', function(zoom) {
+        if(!zoom || !parseInt(zoom)) { return; }
+        map.setZoom(parseInt(zoom));
+        console.log('new zoom set');
+      });
 
-      function createMarker() {
-        var map = scope.$parent.maps[canvas];
-        var coord = scope.$parent.restaurant.coordinates; 
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(coord.lat, coord.lng),
-          map: map
+      google.maps.event.addListener(map, 'dragend', function() {
+        console.log('fire!');
+      });
+      google.maps.event.addListener(map, 'zoom_changed', function() {
+        console.log('fire!');
+      });
+      // destructor
+      $element.on('$destroy', function() {
+        console.log("canvas destroyed");
+      });
+
+      $element.on('focusout', function() {
+        console.log('scroll');
+      });
+
+      $element.on('mousedown', function(e) {
+        console.log('mousedown');
+      });
+
+      console.log("canvas created");
+    }
+  };
+})
+
+.directive('markers', function () {
+  return {
+    restrict: 'E',
+    require: '^googleMaps',
+    scope: {
+      coords: '=',
+    },
+    link: function ($scope, $element, $attrs, $ctrl) {
+      $scope.markers = [];
+      $scope.$watch('coords', function (coords) {
+        angular.forEach($scope.markers, function (m) {
+          m.setMap(null);
         });
-        console.log('marker created');
-
-        // events
-        google.maps.event.addListener(marker, 'click', scope.click);
-        google.maps.event.addListener(marker, 'click', scope.hover);
-
-        // destroy
-        element.on('$destroy', function() {
-          marker.setMap(null);
-          console.log('marker destroyed');
+        angular.forEach(coords, function (coord) {
+          $scope.markers.push(new google.maps.Marker({
+            position: new google.maps.LatLng(coord.lat, coord.lng),
+            map: $ctrl.getMap()
+          }));
         });
-      }
-    };
-  });
-})();
+      });
+    }
+  }
+});

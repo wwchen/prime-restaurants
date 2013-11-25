@@ -1,28 +1,40 @@
-var primeControllers = angular.module('primeControllers', []);
+'use strict';
 
-//primeControllers.controller('PrimeListCtrl', ['$scope', '$http', function($scope, $http) {
-primeControllers.controller('PrimeListCtrl',
-  function($scope, $http) {
-    $http.get('data/restaurants.json').success(function(restaurants) {
-      $scope.restaurants = restaurants;
-      $scope.seattle = { lat: 47.626117, lng:-122.332817 };
+angular.module('primeRestaurantsApp')
+.controller('MainCtrl',
+  function ($scope, $http, $filter) {
+    angular.extend($scope, {
+      filteredRestaurants: [],
+      map: {
+        center: { lat: 47.626117, lng: -122.332817 },
+        zoom: 10,
+      },
     });
+
+    $http.get('data/restaurants.json').success(function (restaurants) {
+      $scope.restaurants = restaurants;
+      console.log($scope);
+
+      // filter and save the results when user types to query
+      $scope.$watch('query', function (newValue, oldValue) {
+        var filtered = $filter('filter')($scope.restaurants, newValue);
+        $scope.filteredRestaurants = filtered;
+        console.log('query: ' + newValue);
+      });
+    });
+
+    $scope.log = function() {
+      console.log('hello');
+    };
 
     $scope.moveToTop = function(anchor) {
       var container = $('#listContainer');
       var scroll = container.scrollTop() + $('#' + anchor).position().top;
-      console.log("Moving list to " + anchor + " by " + scroll);
+      console.log('Moving list to ' + anchor + ' by ' + scroll);
 
       container.animate({
         scrollTop: scroll
       }, 500);
-    }
-  });
+    };
 
-primeControllers.controller('PrimeDetailCtrl',
-  function($scope, $http, $routeParams, $filter) {
-    $http.get('data/restaurants.json').success(function(restaurants) {
-      var id = $routeParams.id;
-      $scope.restaurant = $filter('filter')(restaurants, {id : id}, true)[0];
-    });
   });

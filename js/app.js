@@ -1,6 +1,5 @@
 angular.module('primeRestaurantsApp', [
   'ngRoute',
-  'primeControllers',
   'googleMaps'
 ])
 
@@ -8,11 +7,11 @@ angular.module('primeRestaurantsApp', [
   $routeProvider.
     when('/map', {
       templateUrl: 'partials/map.html',
-      controller: 'PrimeListCtrl'
+      controller: 'MainCtrl'
     }).
     when('/restaurant/:id', {
       templateUrl: 'partials/detail.html',
-      controller: 'PrimeDetailCtrl'
+      controller: 'DetailCtrl'
     }).
     otherwise({
       redirectTo: '/map'

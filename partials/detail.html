@@ -9,6 +9,7 @@
 <!-- {{ restaurant.coordinates | showMap }} -->
 
 <div style="width: 100vw; height: 200px">
-  <google-maps canvas-id="canvas" zoom=10 center='restaurant.coordinates'></google-maps>
+  <google-maps zoom="'18'" center='restaurant'>
+    <markers coords='[restaurant]'></markers>
+  </google-maps>
 </div>
-<marker coordinates='restaurant.coordinates' canvas="canvas"></marker>
