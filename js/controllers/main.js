@@ -40,4 +40,8 @@ angular.module('primeRestaurantsApp')
       }, 500);
     };
 
+    $scope.show = function(restaurant) {
+      console.log('e');
+      $scope.r = restaurant;
+    };
   });
