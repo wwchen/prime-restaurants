@@ -24,12 +24,14 @@ angular.module('googleMaps', [])
         zoom: 10
       }
 
+      /*
       // check for mandatory parameters
       if(!angular.isDefined($scope.center) || 
          !angular.isDefined($scope.zoom)) {
         console.error("Mandatory attributes not configured for initializing a Google Maps canvas");
         return;
       }
+      */
 
       var map = new google.maps.Map($element[0], DEFAULT_OPTS);
       $scope.map = map;
@@ -113,12 +115,13 @@ angular.module('googleMaps', [])
     },
     link: function ($scope, $element, $attrs, $ctrl) {
       $scope.markers = $scope.markers || [];
-      $scope.$watch('coord', function (coords) {
+      $scope.$watch('coord', function (coord) {
+        if(!coord || !coord.lat ) { return; }
         angular.forEach($scope.markers, function (m) {
           m.setMap(null);
         });
         $scope.markers.push(new google.maps.Marker({
-          position: new google.maps.LatLng($scope.coord.lat, $scope.coord.lng),
+          position: new google.maps.LatLng(coord.lat, coord.lng),
           map: $ctrl.getMap()
         }));
       });
