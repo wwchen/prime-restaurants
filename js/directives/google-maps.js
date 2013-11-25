@@ -80,7 +80,7 @@ angular.module('googleMaps', [])
       coords: '=',
     },
     link: function ($scope, $element, $attrs, $ctrl) {
-      $scope.markers = [];
+      $scope.markers = $scope.markers || [];
       $scope.$watch('coords', function (coords) {
         angular.forEach($scope.markers, function (m) {
           m.setMap(null);
@@ -91,6 +91,28 @@ angular.module('googleMaps', [])
             map: $ctrl.getMap()
           }));
         });
+      });
+    }
+  }
+})
+
+.directive('marker', function () {
+  return {
+    restrict: 'E',
+    require: '^googleMaps',
+    scope: {
+      coord: '=',
+    },
+    link: function ($scope, $element, $attrs, $ctrl) {
+      $scope.markers = $scope.markers || [];
+      $scope.$watch('coord', function (coords) {
+        angular.forEach($scope.markers, function (m) {
+          m.setMap(null);
+        });
+        $scope.markers.push(new google.maps.Marker({
+          position: new google.maps.LatLng($scope.coord.lat, $scope.coord.lng),
+          map: $ctrl.getMap()
+        }));
       });
     }
   }

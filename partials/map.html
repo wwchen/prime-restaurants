@@ -5,8 +5,6 @@
   <ul>
     <li id="{{restaurant.id}}" ng-repeat="restaurant in filteredRestaurants">
       <a href="#restaurant/{{restaurant.id}}">{{restaurant.name}}</a>
-      <marker coordinates='restaurant' canvas='mapCanvas'
-      click='moveToTop(anchor)' ng-init="anchor = restaurant.id"></marker>
     </li>
   </ul>
 </div>
