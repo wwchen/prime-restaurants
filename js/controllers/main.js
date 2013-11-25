@@ -12,8 +12,10 @@ angular.module('primeRestaurantsApp')
     });
 
     $http.get('data/restaurants.json').success(function (restaurants) {
+      angular.forEach(restaurants, function (r) {
+        r.click = function() { moveToTop(r.id) };
+      });
       $scope.restaurants = restaurants;
-      console.log($scope);
 
       // filter and save the results when user types to query
       $scope.$watch('query', function (newValue, oldValue) {
@@ -27,7 +29,8 @@ angular.module('primeRestaurantsApp')
       console.log('hello');
     };
 
-    $scope.moveToTop = function(anchor) {
+    var moveToTop = function(anchor) {
+      console.log("move to top clicked");
       var container = $('#listContainer');
       var scroll = container.scrollTop() + $('#' + anchor).position().top;
       console.log('Moving list to ' + anchor + ' by ' + scroll);
