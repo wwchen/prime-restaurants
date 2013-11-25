@@ -25,13 +25,11 @@ angular.module('googleMaps', [])
       }
 
       // check for mandatory parameters
-      /*
       if(!angular.isDefined($scope.center) || 
          !angular.isDefined($scope.zoom)) {
         console.error("Mandatory attributes not configured for initializing a Google Maps canvas");
         return;
       }
-      */
 
       var map = new google.maps.Map($element[0], DEFAULT_OPTS);
       $scope.map = map;
@@ -77,19 +75,29 @@ angular.module('googleMaps', [])
     restrict: 'E',
     require: '^googleMaps',
     scope: {
-      coords: '=',
+      model: '=',
+      lat: '@',
+      lng: '@',
+      click: '@'
     },
     link: function ($scope, $element, $attrs, $ctrl) {
       $scope.markers = $scope.markers || [];
-      $scope.$watch('coords', function (coords) {
+      $scope.$watch('model', function (objs) {
+        if(!objs) { return; }
+        // delete all existing markers
         angular.forEach($scope.markers, function (m) {
           m.setMap(null);
         });
-        angular.forEach(coords, function (coord) {
-          $scope.markers.push(new google.maps.Marker({
-            position: new google.maps.LatLng(coord.lat, coord.lng),
-            map: $ctrl.getMap()
-          }));
+        // loop through all the objects
+        angular.forEach(objs, function (obj) {
+          var m = new google.maps.Marker({
+            position: new google.maps.LatLng(obj[$scope.lat], obj[$scope.lng]),
+            map: $ctrl.getMap() // parent directive
+          });
+          google.maps.event.addListener(m, 'click', function() {
+            obj[$scope.click]();
+          });
+          $scope.markers.push(m);
         });
       });
     }
