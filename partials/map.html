@@ -4,10 +4,20 @@
   Filter: <input ng-model="query">
   <ul>
     <li id="{{restaurant.id}}" ng-repeat="restaurant in filteredRestaurants">
-      <a href="#restaurant/{{restaurant.id}}">{{restaurant.name}}</a>
+    <!--<a href="#restaurant/{{restaurant.id}}">{{restaurant.name}}</a> -->
+    <!--<a ng-click="show(restaurant)">{{restaurant.name}}</a>-->
+    <!--<a data-toggle='popover' data-content="<div restaurant-details model='restaurant'>djog</div>" data-html='true'>{{restaurant.name}}</a> -->
+    <a popover-append-to-body='true' popover-placement='right' popover-template='partials/detail.html'>{{restaurant.name}}</a>
+
     </li>
   </ul>
 </div>
+<style>
+  .popover-content {
+    background: white;
+    width: 650px;
+  }
+</style>
 
 <div style="height: 100vh; width: 70vw; float: right">
   <google-maps zoom='map.zoom' center='map.center'>

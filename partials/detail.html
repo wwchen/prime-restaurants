@@ -6,9 +6,7 @@
   <li ng-repeat="promo in restaurant.promotions">{{promo}}</li>
 </ul>
 
-<!-- {{ restaurant.coordinates | showMap }} -->
-
-<div style="width: 100vw; height: 200px">
+<div style="width: 100%; height: 200px">
   <google-maps zoom="'18'" center='restaurant'>
     <marker coord='restaurant'></marker>
   </google-maps>
