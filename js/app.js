@@ -1,5 +1,6 @@
 angular.module('primeRestaurantsApp', [
   'ngRoute',
+  'ui.bootstrap',
   'googleMaps',
   'restaurantDetails'
 ])
