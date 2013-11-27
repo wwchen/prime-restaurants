@@ -9,14 +9,19 @@ angular.module('primeRestaurantsApp')
         center: { lat: 47.626117, lng: -122.332817 },
         zoom: 10,
       },
-      isPaneOpen: true
+      isPaneCollapsed: true
     });
+
 
     $http.get('data/restaurants.json').success(function (restaurants) {
       angular.forEach(restaurants, function (r) {
-        r.click = function() { moveToTop(r.id) };
+        r.click = function () {
+          moveToTop(r.id);
+          changeDetailPane(r); // no worky, because of scope
+        };
       });
       $scope.restaurants = restaurants;
+      $scope.switchModel = changeDetailPane;
 
       // filter and save the results when user types to query
       $scope.$watch('query', function (newValue, oldValue) {
@@ -27,7 +32,6 @@ angular.module('primeRestaurantsApp')
     });
 
     var moveToTop = function(anchor) {
-      console.log("move to top clicked");
       var container = $('#listContainer');
       var scroll = container.scrollTop() + $('#' + anchor).position().top;
       console.log('Moving list to ' + anchor + ' by ' + scroll);
@@ -37,10 +41,13 @@ angular.module('primeRestaurantsApp')
       }, 500);
     };
 
-    $scope.switchModel = function(restaurant) {
-      if($scope.r == null || $scope.r == restaurant) {
-        $scope.isPaneOpen = !$scope.isPaneOpen;
+    var changeDetailPane = function(restaurant) {
+      var collapsePane = false;
+      console.log('Changing detail pane to ' + restaurant.name);
+      if($scope.r == restaurant) {
+        collapsePane = !$scope.isPaneCollapsed;
       }
+      $scope.isPaneCollapsed = collapsePane;
       $scope.r = restaurant;
     };
   });

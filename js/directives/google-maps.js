@@ -83,23 +83,27 @@ angular.module('googleMaps', [])
       click: '@'
     },
     link: function ($scope, $element, $attrs, $ctrl) {
-      $scope.$watch('model', function (newObj, oldObj) {
-        if(!newObj) { return; }
+      $scope.$watch('model', function (newO, oldO) {
+        if(!newO) { return; }
+        var markers = [];
+        var map = $ctrl.getMap();
         // delete all existing markers
-        angular.forEach(oldObj, function (m) {
-          m.setMap(null);
-          google.maps.event.removeListener(m, 'click');
+        angular.forEach($scope.markers, function (marker) {
+          marker.setMap(null);
+          google.maps.event.clearListeners(marker, 'click');
         });
         // loop through all the objects
-        angular.forEach(newObj, function (coord) {
-          var m = new google.maps.Marker({
-            position: new google.maps.LatLng(coord[$scope.lat], coord[$scope.lng]),
-            map: $ctrl.getMap() // parent directive
+        angular.forEach(newO, function (obj) {
+          var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(obj[$scope.lat], obj[$scope.lng]),
+            map: map
           });
-          google.maps.event.addListener(m, 'click', function() {
+          google.maps.event.addListener(marker, 'click', function() {
             obj[$scope.click]();
           });
+          markers.push(marker);
         });
+        $scope.markers = markers;
       });
     }
   }

@@ -2,7 +2,7 @@
   <h3>Restuarants that accept Prime discounts!</h3>
   <h5>Site built with <a href="http://angular.org">AngularJS</a></h5>
   Filter: <input ng-model="query">
-  <button ng-click="isPaneOpen = !isPaneOpen">{{isPaneOpen}}</button>
+  <button ng-click="isPaneCollapsed = !isPaneCollapsed">{{isPaneCollapsed}}</button>
   <ul>
     <li id="{{restaurant.id}}" ng-repeat="restaurant in filteredRestaurants">
       <a ng-click="switchModel(restaurant)">{{restaurant.name}}</a> <!-- href="#restaurant/{{restaurant.id}}"-->
@@ -14,7 +14,7 @@
 
 <div style="height: 100vh; width: 80%; float: right">
   <div style="width: 100%; height: 100%">
-    <div style="width: 30%; float: left" collapse='isPaneOpen'>
+    <div style="width: 30%; float: left" collapse='isPaneCollapsed'>
       <div restaurant-details model='r'></div>
     </div>
     <google-maps zoom='map.zoom' center='map.center'>
