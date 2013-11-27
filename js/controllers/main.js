@@ -9,6 +9,7 @@ angular.module('primeRestaurantsApp')
         center: { lat: 47.626117, lng: -122.332817 },
         zoom: 10,
       },
+      isPaneOpen: true
     });
 
     $http.get('data/restaurants.json').success(function (restaurants) {
@@ -25,10 +26,6 @@ angular.module('primeRestaurantsApp')
       });
     });
 
-    $scope.log = function() {
-      console.log('hello');
-    };
-
     var moveToTop = function(anchor) {
       console.log("move to top clicked");
       var container = $('#listContainer');
@@ -40,8 +37,10 @@ angular.module('primeRestaurantsApp')
       }, 500);
     };
 
-    $scope.show = function(restaurant) {
-      console.log('e');
+    $scope.switchModel = function(restaurant) {
+      if($scope.r == null || $scope.r == restaurant) {
+        $scope.isPaneOpen = !$scope.isPaneOpen;
+      }
       $scope.r = restaurant;
     };
   });

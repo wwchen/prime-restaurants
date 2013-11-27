@@ -14,7 +14,8 @@ angular.module('restaurantDetails', [])
     },
     link: function ($scope, $element, $attrs) {
       $scope.$watch('restaurant', function() {
-            console.log('loaded');
+        console.log('loaded');
+        console.log($scope.restaurant);
       });
     }
   }
