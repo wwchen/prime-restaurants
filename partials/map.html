@@ -17,7 +17,7 @@
     <div style="width: 30%; float: left" collapse='isPaneCollapsed'>
       <div restaurant-details model='r'></div>
     </div>
-    <google-maps zoom='map.zoom' center='map.center'>
+    <google-maps zoom='map.zoom' center='map.center' fit-bounds='true'>
       <markers model='filteredRestaurants' lat='lat' lng='lng' click='click'></markers>
     </google-maps>
   </div>

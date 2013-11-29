@@ -10,11 +10,19 @@ angular.module('googleMaps', [])
     template: '<div style="height: 100%" ng-transclude></div>',
     scope: {
       center: '=',
-      zoom: '='
+      zoom: '=',
+      fitBounds: '@'
     },
     controller: function ($scope, $element, $attrs) {
       this.getMap = function() {
         return $scope.map;
+      };
+
+      this.fitBounds = function(latLngBounds) {
+        if ($scope.fitBounds == 'true') {
+          console.log("bounds changed");
+          $scope.map.fitBounds(latLngBounds);
+        }
       };
     },
     link: function ($scope, $element, $attrs) {
@@ -87,6 +95,7 @@ angular.module('googleMaps', [])
         if(!newO) { return; }
         var markers = [];
         var map = $ctrl.getMap();
+        var bounds = new google.maps.LatLngBounds();
         // delete all existing markers
         angular.forEach($scope.markers, function (marker) {
           marker.setMap(null);
@@ -94,16 +103,19 @@ angular.module('googleMaps', [])
         });
         // loop through all the objects
         angular.forEach(newO, function (obj) {
+          var latlng = new google.maps.LatLng(obj[$scope.lat], obj[$scope.lng]);
           var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(obj[$scope.lat], obj[$scope.lng]),
+            position: latlng,
             map: map
           });
+          bounds.extend(latlng);
           google.maps.event.addListener(marker, 'click', function() {
             obj[$scope.click]();
           });
           markers.push(marker);
         });
         $scope.markers = markers;
+        $ctrl.fitBounds(bounds);
       });
     }
   }
