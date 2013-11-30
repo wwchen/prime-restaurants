@@ -89,6 +89,7 @@ angular.module('googleMaps', [])
       click: '@'
     },
     link: function ($scope, $element, $attrs, $ctrl) {
+            
       $scope.$watch('model', function (newO, oldO) {
         if(!newO) { return; }
         var markers = [];
@@ -103,6 +104,7 @@ angular.module('googleMaps', [])
         });
         // loop through all the objects
         angular.forEach(newO, function (obj) {
+          if(!obj) { return; }
           var latlng = new google.maps.LatLng(obj[lat], obj[lng]);
           var marker = new google.maps.Marker({
             position: latlng,

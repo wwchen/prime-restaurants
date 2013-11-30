@@ -25,8 +25,14 @@ angular.module('primeRestaurantsApp')
 
       // filter and save the results when user types to query
       $scope.$watch('query', function (newValue, oldValue) {
-        var filtered = $filter('filter')($scope.restaurants, newValue);
-        $scope.filteredRestaurants = filtered;
+        //var filtered = $filter('filter')($scope.restaurants, newValue);
+        var filtered = $scope.filteredRestaurants = JSON.parse(JSON.stringify($scope.restaurants));
+        if(!newValue) { return; }
+        for (var id in filtered) {
+          if (filtered[id].name.toLowerCase().search (newValue.toLowerCase()) < 0) {
+            delete filtered[id];
+          }
+        }
         console.log('query: ' + newValue);
       });
     });

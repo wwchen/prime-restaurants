@@ -49,22 +49,17 @@ unless out_fname
   exit unless ans =~ /[yY]/
 end
 
-ids = []
+output = {}
 json.each_index do |i|
   info = json[i]
 
   # uniq id names
   id = info['name'].downcase.gsub(/[^0-9a-z ]/, '').split.join('-')
-  if ids.index(id)
-    num = 1
-    begin
-      num += 1
-      newid = "#{id}-#{num}"
-    end while not ids.index(newid).nil?
+  num = 1
+  while output.has_key? id
+    num += 1
     id = "#{id}-#{num}"
   end
-  ids.push(id)
-  json[i]['id'] = id
   msg = "%d: %s - %s" % [i+1, id, info['name']]
 
   # geocode
@@ -77,16 +72,19 @@ json.each_index do |i|
     end
   end while result.nil?
 
-  json[i]['formatted_address'] = result.address #result.formatted_address
-  json[i]['lat'] = result.latitude
-  json[i]['lng'] = result.longitude
+  output[id] = {
+    'formatted_address' => result.address, #result.formatted_address
+    'lat' => result.latitude,
+    'lng' => result.longitude,
+    'id' => id
+  }.merge!(info)
   puts "\u2713 #{msg}".green
 end
 
 if out_fname
   File.open(out_fname, 'w') do |f|
-    f.write(json.to_json)
+    f.write(output.to_json)
   end
 else
-  puts json.to_json
+  puts output.to_json
 end
