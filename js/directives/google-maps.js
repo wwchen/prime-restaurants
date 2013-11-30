@@ -11,7 +11,8 @@ angular.module('googleMaps', [])
     scope: {
       center: '=',
       zoom: '=',
-      fitBounds: '@'
+      fitBounds: '@',
+      boundsChange: '&'
     },
     controller: function ($scope, $element, $attrs) {
       this.getMap = function() {
@@ -56,21 +57,15 @@ angular.module('googleMaps', [])
 
       google.maps.event.addListener(map, 'dragend', function() {
         console.log('fire!');
+        $scope.boundsChange();
       });
       google.maps.event.addListener(map, 'zoom_changed', function() {
         console.log('fire!');
+        $scope.boundsChange();
       });
       // destructor
       $element.on('$destroy', function() {
         console.log("canvas destroyed");
-      });
-
-      $element.on('focusout', function() {
-        console.log('scroll');
-      });
-
-      $element.on('mousedown', function(e) {
-        console.log('mousedown');
       });
 
       console.log("canvas created");
@@ -111,6 +106,7 @@ angular.module('googleMaps', [])
             map: map
           });
           bounds.extend(latlng);
+      console.log(obj);
           google.maps.event.addListener(marker, 'click', function() {
             obj[$scope.click]();
           });

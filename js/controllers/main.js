@@ -36,22 +36,22 @@ angular.module('primeRestaurantsApp')
       // filter and save the results when user types to query
       $scope.$watch('query', function (newValue, oldValue) {
         //var filtered = $filter('filter')($scope.restaurants, newValue);
-        var filtered = $scope.filteredRestaurants = JSON.parse(JSON.stringify($scope.restaurants));
-        if(!newValue) { return; }
-        for (var id in filtered) {
-          if (filtered[id].name.toLowerCase().search (newValue.toLowerCase()) < 0) {
-            delete filtered[id];
+        if(!newValue) { $scope.filteredRestaurants = $scope.restaurants; return; }
+        $scope.filteredRestaurants = {};
+        angular.forEach ($scope.restaurants, function (r) {
+          if (r.name.toLowerCase().search (newValue.toLowerCase()) >= 0) {
+            $scope.filteredRestaurants[r.id] = r;
           }
-        }
+        });
         console.log('query: ' + newValue);
       });
 
       $scope.$watch('promoSelect', function (newValue, oldValue) {
-        if (!newValue) { return; }
-        $scope.filteredRestaurants = [];
+        if (!newValue) { $scope.filteredRestaurants = $scope.restaurants; return; }
+        $scope.filteredRestaurants = {};
         // newValue is an array of restaurant ids
         angular.forEach (newValue, function (id) {
-          $scope.filteredRestaurants.push($scope.restaurants[id]);
+          $scope.filteredRestaurants[id] = $scope.restaurants[id];
         });
       });
     });

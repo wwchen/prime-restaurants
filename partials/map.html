@@ -2,8 +2,10 @@
   <h3>Restuarants that accept Prime discounts!</h3>
   <h5>Site built with <a href="http://angular.org">AngularJS</a></h5>
   Filter: <input ng-model="query">
-  <select ng-model='promoSelect' ng-options='promo for (promo, idList) in restaurantsByPromo'></select>
-  <button ng-click="isPaneCollapsed = !isPaneCollapsed">{{isPaneCollapsed}}</button>
+  <select ng-model='promoSelect' ng-options='promo for (promo, idList) in restaurantsByPromo'>
+    <option value=''>-- Filter by promotion --</option>
+  </select>
+  <button ng-click="updateMarkers = !updateMarkers">{{updateMarkers}}</button>
   <ul>
     <li id="{{restaurant.id}}" ng-repeat="restaurant in filteredRestaurants">
       <a ng-click="switchModel(restaurant)">{{restaurant.name}}</a> <!-- href="#restaurant/{{restaurant.id}}"-->
@@ -18,8 +20,8 @@
     <div style="width: 30%; float: left" collapse='isPaneCollapsed'>
       <div restaurant-details model='r'></div>
     </div>
-    <google-maps zoom='map.zoom' center='map.center' fit-bounds='true'>
-      <markers model='filteredRestaurants' lat='lat' lng='lng' click='click'></markers>
+    <google-maps zoom='map.zoom' center='map.center' fit-bounds='true' bounds-change='updateMarkers = true' >
+      <markers model='filteredRestaurants' click='click'></markers>
     </google-maps>
   </div>
 </div>
