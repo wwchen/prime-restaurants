@@ -49,9 +49,25 @@ unless out_fname
   exit unless ans =~ /[yY]/
 end
 
+ids = []
 json.each_index do |i|
   info = json[i]
-  msg = "%d: %s" % [i+1, info['name']]
+
+  # uniq id names
+  id = info['name'].downcase.gsub(/[^0-9a-z ]/, '').split.join('-')
+  if ids.index(id)
+    num = 1
+    begin
+      num += 1
+      newid = "#{id}-#{num}"
+    end while not ids.index(newid).nil?
+    id = "#{id}-#{num}"
+  end
+  ids.push(id)
+  json[i]['id'] = id
+  msg = "%d: %s - %s" % [i+1, id, info['name']]
+
+  # geocode
   address = "%s, %s, %s %s" % [info['address'], info['city'], info['state'], info['zip']]
   begin
     result = Geocoder.search(address).first
@@ -62,9 +78,8 @@ json.each_index do |i|
   end while result.nil?
 
   json[i]['formatted_address'] = result.address #result.formatted_address
-  json[i]['coordinates'] = {}
-  json[i]['coordinates']['lat'] = result.latitude
-  json[i]['coordinates']['lng'] = result.longitude
+  json[i]['lat'] = result.latitude
+  json[i]['lng'] = result.longitude
   puts "\u2713 #{msg}".green
 end
 
