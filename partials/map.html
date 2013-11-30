@@ -2,6 +2,7 @@
   <h3>Restuarants that accept Prime discounts!</h3>
   <h5>Site built with <a href="http://angular.org">AngularJS</a></h5>
   Filter: <input ng-model="query">
+  <select ng-model='promoSelect' ng-options='promo for (promo, idList) in restaurantsByPromo'></select>
   <button ng-click="isPaneCollapsed = !isPaneCollapsed">{{isPaneCollapsed}}</button>
   <ul>
     <li id="{{restaurant.id}}" ng-repeat="restaurant in filteredRestaurants">

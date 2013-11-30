@@ -9,7 +9,10 @@ angular.module('primeRestaurantsApp')
         center: { lat: 47.626117, lng: -122.332817 },
         zoom: 10,
       },
-      isPaneCollapsed: true
+      isPaneCollapsed: true,
+      restaurantsByPromo: {},
+      restaurants: {},
+      promoSelect: null
     });
 
 
@@ -19,6 +22,13 @@ angular.module('primeRestaurantsApp')
           moveToTop(r.id);
           changeDetailPane(r); // no worky, because of scope
         };
+
+        // create a reverse object that maps promos to restaurant ids
+        angular.forEach(r.promotions, function (p) {
+          var array = $scope.restaurantsByPromo[p] || [];
+          array.push(r.id);
+          $scope.restaurantsByPromo[p] = array;
+        });
       });
       $scope.restaurants = restaurants;
       $scope.switchModel = changeDetailPane;
@@ -34,6 +44,15 @@ angular.module('primeRestaurantsApp')
           }
         }
         console.log('query: ' + newValue);
+      });
+
+      $scope.$watch('promoSelect', function (newValue, oldValue) {
+        if (!newValue) { return; }
+        $scope.filteredRestaurants = [];
+        // newValue is an array of restaurant ids
+        angular.forEach (newValue, function (id) {
+          $scope.filteredRestaurants.push($scope.restaurants[id]);
+        });
       });
     });
 
