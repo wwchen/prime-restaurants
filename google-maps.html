@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html ng-app="demoApp">
   <head>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
-    <script type="text/javascript"
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEfet-YacBhc1yYnyiYXaDdRnTUdpVyL0&sensor=true">
-    </script>
-    <script src="js/google-maps.js"></script>
-    <script src="js/demo-app.js"></script>
+    <script src="js/directives/google-maps.js"></script>
   </head>
   <body style="margin: 0 auto" ng-controller="demoCtrl">
   <div style='height: 50vh'>
-    <google-maps canvas-id="mapCanvas" zoom=10 center="coord"></google-maps>
-    </div>
-    <marker id="m" coordinate="mcoord" canvas="mapCanvas"></marker>
+    <google-maps zoom='"17"' center='seattle' fit-bounds='true'>
+      <markers model='markers' lat='latitude' lng='longitude' click='clickFn'></markers>
+    </google-maps>
+  </div>
+
+<script>
+  angular.module('demoApp', ['googleMaps'])
+  .controller('demoCtrl', function ($scope) {
+    $scope.seattle = { lat: -47, lng: 128 };
+    $scope.markers = [
+      { "latitude":47.6287704, "longitude":-122.3317388, clickFn: function() { } },
+      { "latitude":47.7196775, "longitude":-122.3449531, clickFn: function() { } },
+      { "latitude":47.6188279, "longitude":-122.3358973, clickFn: function() { } },
+      { "latitude":47.4889562, "longitude":-122.1654796, clickFn: function() { } },
+      { "latitude":47.7069513, "longitude":-122.2117079, clickFn: function() { } }
+    ];
+  });
+</script>
+
   </body>
 </html>

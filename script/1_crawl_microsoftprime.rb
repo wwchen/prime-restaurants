@@ -12,7 +12,8 @@ OptionParser.new do |opts|
 
   opts.on("-l", "--list-regions", "List all available regions") do |v|
     page = agent.get 'http://microsoftprime.com'
-    regions = page.form.field_with(:name => 'ddlRegion')
+    form = page.forms_with(:id => "form6").first
+    regions = form.field_with(:name => 'txtRegion')
     regions.options.each do |region|
       puts "#{region}\t#{region.text}"
     end
@@ -38,7 +39,8 @@ end
 
 page = agent.get 'http://microsoftprime.com/'
 
-region_selectlist = page.form.field_with(:name => 'ddlRegion')
+form = page.forms_with(:id => "form6").first
+region_selectlist = form.field_with(:name => 'txtRegion')
 region_option = region_selectlist.option_with(:value => region)
 
 if region_option.nil?

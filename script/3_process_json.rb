@@ -49,9 +49,20 @@ unless out_fname
   exit unless ans =~ /[yY]/
 end
 
+output = {}
 json.each_index do |i|
   info = json[i]
-  msg = "%d: %s" % [i+1, info['name']]
+
+  # uniq id names
+  id = info['name'].downcase.gsub(/[^0-9a-z ]/, '').split.join('-')
+  num = 1
+  while output.has_key? id
+    num += 1
+    id = "#{id}-#{num}"
+  end
+  msg = "%d: %s - %s" % [i+1, id, info['name']]
+
+  # geocode
   address = "%s, %s, %s %s" % [info['address'], info['city'], info['state'], info['zip']]
   begin
     result = Geocoder.search(address).first
@@ -61,17 +72,19 @@ json.each_index do |i|
     end
   end while result.nil?
 
-  json[i]['formatted_address'] = result.address #result.formatted_address
-  json[i]['coordinates'] = {}
-  json[i]['coordinates']['lat'] = result.latitude
-  json[i]['coordinates']['lng'] = result.longitude
+  output[id] = {
+    'formatted_address' => result.address, #result.formatted_address
+    'lat' => result.latitude,
+    'lng' => result.longitude,
+    'id' => id
+  }.merge!(info)
   puts "\u2713 #{msg}".green
 end
 
 if out_fname
   File.open(out_fname, 'w') do |f|
-    f.write(json.to_json)
+    f.write(output.to_json)
   end
 else
-  puts json.to_json
+  puts output.to_json
 end

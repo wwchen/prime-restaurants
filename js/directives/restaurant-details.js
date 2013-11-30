@@ -11,11 +11,6 @@ angular.module('restaurantDetails', [])
     templateUrl: 'partials/detail.html',
     scope: {
       restaurant: '=model'
-    },
-    link: function ($scope, $element, $attrs) {
-      $scope.$watch('restaurant', function() {
-            console.log('loaded');
-      });
     }
   }
 });

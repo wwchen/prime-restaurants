@@ -1,27 +1,25 @@
-<div id="listContainer" style="height: 100%; width: 30vw; float: left; position: fixed; overflow-y: scroll">
+<div id="listContainer" style="height: 100%; width: 20%; float: left; position: fixed; overflow-y: scroll">
   <h3>Restuarants that accept Prime discounts!</h3>
   <h5>Site built with <a href="http://angular.org">AngularJS</a></h5>
   Filter: <input ng-model="query">
+  <button ng-click="isPaneCollapsed = !isPaneCollapsed">{{isPaneCollapsed}}</button>
   <ul>
     <li id="{{restaurant.id}}" ng-repeat="restaurant in filteredRestaurants">
-    <!--<a href="#restaurant/{{restaurant.id}}">{{restaurant.name}}</a> -->
+      <a ng-click="switchModel(restaurant)">{{restaurant.name}}</a> <!-- href="#restaurant/{{restaurant.id}}"-->
     <!--<a ng-click="show(restaurant)">{{restaurant.name}}</a>-->
-    <!--<a data-toggle='popover' data-content="<div restaurant-details model='restaurant'>djog</div>" data-html='true'>{{restaurant.name}}</a> -->
-    <a popover-append-to-body='true' popover-placement='right' popover-template='partials/detail.html'>{{restaurant.name}}</a>
-
+    <!-- <a popover-append-to-body='true' popover-placement='right' popover-template='partials/detail.html'>{{restaurant.name}}</a> -->
     </li>
   </ul>
 </div>
-<style>
-  .popover-content {
-    background: white;
-    width: 650px;
-  }
-</style>
 
-<div style="height: 100vh; width: 70vw; float: right">
-  <google-maps zoom='map.zoom' center='map.center'>
-    <markers model='filteredRestaurants' lat='lat' lng='lng' click='click'></markers>
-  </google-maps>
+<div style="height: 100vh; width: 80%; float: right">
+  <div style="width: 100%; height: 100%">
+    <div style="width: 30%; float: left" collapse='isPaneCollapsed'>
+      <div restaurant-details model='r'></div>
+    </div>
+    <google-maps zoom='map.zoom' center='map.center' fit-bounds='true'>
+      <markers model='filteredRestaurants' lat='lat' lng='lng' click='click'></markers>
+    </google-maps>
+  </div>
 </div>
 
