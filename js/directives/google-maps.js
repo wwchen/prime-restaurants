@@ -47,13 +47,11 @@ angular.module('googleMaps', [])
       $scope.$watch('center', function(center) {
         if(!center || !center.lat || !center.lng) { return; }
         map.setCenter(new google.maps.LatLng(center.lat, center.lng));
-        console.log('new center set');
       });
 
       $scope.$watch('zoom', function(zoom) {
         if(!zoom || !parseInt(zoom)) { return; }
         map.setZoom(parseInt(zoom));
-        console.log('new zoom set');
       });
 
       google.maps.event.addListener(map, 'dragend', function() {
@@ -96,6 +94,8 @@ angular.module('googleMaps', [])
         var markers = [];
         var map = $ctrl.getMap();
         var bounds = new google.maps.LatLngBounds();
+        var lat = $scope.lat || 'lat';
+        var lng = $scope.lng || 'lng';
         // delete all existing markers
         angular.forEach($scope.markers, function (marker) {
           marker.setMap(null);
@@ -103,7 +103,7 @@ angular.module('googleMaps', [])
         });
         // loop through all the objects
         angular.forEach(newO, function (obj) {
-          var latlng = new google.maps.LatLng(obj[$scope.lat], obj[$scope.lng]);
+          var latlng = new google.maps.LatLng(obj[lat], obj[lng]);
           var marker = new google.maps.Marker({
             position: latlng,
             map: map
@@ -120,7 +120,7 @@ angular.module('googleMaps', [])
     }
   }
 })
-
+/*
 .directive('marker', function () {
   return {
     restrict: 'E',
@@ -143,3 +143,4 @@ angular.module('googleMaps', [])
     }
   }
 });
+*/
