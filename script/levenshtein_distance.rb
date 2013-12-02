@@ -2,11 +2,6 @@
 # Computes the diff between two strings
 # http://en.wikipedia.org/wiki/Levenshtein_distance
 
-DEBUG = false
-
-# dynamic programming, improved
-# improved in the sense that we are not keeping tracking of all row.
-# just only the previous and current row
 def levenshtein_distance(str1, str2)
   # degenerate cases
   return 0 if str1 == str2
@@ -31,15 +26,6 @@ def levenshtein_distance(str1, str2)
                      prev[j + 1] + 1,
                      prev[j] + cost].min
     }
-
-    # debug
-    if DEBUG
-      puts "=========="
-      puts "Iteration #{i}"
-      puts "prev: #{prev}"
-      puts "curr: #{curr}"
-      puts "=========="
-    end
 
     prev = Array.new curr
   }
