@@ -2,6 +2,9 @@
 <p>{{restaurant.formatted_address}}</p>
 <p>{{restaurant.telephone}}</p>
 
+<rating readonly="true" value="restaurant.rating" ng-if="restaurant.rating"></rating>
+{{restaurant.rating}}
+
 <ul>
   <li ng-repeat="promo in restaurant.promotions">{{promo}}</li>
 </ul>

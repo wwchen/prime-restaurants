@@ -9,7 +9,10 @@ angular.module('primeRestaurantsApp')
         center: { lat: 47.626117, lng: -122.332817 },
         zoom: 10,
       },
-      isPaneCollapsed: true
+      isPaneCollapsed: true,
+      restaurantsByPromo: {},
+      restaurants: {},
+      promoSelect: null
     });
 
 
@@ -19,6 +22,13 @@ angular.module('primeRestaurantsApp')
           moveToTop(r.id);
           changeDetailPane(r); // no worky, because of scope
         };
+
+        // create a reverse object that maps promos to restaurant ids
+        angular.forEach(r.promotions, function (p) {
+          var array = $scope.restaurantsByPromo[p] || [];
+          array.push(r.id);
+          $scope.restaurantsByPromo[p] = array;
+        });
       });
       $scope.restaurants = restaurants;
       $scope.switchModel = changeDetailPane;
@@ -26,14 +36,23 @@ angular.module('primeRestaurantsApp')
       // filter and save the results when user types to query
       $scope.$watch('query', function (newValue, oldValue) {
         //var filtered = $filter('filter')($scope.restaurants, newValue);
-        var filtered = $scope.filteredRestaurants = JSON.parse(JSON.stringify($scope.restaurants));
-        if(!newValue) { return; }
-        for (var id in filtered) {
-          if (filtered[id].name.toLowerCase().search (newValue.toLowerCase()) < 0) {
-            delete filtered[id];
+        if(!newValue) { $scope.filteredRestaurants = $scope.restaurants; return; }
+        $scope.filteredRestaurants = {};
+        angular.forEach ($scope.restaurants, function (r) {
+          if (r.name.toLowerCase().search (newValue.toLowerCase()) >= 0) {
+            $scope.filteredRestaurants[r.id] = r;
           }
-        }
+        });
         console.log('query: ' + newValue);
+      });
+
+      $scope.$watch('promoSelect', function (newValue, oldValue) {
+        if (!newValue) { $scope.filteredRestaurants = $scope.restaurants; return; }
+        $scope.filteredRestaurants = {};
+        // newValue is an array of restaurant ids
+        angular.forEach (newValue, function (id) {
+          $scope.filteredRestaurants[id] = $scope.restaurants[id];
+        });
       });
     });
 

@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+
+gem 'geocoder'
+gem 'google_places'   # http://rubydoc.info/gems/google_places/0.20.0/frames
+gem 'mechanize'
+gem 'nokogiri'
