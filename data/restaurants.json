@@ -3,15 +3,17 @@
         "address": "1001 Fairview Ave",
         "city": "Seattle",
         "formatted_address": "1001 Fairview Avenue North, Seattle, WA 98109, USA",
+        "gplaces_ref": "CoQBdwAAABR1gug_AMKFLxEFMFTh4MpqhpkGSAQTXZipwT1tTa4W7CDWmlTdu0mXl_zFS_zB8kCpZRgaB1MWY8-tE3WsmavgBrZIOE7P5uY4f8cFwTsYr_54QrfO3JmOUqEHRtAmO6rVUgwlMMa3P_lmJ-LBgffZiqgP9KLTkPzyALBcncJGEhDz2PY6HpLe4cHadZfmrj2PGhQ_svYB-Q7Ed7_aFUrEUbNKC7LAwQ",
         "id": "1-hundred-bistro",
-        "lat": 47.6287704,
-        "lng": -122.3317388,
+        "lat": 47.628822,
+        "lng": -122.33174,
         "name": "1 Hundred Bistro",
         "promotions": [
             "20% off total guest check(2 - 6 adults)",
             "10% savings on banquets booked",
             "18% gratuity automatically added"
         ],
+        "rating": null,
         "state": "WA",
         "telephone": "(206) 402-6364",
         "zip": "98109"
@@ -20,14 +22,16 @@
         "address": "12255 Aurora Ave N",
         "city": "Seattle",
         "formatted_address": "12255 Aurora Avenue North, Seattle, WA 98133, USA",
+        "gplaces_ref": "CoQBdQAAAIo0J8ghst56dLYDOznC8OPq30QKFIE3DdQs_MMvvcohy4vZyTR28DIXGq3dE-Orc9F199hEupWXdV1zeL3B5koJTqpyHEq7A8W04J8YBtEuB_aOEBnGzOVZCKOkpXLH1hsn-AzVEXo7S1RkhdTODLTkpyQmmNZduDCbl-ChlJH9EhAIl-6vu_fLhFR-0clxim5fGhS6XaCKhhhH86aR9F0DOfdcea1o3A",
         "id": "125th-street-grill",
-        "lat": 47.7196775,
-        "lng": -122.3449531,
+        "lat": 47.719292,
+        "lng": -122.345121,
         "name": "125th Street Grill",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "18% gratuity automatically added"
         ],
+        "rating": 3.8,
         "state": "WA",
         "telephone": "(206) 363-8950",
         "zip": "98153"
@@ -36,15 +40,17 @@
         "address": "125 Boren Ave. N",
         "city": "Seattle",
         "formatted_address": "125 Boren Avenue North, Seattle, WA 98109, USA",
+        "gplaces_ref": "CoQBdgAAAI1J1mgQjNEylyoEWOh8AJVRJYVc4Hm8DRWCPFqd8PHRuEeZ_FZV1mpejlnydr13ptM88CmaX9iO4fl9U5G-JyaxiUob3zAqzHBU-v7CcynMlMVd-bGIhH5668lSQieJTYY3nu-MQMPQlyX2tdzkPHTmx4SvGkbP72IhuR042Bc8EhBX7R00H8K7NgL1D9EFlOubGhTtHcQUvaG9ZiFiZZ3gIN8HLNREdA",
         "id": "13-coins-restaurant",
-        "lat": 47.6188279,
-        "lng": -122.3358973,
+        "lat": 47.619191,
+        "lng": -122.336002,
         "name": "13 Coins Restaurant",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "10% savings on banquets booked",
             "This location only."
         ],
+        "rating": 4.1,
         "state": "WA",
         "telephone": "(206) 682-2513",
         "zip": "98019"
@@ -53,15 +59,17 @@
         "address": "4004 NE 4th St.",
         "city": "Renton",
         "formatted_address": "4004 Northeast 4th Street, Renton, WA 98056, USA",
+        "gplaces_ref": "CoQBegAAANKSWArcqDaOIqWcWxCKVy-c1dgG2ca0ITsO02w8IoOugx5sZaNX_A1W9ZklExiDlNeeQJhHmrzgOfQ0lnfIWNimXSe0QPpB1lUdh_SxFtgXDEkwa-yUYMNjvZbgAmqG0I5k757ZjFhOXdoI_Yb-kIi3yKnE9x3WaXL5tDHSvnX2EhCIKVCQYAdugZZ_C7O9zf1YGhSTyC4wDtElQyR0Lzmo-rFjBZwEKA",
         "id": "4th-street-grill-lounge",
-        "lat": 47.4889562,
-        "lng": -122.1654796,
+        "lat": 47.488893,
+        "lng": -122.165723,
         "name": "4th Street Grill & Lounge",
         "promotions": [
             "20% off total guest check(2 - 6 adults)",
             "20% off total bill when dining alone",
             "10% savings on banquets booked"
         ],
+        "rating": 2.8,
         "state": "WA",
         "telephone": "(425) 255-3595",
         "zip": "98056"
@@ -70,13 +78,15 @@
         "address": "9730 NE 119th Way",
         "city": "Kirkland",
         "formatted_address": "9730 Northeast 119th Way, Kirkland, WA 98034, USA",
+        "gplaces_ref": "CnRrAAAAkmHxXJ6nfNpzdBBpVQHZPf7o5A4RjPFUhwqHSY_ZxlgZS-jzqvocAHabFUDItLXDWAIaBi3FL96d48hP_m2KbCeCpmC0biI4dCysmoLW1GvQ7y7AjLJprvqPoOH7AwT2xFURif3gxyjeaw2_3TAcqBIQOQ9RKVZeulq308xRhV6xBhoUt5z6AxkWm6dlMtgsLmAB8GNsqAo",
         "id": "aa-sushi",
-        "lat": 47.7069513,
-        "lng": -122.2117079,
+        "lat": 47.707011,
+        "lng": -122.211741,
         "name": "aa Sushi",
         "promotions": [
             "20% off total guest check(2 - 6 adults)"
         ],
+        "rating": 3.8,
         "state": "WA",
         "telephone": "(425) 821-7989",
         "zip": "98034"
@@ -85,14 +95,16 @@
         "address": "1 Yesler Way",
         "city": "Seattle",
         "formatted_address": "1 Yesler Way, Seattle, WA 98104, USA",
+        "gplaces_ref": "CnRtAAAAKZVNnC6Uew_Gv1Dggy4yVgOSsgYu2IpVWVsuVpNwXouUQQAuB6wux82owX464R-SiG29OpXWnTycN7n1akzZ8LYH4z8NVP8SamtwHVVHiM2IEuC0qWt6yhEel4k8lrx_WrdoSmXN5x0Sa1r0NTpXjBIQz66T9UF5pJS0dKPPK9THzxoUx0oukfAQx-Ifiu542ywdD6dW-Qc",
         "id": "al-boccalino",
-        "lat": 47.601539,
-        "lng": -122.335669,
+        "lat": 47.60154,
+        "lng": -122.335678,
         "name": "Al Boccalino",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "18% gratuity automatically added"
         ],
+        "rating": 4,
         "state": "WA",
         "telephone": "(206) 622-7688",
         "zip": "98104"
@@ -101,14 +113,16 @@
         "address": "3110 Sumner Tapps Hwy E",
         "city": "Lake Tapps",
         "formatted_address": "3110 Sumner Tapps Highway East, Lake Tapps, WA 98391, USA",
+        "gplaces_ref": "CoQBcwAAAJbupHt-6ls_hyv053CNWLUvhURIrw8zuV4C52lEJshRd3PePvtNNz5UsPFDtZA2DR5B8I8ioQ6H7TGjrAwtueQ6TAWBLg5Fk0YHlO_Eg30dDiRYn9TiGf4J-92yc3T_r61r4HudI7Y_2rWpGDhA6PFGk5_UCQY8cTnKm2s8gT2YEhBxZCqwbYikkywezL324LBMGhR6zRF7lgzrZXRbiCpXbzeu2FCJWA",
         "id": "al-lago-restaurant",
-        "lat": 47.2290316,
-        "lng": -122.2003435,
+        "lat": 47.229086,
+        "lng": -122.200445,
         "name": "Al Lago Restaurant",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "18% gratuity automatically added"
         ],
+        "rating": 4.1,
         "state": "WA",
         "telephone": "(253) 863-8636",
         "zip": "98391"
@@ -117,6 +131,7 @@
         "address": "10115 Main St.",
         "city": "Bothell",
         "formatted_address": "10115 Main Street, Bothell, WA 98011, USA",
+        "gplaces_ref": "CoQBeQAAAGh3bOW0B2W2n42aJSlhzSDaWG9aK14j9vloj3L1rB3XleSIN1kUD8ttyEwQtNdwLE0lumRZwc99VCg-ss9muLzKcTzEgt-cBQypczdMYpYBUeasJH7Ft-jG5Ee34aJgFRHFIB-YkOXQzbLVPHv7UtpulCAaiFF87s6Sqly1Kua8EhCL3FHFmrrZjCQPv8OIbvlfGhTrj56myvtay6YbFMq3pJ4vStJwWQ",
         "id": "alexas-caf-catering",
         "lat": 47.759868,
         "lng": -122.204777,
@@ -124,6 +139,7 @@
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 3.5,
         "state": "WA",
         "telephone": "(425) 402-1754",
         "zip": "98011"
@@ -149,9 +165,10 @@
         "address": "131 Front St. N",
         "city": "Issaquah",
         "formatted_address": "131 Front Street North, Issaquah, WA 98027, USA",
+        "gplaces_ref": "CoQBeAAAAC7IkJXnkdezSzy1MmJbb2OmXufGphK89EaAGKlHWVaehng6yR3wh838JenSGXCOPkSmEshMH9uJTfi8GlMoftZhNGBKdr_QShc5F9hge5uoptMKneCI3GDw2Rin1wCmcBxTaICJGtfo7euiOBhZdc1B5rfFabQajWxPbmMC_E6ZEhBsBwaKXuFBwBa_TmK_L7yLGhRp--4FH_Aph7DYWOQchKzcsO8M6w",
         "id": "amante-pizza-pasta-2",
-        "lat": 47.531715,
-        "lng": -122.036971,
+        "lat": 47.531744,
+        "lng": -122.036631,
         "name": "Amante Pizza & Pasta",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
@@ -160,6 +177,7 @@
             "18% gratuity automatically added",
             "Not valid on daily lunch/dinner specials."
         ],
+        "rating": 3.3,
         "state": "WA",
         "telephone": "(425) 313-9600",
         "zip": "98027"
@@ -204,14 +222,16 @@
         "address": "100 Harrison St",
         "city": "Port Orchard",
         "formatted_address": "100 Harrison Avenue, Port Orchard, WA 98366, USA",
+        "gplaces_ref": "CoQBcwAAAN33Cnzx1qjspTK2lgCu9q_pGmsxUHSK3CFIoLuRNI0YIixUbuwNtADKME57HBzK7JArJUHR2WBAXojmWIB3J9JS21asvSwfOS9CxW_s-VcZUi5fT_boBV-vg00uTkq3FMslZkT1IC7YucBZSS3F__7tjUfhZUD2szsNlOSJm89rEhAhFBlrsX5TEcQ1o0pD0hsmGhTCJwFoscHCDKZBiEkgyp8prQYHmA",
         "id": "amys-on-the-bay-restaurant-bar",
-        "lat": 47.5418348,
-        "lng": -122.6348304,
+        "lat": 47.542107,
+        "lng": -122.63491,
         "name": "Amys On The Bay Restaurant & Bar",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "18% gratuity automatically added"
         ],
+        "rating": 3.3,
         "state": "WA",
         "telephone": "(360) 876-1445",
         "zip": "98366"
@@ -220,14 +240,16 @@
         "address": "938 110th Ave. NE",
         "city": "Bellevue",
         "formatted_address": "938 110th Avenue Northeast, Bellevue, WA 98004, USA",
+        "gplaces_ref": "CoQBcgAAACC9h18ryE7LTpYTwFaX4VxbaUTwoC3v9W_iM3Ajmqu8vQKn80VpWnD8lDHRFcIuu-tBc5XxY7EjXRt8lIlgNHxI5FeL7YZe0kWdUq_PT0ODe7-XrlhUHC4za9Gcw6LLEsfl5o8HLvHiBVvFKMts3mDQanwB9k9rZjf0ENL0oThjEhD7Y42Oy3nZXfJwLbxj_EAsGhSRmHcIVYZpo1ENsuQ6DEZnmylcTw",
         "id": "andiamo",
-        "lat": 47.618725,
-        "lng": -122.193135,
+        "lat": 47.619244,
+        "lng": -122.193481,
         "name": "Andiamo",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "18% gratuity automatically added"
         ],
+        "rating": 3.6,
         "state": "WA",
         "telephone": "(425) 452-9602",
         "zip": "98004"
@@ -251,14 +273,16 @@
         "address": "300 Admiral Way",
         "city": "Edmonds",
         "formatted_address": "300 Admiral Way, Edmonds, WA 98020, USA",
+        "gplaces_ref": "CoQBdAAAABM4lH0fYesb-NkPSXZk3q331i5P9YUKV4q5lg9-xYl4Hm8UE39beHgd0Y6puZVBNVbFkzqhpCsiCVqmguYSJcnpNwGi-D03LAP37mmKaTgJdrlr-fh72ROQyFoWGImPYgYv6J9f1OIXXlVsqgOLEEglXKmtCz84_hPENon2jTmaEhAn83PnMA2XBYgYGazC-1iyGhTF7HPMr-NNQxfCMNar3ZHU4nIRKA",
         "id": "arnies-in-edmonds",
-        "lat": 47.8100706,
-        "lng": -122.3876691,
+        "lat": 47.810071,
+        "lng": -122.387669,
         "name": "Arnies in Edmonds",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "75% off 2nd brunch"
         ],
+        "rating": 3.7,
         "state": "WA",
         "telephone": "(425) 771-5688",
         "zip": "98020"
@@ -267,14 +291,16 @@
         "address": "714 2nd St.",
         "city": "Mukilteo",
         "formatted_address": "714 2nd Street, Mukilteo, WA 98275, USA",
+        "gplaces_ref": "CoQBeQAAABhC7zIhSWhmWvrhUNOqxsucpSXfJNkeVRNqjpWbryaGL44B7lzeDHOqg6idJTf_Ce81gabLdJcVioP7h1FaVt7Fzj6JUO727lGRHwr56fmHWLm4o0RMbI3W5qU6wBzed5egS2OAg2NXzqN6KMZTSrRlRiF8CQ2bsmyR0RqpBpIZEhCb_-RZkM0Zyl9y-WGT8U6OGhSdRJKsSpqLjp56Tf6E_vzbxKHjgA",
         "id": "arnies-in-mukilteo",
-        "lat": 47.9474166,
-        "lng": -122.3032286,
+        "lat": 47.94736,
+        "lng": -122.303207,
         "name": "Arnies in Mukilteo",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "75% off 2nd brunch"
         ],
+        "rating": 3.8,
         "state": "WA",
         "telephone": "(425) 355-2181",
         "zip": "98275"
@@ -299,14 +325,16 @@
         "address": "4285 Meridian St.",
         "city": "Bellingham",
         "formatted_address": "4285 Meridian Street, Cordata Center, Bellingham, WA 98226, USA",
+        "gplaces_ref": "CoQBfgAAAGMOePmeLPE9Jwo_a_q9476u92kktdFrSD-yIsFRyTfbBlhlguqt_E0fvXPKq6l14l-Rsj3zKe060QQcB7Q9O4kc9jPBpZUUCsrWHaM20jVFj6iizzzOevXB52QFObxrCnQ-keHiBibGlqgiJ8lYJMJCeAzOLO0G0YbA5ALZSEKcEhDNwGyIuRlvksp62_ZWWtkRGhScGPVeCZgt4ugwhh4WQP5cn39xcw",
         "id": "asian-1-2",
-        "lat": 48.7966756,
-        "lng": -122.4865965,
+        "lat": 48.796735,
+        "lng": -122.486472,
         "name": "Asian 1",
         "promotions": [
             "20% off total guest check(2 - 6 adults)",
             "Dine-in only"
         ],
+        "rating": 3.5,
         "state": "WA",
         "telephone": "(360) 752-2422",
         "zip": "98226"
@@ -315,14 +343,16 @@
         "address": "300 112th Ave. SE",
         "city": "Bellevue",
         "formatted_address": "300 112th Avenue Southeast, Bellevue, WA 98004, USA",
+        "gplaces_ref": "CoQBcQAAAOIUASH8hUBuE9sAyrVNOyQdiw_lLX81U0_UWR43XldthH8wtvq4V6co6KaIQTLLzOMJt2NY8ANcQsr6AfPrgLv6OwZ-7UM-ho2HO8hL5_bXVpKHIM18Uc4Am-2uu0mFjXhrZn0kO0i77Bmf_xjjEuuNjMGJTvIEZ3zBco8xBC-1EhA0ry9V8SDSpaA9NWpEEq07GhSFbrcSRnrYNGFoOUzSCmRfx_Zc2A",
         "id": "basils-kitchen",
-        "lat": 47.6072554,
-        "lng": -122.1889557,
+        "lat": 47.607289,
+        "lng": -122.189523,
         "name": "Basils Kitchen",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off total bill when dining alone"
         ],
+        "rating": null,
         "state": "WA",
         "telephone": "(425) 452-4848",
         "zip": "98004"
@@ -331,14 +361,16 @@
         "address": "15920 W Valley Hwy.",
         "city": "Tukwila",
         "formatted_address": "15920 West Valley Highway, Tukwila, WA 98188, USA",
+        "gplaces_ref": "CoQBdgAAAOngUSEhmkbIojfzp7_sEYJUovcjlpd5hwJX5XvZ5-6UTfZMu3ripTDDBVANONSxF-cDhiBvwq0xHT7UkVxgUlUBW7KYxkSI3GFbAHseyP0Nt-wbhy6FFyk3dFKKLbtbaY9msm5m8t2Nhk8XNwxI2Dgp9QcoriyiWbgbZ_sWEqiQEhAPX6gaujZ-sHM4PtC9E_RrGhTRAb8ZBo7O3u56RFCWrKr5QcV9cA",
         "id": "basils-kitchen-lounge",
-        "lat": 47.46013749999999,
-        "lng": -122.2438517,
+        "lat": 47.460841,
+        "lng": -122.244691,
         "name": "Basils Kitchen & Lounge",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off total bill when dining alone"
         ],
+        "rating": 3.7,
         "state": "WA",
         "telephone": "(425) 227-9406",
         "zip": "98501"
@@ -347,15 +379,17 @@
         "address": "1170 Carillon Pt.",
         "city": "Kirkland",
         "formatted_address": "1170 Carillon Point, Kirkland, WA 98033, USA",
+        "gplaces_ref": "CnRsAAAA8yDx_IeI0doCRVJUwKe7qxhk4blCmduhp_h-v_PtPqSZKHS0QwFx_C6tNrTAURgewp5Do58q4NWoh6Q8lkEgAQhkSscFQeH8JrlqGDadSQM0M5fmxFztko-ZPDMCQ8xesHYtmkE5vjqCiHG6QZ4VPxIQoiFzfoi-s6VG3g4hC9gVThoUwxaCvEQayZDL4UFcbZxylofOp7o",
         "id": "beach-caf",
-        "lat": 47.6576229,
-        "lng": -122.2064551,
+        "lat": 47.65688,
+        "lng": -122.207716,
         "name": "Beach Caf",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "18% gratuity automatically added",
             "Max use 2 cards per party"
         ],
+        "rating": 4,
         "state": "WA",
         "telephone": "(425) 889-0303",
         "zip": "98033"
@@ -364,13 +398,15 @@
         "address": "6501 6th Ave.",
         "city": "Tacoma",
         "formatted_address": "6501 6th Avenue, Tacoma, WA 98406, USA",
+        "gplaces_ref": "CoQBewAAAEgRcImy0ID0b3vKf2VRz94zj6dwjRzO01T8B_st9ra0Luke266qv-Kl1UYKKvd6JSn4h_RuD4sPWZ8xZ6g2I1Xy4tgB1H1_Ho1bZstEFR1B4W7Emq3RPje9lwUj9AWjXmLH_Tj9YCYlATuTRpCn5TKiBZ-2OcNYroHgiiQF0KDSEhCMWrsP01TKdUVq75-xM5cxGhRsbxfwgefcYCGqoYbzY-DWBLWseg",
         "id": "ben-dews-clubhouse-grill",
-        "lat": 47.255762,
+        "lat": 47.255628,
         "lng": -122.5245,
         "name": "Ben Dews Clubhouse Grill",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4.1,
         "state": "WA",
         "telephone": "(253) 564-4442",
         "zip": "98406"
@@ -379,14 +415,16 @@
         "address": "1200 Fifth Ave.",
         "city": "Seattle",
         "formatted_address": "1200 5th Avenue, Seattle, WA 98101, USA",
+        "gplaces_ref": "CnRpAAAARx8AtgvSCt7fonDyf0qmrKJVSuZm9AlX41HgdNYnHqxEzPw0esvmhYIdDWVwj6mI0pARtqfVwwntzimMC0QSnleldQzCevd_w33-tY0Kqc7g0ebs9erJTv2pkSmhFpKEk4IPzSBVG61DCPPZ7dYDKRIQCpyhCRXJyI_UjA9vyoHk0BoUu9nz30rukTfYJOOksmhE6ZctD_s",
         "id": "benihana",
-        "lat": 47.608449,
-        "lng": -122.333043,
+        "lat": 47.608666,
+        "lng": -122.333242,
         "name": "Benihana",
         "promotions": [
             "Lunch for Two $17 orDinner for Two $40 1Two sushi lunch buffets $25 2",
             "1 Create your own lunch/dinner by selecting two of your Benihana favorites.2 Sushi buffets valid only in the sushi lounge."
         ],
+        "rating": 4,
         "state": "WA",
         "telephone": "(206) 682-4686",
         "zip": "98101"
@@ -411,15 +449,17 @@
         "address": "1270 Carillon Pt.",
         "city": "Kirkland",
         "formatted_address": "1270 Carillon Point, Kirkland, WA 98033, USA",
+        "gplaces_ref": "CoQBcgAAAJdiqQ6bboScJ1zMLpcfQm7BCCRA-tP-CB-eBsTvz9i2Y6h2Yvvl4JLG18KD47OS0U13PhDjzhfWnH34DAnMpDr9sJMGnBWNpUo4MhWdshZBO-dwQfzAYlnp8DMrlEHRLa6yyWPxpU2E1CbvOPZYEXz1n6_oz92pl7eL1X-YIwg7EhClmHUgzWHRZMq_ycPJrZc2GhQDQjsM5IzgVi3IHSNuDjkyS8smaw",
         "id": "bin-on-the-lake",
-        "lat": 47.6559277,
-        "lng": -122.2074194,
+        "lat": 47.656314,
+        "lng": -122.207338,
         "name": "bin on the lake",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "18% gratuity automatically added",
             "Max use 2 cards per party"
         ],
+        "rating": 4.1,
         "state": "WA",
         "telephone": "(425) 803-5595",
         "zip": "98033"
@@ -428,14 +468,16 @@
         "address": "5315 Pt Fosdick Dr NW",
         "city": "Gig Harbor",
         "formatted_address": "5315 Point Fosdick Drive Northwest, Gig Harbor, WA 98335, USA",
+        "gplaces_ref": "CnRwAAAAX26mBhZljcXbkYfIFSrqc2eWkXL0NeD9Wngvi-cAVmkJ5DxYE2OyD1tvt6_NkejVVYXYckPdNHXj272Ys9vzZcOjZzNCXaKLK7wkTK9HQUEDivnO9seYSEbBvnIpsGFSBneZtf49r7yFxoaIYVY-RxIQ0D_bG_-xzJVhoW4cWJAvXhoUjVJADMKF0jgH_fUgkmMcBOd0Q1g",
         "id": "bistro-satsuma",
-        "lat": 47.3061055,
-        "lng": -122.5791686,
+        "lat": 47.305969,
+        "lng": -122.578946,
         "name": "Bistro Satsuma",
         "promotions": [
             "20% off total guest check(2 - 6 adults)",
             "18% gratuity automatically added"
         ],
+        "rating": 3.6,
         "state": "WA",
         "telephone": "(253) 858-5151",
         "zip": "98335"
@@ -459,13 +501,15 @@
         "address": "1010 1st Ave.",
         "city": "Seattle",
         "formatted_address": "1010 1st Avenue, Seattle, WA 98104, USA",
+        "gplaces_ref": "CoQBeAAAAHuSPEDHqUHtFd-ehndwpKPQCKqy595wEuuOCQ3ndEwKUry5uwcAJXG-Mc6lLCwrMdRcPm5T8HPWlo3HwqcNAuJvdl6Vjw11lhtQG_6xFevw7Oi0wYVXCv4RlBSlaKaYNm0vt82QQ3BmC7yn2avY1rgESaALZd1M7CdDYy5z-6vfEhDkL1H2F5Uev8cGRV4ajcfRGhTXZKEvgJ3pbR23JZjZBm7VVJhTVw",
         "id": "boka-restaurant-bar",
-        "lat": 47.6048491,
-        "lng": -122.3362585,
+        "lat": 47.605014,
+        "lng": -122.336276,
         "name": "BOKA Restaurant & Bar",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4.2,
         "state": "WA",
         "telephone": "(206) 357-9000",
         "zip": "98104"
@@ -474,9 +518,10 @@
         "address": "101 W North Bend Way",
         "city": "North Bend",
         "formatted_address": "101 West North Bend Way, North Bend, WA 98045, USA",
+        "gplaces_ref": "CnRoAAAAbf9wxxPZ2nbmsdnsd23Y4_1VpD1YiVcnF83vv3Ua8x5LzLelINBi7x1awseTk9FrYQ4UbYSpBeF3sfXTOjlcgQy4yhNJn3Ot25rxGyo3OYliNPFnil89BN6dUZcNeQgtM04KOg8GBr5bHl3NLQK-xxIQJrUNxRQoUpiV9E12LUoD0RoUtRyr0JjNeqsyfIH5Jr2A4JJmoDs",
         "id": "boxleys",
-        "lat": 47.4949117,
-        "lng": -121.7859817,
+        "lat": 47.494881,
+        "lng": -121.786008,
         "name": "Boxleys",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
@@ -484,6 +529,7 @@
             "20% off on all 'To Go' orders",
             "10% savings on banquets booked"
         ],
+        "rating": 4.7,
         "state": "WA",
         "telephone": "(425) 292-9307",
         "zip": "98045"
@@ -507,13 +553,15 @@
         "address": "7707 Pioneer Way",
         "city": "Gig Harbor",
         "formatted_address": "7707 Pioneer Way, Gig Harbor, WA 98335, USA",
+        "gplaces_ref": "CnRpAAAAzE0N8EUc6Re62t6xYSE9_YP9AsXfOYbyXHhHi4yhq_Rx4j-3kDPItheIxE9x0VjFtq09goVYM-17EioR7qAI5yzBJnKb9wg_RJK9uEnY4R61Zvpe2BWYLz6qZ3mDNY6dwiAvNDFK2ZpA84-u5IKdxRIQl4hWl2a0VDo7Q9lWCucUXhoUxCospUZczIVtYW2hjwFA5ML_YRE",
         "id": "brix-25-restaurant",
-        "lat": 47.32832399999999,
-        "lng": -122.581721,
+        "lat": 47.328433,
+        "lng": -122.581834,
         "name": "Brix 25 Restaurant",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4.4,
         "state": "WA",
         "telephone": "(253) 858-6626",
         "zip": "98335"
@@ -538,13 +586,15 @@
         "address": "2901 Hewitt Ave.",
         "city": "Everett",
         "formatted_address": "2901 Hewitt Avenue, Everett, WA 98201, USA",
+        "gplaces_ref": "CoQBdwAAAFZ0CMiFEU_9wdi_YUV2XssozSXysogE4iPxFE0BmtkRFDLHIFge8AqEbr_gLHVVAdPwWc0kBTx3M0iceF1aizzQhk-UqgGQBGwPttFhAZ0QSWNAxXPhjfMsd8gc5BgNWqgYGxegk3s4hK-h23Kll2BN0UidAzD-nv-2sQaCZ9wZEhAkFLYLGjRpPTakwy4mLi5KGhTOEXs8R0KYLrsqN1JIbfn4Ssjnkw",
         "id": "bucks-american-caf",
-        "lat": 47.979358,
-        "lng": -122.1922081,
+        "lat": 47.979239,
+        "lng": -122.192124,
         "name": "Bucks American Caf",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 3.8,
         "state": "WA",
         "telephone": "(425) 258-1351",
         "zip": "98201"
@@ -553,13 +603,15 @@
         "address": "12926 Mukilteo Spdwy.",
         "city": "Lynnwood",
         "formatted_address": "12926 Mukilteo Speedway, Lynnwood, WA 98087, USA",
+        "gplaces_ref": "CoQBcQAAAFii92F1Nf2M6xx4KVpfs9VL1hCVQvoXVzlM17bURmJyxNS7zskYmQF0y0AlG0j1Ns7ZO4HVU4lu5nVALF4ditLHa8o-6fTLU8Zjbm45ab0EjWZ-Y6M98LbFRrzNL96ErMztZfYz3woauYAuK-WlobDHI7EqQRGsn-K4CX3G1HaTEhDAf3x9UinKAGeqQzBeAVD-GhR4vluoWfbtA4B9zdG8bfaYEJt7ew",
         "id": "budapest-bistro",
-        "lat": 47.8803132,
-        "lng": -122.2800532,
+        "lat": 47.881008,
+        "lng": -122.279326,
         "name": "Budapest Bistro",
         "promotions": [
             "20% off total guest check(2 - 6 adults)"
         ],
+        "rating": 4.2,
         "state": "WA",
         "telephone": "(425) 513-9846",
         "zip": "98037"
@@ -600,14 +652,16 @@
         "address": "700 1st Ave.",
         "city": "Seattle",
         "formatted_address": "700 1st Avenue, Seattle, WA 98104, USA",
+        "gplaces_ref": "CnRuAAAAxHQAnOdDoF6eRgcFdShOZwVQarEbVpmS61Zz4ODRbLCIuUxzQkleaXdLYRqlW7hsVAeMyJXx4B7Fg0RacJ2QULjfCxNUPG3PzzWnDn-aSllR2pDmFRn9PdTrnWB1UhB1PQ8SzKuFwEEcF04N8i33shIQ2tRrAyKczpxZFh-i3SHoGxoUdvAdC3oKU6W6dCmj7t7fzzb8vEw",
         "id": "cafe-bengodi",
-        "lat": 47.6027241,
-        "lng": -122.3342043,
+        "lat": 47.602737,
+        "lng": -122.334158,
         "name": "Cafe Bengodi",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "10% savings on banquets booked"
         ],
+        "rating": 3.7,
         "state": "WA",
         "telephone": "(206) 381-0705",
         "zip": "98104"
@@ -616,14 +670,16 @@
         "address": "109 Main St.",
         "city": "Edmonds",
         "formatted_address": "109 Main Street, Edmonds, WA 98020, USA",
+        "gplaces_ref": "CoQBegAAAHQtzwoTGxqi27oSZmSobNtY-TxenKwth6hwIMZhxPeQRymXI_7mupD6HHOn2M0itsf1abpKgBwjwLWjWXMwoCv0Z_YRU4GIMZzyGZIvI-0Kg_pInatiI1filcfgv_MP14HOAB9MBgXFbpBWgDWQq4QLaAWXd6TZrFs2VzaQr1H_EhAilDhoNp9-3Mq7QCqhh-PVGhTJVOlGonWZIhx3ua76xYIy_8oyfg",
         "id": "cafe-de-paris",
-        "lat": 47.8122538,
-        "lng": -122.3813156,
+        "lat": 47.812181,
+        "lng": -122.381364,
         "name": "Cafe De Paris",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "Max $13.95/$20.95 savings on lunch/dinner specials."
         ],
+        "rating": 4.3,
         "state": "WA",
         "telephone": "(425) 771-2350",
         "zip": "98020"
@@ -649,14 +705,16 @@
         "address": "504 Ramsay Way",
         "city": "Kent",
         "formatted_address": "504 Ramsay Way, Kent, WA 98032, USA",
+        "gplaces_ref": "CoQBeAAAAEENw2x11O9nxGVVregqjgnY_ZF0jnXK_22WYE-SXDJEc6tUAKWHbnm2PU-5BgarfLx5Z7n8fT7tvOSn-FwyiSOsvXRYTPuhTretxKrZDgILBhK4nlvUHkdsm0AI2X4YSFGMd1OfdwlUC74exUfwRrlJrc1sAia5APJVXgSAgkl0EhBKBlxbsxEY1f7Q7Ufjf8SHGhS1wCB9RLtKwitwYKdsMgxgPrq3PQ",
         "id": "cals-classic-american",
-        "lat": 47.3850006,
-        "lng": -122.2345679,
+        "lat": 47.384186,
+        "lng": -122.234615,
         "name": "Cals Classic American",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "18% gratuity automatically added"
         ],
+        "rating": 4.2,
         "state": "WA",
         "telephone": "(253) 234-1913",
         "zip": "98032"
@@ -665,9 +723,10 @@
         "address": "15740 Redmond Way",
         "city": "Redmond",
         "formatted_address": "15740 Redmond Way, Redmond, WA 98052, USA",
+        "gplaces_ref": "CoQBeQAAAOPWZMDMCUQM_zX092A1tnweftCgGLfgBtumJBCcXnjJXL_XNeyaf-LwTtg5u0uSbDaRQHh6qahWiDdukY4I_GFcxe959_mpUyOOGhS6kW9_jD59C5CaQrn6Ua8dXHaUeOLx1MDjlsf0RrnTsjdI7WflKSM49TmOrIJFDstJkDiLEhAEpCKWB73CBCi4tL8g7iLLGhRHk1YRhjPecaEXW0LOXvBzw9jcAw",
         "id": "canyons-restaurant",
-        "lat": 47.6747227,
-        "lng": -122.1296894,
+        "lat": 47.674831,
+        "lng": -122.129615,
         "name": "Canyons Restaurant",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
@@ -676,6 +735,7 @@
             "10% savings on banquets booked",
             "18% gratuity automatically added"
         ],
+        "rating": 3.2,
         "state": "WA",
         "telephone": "(425) 556-1390",
         "zip": "98052"
@@ -684,9 +744,10 @@
         "address": "22010 17th Ave. SE",
         "city": "Bothell",
         "formatted_address": "22010 17th Avenue Southeast, Bothell, WA 98021, USA",
+        "gplaces_ref": "CoQBcwAAAGyAfS0vIvUh2s3u6hMpG9YVDBLPvWweqJ4euWBkEshyMYIyhmSprPR4Iq8CKsZYVwelE-rpbiJfSkIMyZtulGRNtjufYAEfet3_EOkeuuPAYdKHGws-Qqf5Vy4IE5q5Pnvgdt047yOQlVcRoOUtAhj9eqTBm_0DZfc3L36t5WcEEhCHEOkqjrEyyzREcDTOD7mGGhSqhd5uPeqZeAYpi9UwX9GA2-54Xg",
         "id": "canyons-restaurant-2",
-        "lat": 47.797878,
-        "lng": -122.2107271,
+        "lat": 47.797993,
+        "lng": -122.21163,
         "name": "Canyons Restaurant",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
@@ -695,6 +756,7 @@
             "10% savings on banquets booked",
             "18% gratuity automatically added"
         ],
+        "rating": 3.2,
         "state": "WA",
         "telephone": "(425) 485-3288",
         "zip": "98021"
@@ -703,15 +765,17 @@
         "address": "2132 First Ave.",
         "city": "Seattle",
         "formatted_address": "2132 1st Avenue, Seattle, WA 98121, USA",
+        "gplaces_ref": "CoQBfQAAAHFEr6jFRTGXSXVK_3bs7qD_MTN5pTfLCJ54ke0j5ZadZNH7lBJSCqyZ79hUeB6XwLsIMRrbYmush0pZbkjtY8YP1MXZuJ8ScQEqk0qTfxxZ348Zx9qAMKLy0vd5Gz-K8mFmbnm5NMMwQ4RZLaus8IYHQABzMzrvqjLAKI3q1tNYEhDBN89Tl9SgaZ0c2SBQs62YGhRQwixsxnfC-iU-9PEzG8slKfYF0Q",
         "id": "cellars-restaurant-lounge",
-        "lat": 47.6122242,
-        "lng": -122.3445436,
+        "lat": 47.612581,
+        "lng": -122.344911,
         "name": "Cellars Restaurant & Lounge",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off total bill when dining alone",
             "10% savings on banquets booked"
         ],
+        "rating": 4.1,
         "state": "WA",
         "telephone": "(206) 448-8757",
         "zip": "98121"
@@ -720,14 +784,16 @@
         "address": "316 Main St",
         "city": "Edmonds",
         "formatted_address": "316 Main Street, Edmonds, WA 98020, USA",
+        "gplaces_ref": "CnRsAAAA8zXMZUd-VLjpZL-aBjSRpJoVAQohmouOREOECzyNCrhdQLhxcrfcAcZW2SlhcxIyAvasO1PYQQ6MjCYiqgiy2ZYRE5gwUaFZ0uIOhuWm0aACF7XKaPdTsKg1-4MebbdnUj5AwmLyClh10OfpnipnZxIQuGanC8okL7OvokxBEVJjWBoUie-PWpATUQT1VB_0mL6dLW3XqZA",
         "id": "chanterelle",
-        "lat": 47.810955,
-        "lng": -122.379108,
+        "lat": 47.811101,
+        "lng": -122.378995,
         "name": "Chanterelle",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "Not valid for Breakfast, Early Bird special or Three Course Dinners"
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(425) 774-0650",
         "zip": "98020"
@@ -736,13 +802,15 @@
         "address": "5694 Third Ave",
         "city": "Ferndale",
         "formatted_address": "5694 3rd Avenue, Ferndale, WA 98248, USA",
+        "gplaces_ref": "CoQBegAAAM0vgythCwIhEK75lnTV_5-PIu0sFAP73PJ5wQimWlfty2HUyakdBprdypjDbbZkjNmCM0dcNQjnW32c6HLpfEvPIgQZPKip5jK2myi5-h91wdCAQQvq-EwHpCU5_6efuuVBxSAdH3DLYoLdYyMp1L8oxQEJEa-VEy253YFoVfU8EhCAAVHxuavmqmr_G_EfwZ31GhRMv624N6-98lTnGrncVhdpKxYg5Q",
         "id": "chihuahua-family-mexican",
-        "lat": 48.84767979999999,
-        "lng": -122.5917416,
+        "lat": 48.847618,
+        "lng": -122.591787,
         "name": "Chihuahua Family Mexican",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4.1,
         "state": "WA",
         "telephone": "(360) 384-5820",
         "zip": "98248"
@@ -751,9 +819,10 @@
         "address": "2040 Westlake Ave. N",
         "city": "Seattle",
         "formatted_address": "2040 Westlake Avenue North, Seattle, WA 98109, USA",
+        "gplaces_ref": "CoQBeQAAAKotNH51SMZRGgM5QetQOLAWrcLquQwQWsBznkmRUB4wdCuzMMAPD_FJIhAEUiUi5JTxDYFqRDzm3CVjCCz40MjGWCzQztcJ6ugHyEATd35rbJ3w_1X95fSEOMQdBVghBail-xEtFCW4klZ-ThNriDlZYR-N62akUYq6YNPRVP--EhD8Bjr8VpI0AVNgMaIWJzL9GhS4cI7aiaYR0-xsIuEGt6w3lcfyaQ",
         "id": "china-harbor",
-        "lat": 47.6373831,
-        "lng": -122.3399652,
+        "lat": 47.637324,
+        "lng": -122.340035,
         "name": "China Harbor",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
@@ -761,6 +830,7 @@
             "20% off on all 'To Go' orders",
             "Not valid on Lunch Specials"
         ],
+        "rating": 3.2,
         "state": "WA",
         "telephone": "(206) 286-1688",
         "zip": "98109"
@@ -769,14 +839,16 @@
         "address": "3515 NE 45th St",
         "city": "Seattle",
         "formatted_address": "3515 Northeast 45th Street, Seattle, WA 98105, USA",
+        "gplaces_ref": "CnRvAAAAZb1lTiZ8xI9KLt_dCSTpk9naNzZLhaksB_zifgqlvfYx_xsy1TMK46kj2ElQCXi5EIY5n5C_bdKxrTCvObTtccmNx-xShKUlPJEt-AtLyiQWjg7P40_D7qx7msbVhdWLd7-XuXx3iSsRNao2zCRy-RIQbWyDY-sZGHY3nN46TE0InRoUxTPvy7gw05NE7RQzcoPDsV-Vr_k",
         "id": "chlo-bistrot",
-        "lat": 47.6609311,
-        "lng": -122.2895841,
+        "lat": 47.661021,
+        "lng": -122.289533,
         "name": "Chlo Bistrot",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "Not valid on Three Course Dinner Special or 50% Wine Night"
         ],
+        "rating": 4,
         "state": "WA",
         "telephone": "(206) 257-0286",
         "zip": "98105"
@@ -817,14 +889,16 @@
         "address": "8976 161st Ave. NE",
         "city": "Redmond",
         "formatted_address": "8976 161st Avenue Northeast, Redmond, WA 98052, USA",
+        "gplaces_ref": "CnRsAAAAWYFgMIC0AW6GVSe9Cfv9PctMIBBM1aXd6NblR2BoUW1H3wo54HUJOWtzo28xSpUGa4tt3nOfaanIWzHGb_4PrfDFqd32gxVJafN50aFM0SqgfBCDd1k8QX88YKJKZgjhlrsxDLEXLbyU42A6SHgx6hIQW950JH6X7JjjZykZwKeNohoUTGwXCEJALAFsqaPYAthsJXzPaaA",
         "id": "coho-caf-2",
-        "lat": 47.6820143,
-        "lng": -122.1255482,
+        "lat": 47.681809,
+        "lng": -122.125097,
         "name": "Coho Caf",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "Not valid on 1/2 price Happy Hour Specials"
         ],
+        "rating": 3.8,
         "state": "WA",
         "telephone": "(425) 885-2646",
         "zip": "98052"
@@ -866,15 +940,17 @@
         "address": "1821 SE Lund Ave.",
         "city": "Port Orchard",
         "formatted_address": "1821 Southeast Lund Avenue, Port Orchard, WA 98366, USA",
+        "gplaces_ref": "CnRuAAAAsBj8KRvMJZAdQn1EVbpYjvOE-awDr-Yu3ctebPfzSdTQk1SsjgAiAs0Q88eqHEgN55DBy0c4Z2D3aLKV9mqtsCgo_WVP96p25AjfccFGDI3GHHo6xRmtFGIGxBSVIq5rfeOS49W4O5jXkyRaSEKnCBIQmaJT2JCYuBoYqKHw1K9_SBoUVmsKBL42mB_lMZ2atILDspP1VYQ",
         "id": "cosmos-ristorante",
-        "lat": 47.519787,
-        "lng": -122.6286127,
+        "lat": 47.51963,
+        "lng": -122.628565,
         "name": "Cosmos Ristorante",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "18% gratuity automatically added",
             "Dine-in only"
         ],
+        "rating": 4,
         "state": "WA",
         "telephone": "(360) 895-3138",
         "zip": "98366"
@@ -883,14 +959,16 @@
         "address": "310 Terry Ave N",
         "city": "Seattle",
         "formatted_address": "310 Terry Avenue North, Seattle, WA 98109, USA",
+        "gplaces_ref": "CnRnAAAA4529baTcTWgJ_7d0chk4oqFQPQmAd1vOHIBBi9OEYpYI6_d-FILEtuO5agcnvOuwOZLHow3Lh0qAIlWNuMhVM8fDpq9HNs2oQTlatVi4vOqYlZUgpJUiyshB1V2ZPGyi1gPGzLiQ07-naun0db1q4BIQgJyAcT3z3qirDf2zqcRvFRoU7A58wimMZNr6UjzIh-MsMDC8PKU",
         "id": "cuoco",
-        "lat": 47.621449,
-        "lng": -122.336772,
+        "lat": 47.62144,
+        "lng": -122.336846,
         "name": "Cuoco",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "18% gratuity automatically added"
         ],
+        "rating": 4.3,
         "state": "WA",
         "telephone": "(206) 971-0710",
         "zip": "98109"
@@ -933,15 +1011,17 @@
         "address": "101 Main St.",
         "city": "Edmonds",
         "formatted_address": "101 Main Street, Edmonds, WA 98020, USA",
+        "gplaces_ref": "CoQBfQAAAHZjyxcVyfyP1_PrHDhAObqfeNTm8FCJmI1p7EKjydBK-sDkW8EAjN-BZEOYKhkjdfZ0rsY8xuv7eSIp3nhKGjg-HeYH34EbPtOB8w4FJgwTv0ksyTa5jj-g_MHRdZOmU1pkU5kCI7kY1itPMyDlnQnaLYyriXDw8BaDJHPNgR3vEhAMX0D6DasW3Bq3yQZRLuYuGhQ2CpL_4EVGdxfAsneofcrVzXBDKg",
         "id": "demetris-woodstone-taverna",
-        "lat": 47.812553,
-        "lng": -122.38211,
+        "lat": 47.812518,
+        "lng": -122.382311,
         "name": "Demetris Woodstone Taverna",
         "promotions": [
             "20% off total guest check(2 - 6 adults)",
             "20% off total bill when dining alone",
             "10% savings on banquets booked"
         ],
+        "rating": null,
         "state": "WA",
         "telephone": "(425) 744-9999",
         "zip": "98020"
@@ -968,9 +1048,10 @@
         "address": "722 Pine St.",
         "city": "Seattle",
         "formatted_address": "722 Pine Street, Seattle, WA 98101, USA",
+        "gplaces_ref": "CoQBdwAAAHg7ntY-rTWXk8tBWp-3mL7UjPep2VUwcnImrEkEv4JjS7ArS3xB0-MgK8zxgiEIlH4gg4Szsqkco1KT-oPSaXnymW7qndaYpVQcPCIdWOvpmoGndPFHE38mnWGA-z-sXCI0XP1JDTVh_PARAn9O8vQQ28GhSryn6LnHigtJ3WJ-EhCbeHbeC7t3GkRVEnDujfoEGhQrLhzpoEeyRCbNRSzqUzDfrQrKgA",
         "id": "dragonfish-asian-caf",
-        "lat": 47.6131183,
-        "lng": -122.3333731,
+        "lat": 47.613146,
+        "lng": -122.333496,
         "name": "Dragonfish Asian Caf",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
@@ -978,6 +1059,7 @@
             "20% off on all 'To Go' orders",
             "10% savings on banquets booked"
         ],
+        "rating": 3.8,
         "state": "WA",
         "telephone": "(206) 467-7777",
         "zip": "98101"
@@ -986,14 +1068,16 @@
         "address": "2947 Eastlake Ave. E",
         "city": "Seattle",
         "formatted_address": "2947 Eastlake Avenue East, Seattle, WA 98102, USA",
+        "gplaces_ref": "CoQBdAAAALu_Vpk31X0Rl1bWmn1zk2Z2vkvq-6cxEsJbdmYEWCbF_9WO-LBOPKcgT1OSLrTZ95aC4OeEhMMqJ9eu-eL7EUw32d70mSKIVLz5NGjbAaPTDT7l2DKv3WPZtIHt5_ufUbNPj_pSOuChclNXDOB3fFxSvi647zJlKLKGLGUYV3gVEhBY-db3KMZcQrQWVAzb6Y6kGhSPrZLjW0WIUvT9r8TsTRWfYSn14w",
         "id": "eastlake-bar-and-grill",
-        "lat": 47.6485895,
-        "lng": -122.3239699,
+        "lat": 47.648584,
+        "lng": -122.323838,
         "name": "Eastlake Bar and Grill",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "10% savings on banquets booked"
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(206) 957-7777",
         "zip": "98102"
@@ -1002,14 +1086,16 @@
         "address": "625 116th Ave. NE",
         "city": "Bellevue",
         "formatted_address": "625 116th Avenue Northeast, Bellevue, WA 98004, USA",
+        "gplaces_ref": "CoQBdQAAAOTf4vj4WfVN19h_hUfvSI5GUOrfMz-KOY747IBM6QXEXtpRNrEOQ7yJ51ZgyxYZ3e8pBi9R9gB1qeCDjAgQWTaMfL9MFeodVVET9drESl-bXNZYXy0qyMmV-T0avSsckZxOlITiZYlvgAsWNRKW7pqCgBLOHsqZHB7UaqRbBZebEhAgI58ADYOiYHmEhqlccCDWGhQZ5c3wwhtCwnAM4vYcwCRsUJ3yaw",
         "id": "eastside-bar-grill",
-        "lat": 47.61594059999999,
-        "lng": -122.1867712,
+        "lat": 47.61592,
+        "lng": -122.186278,
         "name": "Eastside Bar & Grill",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "10% savings on banquets booked"
         ],
+        "rating": null,
         "state": "WA",
         "telephone": "(425) 455-9444",
         "zip": "98004"
@@ -1035,15 +1121,17 @@
         "address": "526 Main St.",
         "city": "Edmonds",
         "formatted_address": "526 Main Street, Edmonds, WA 98020, USA",
+        "gplaces_ref": "CnRuAAAAVn79Q8Cyc8lDCGEKGH9IC-1LPxK2maPg2K996g7JGIu9ZbG2rNfTTAT00aNFwIiB9rL2h7dFBCXotc_wxtPxURnTAWPbzSALaYvKUHjSWNIZl9PQrHMkXpwoWF97YfPur734qmHnlJqMQWyD9taJSBIQre0Iq4uYhgsv2Ks5xinjlhoUDPUXUWj-528x93aJ2MgOUCZGj1E",
         "id": "epulo-bistro",
-        "lat": 47.810286,
-        "lng": -122.376342,
+        "lat": 47.810446,
+        "lng": -122.376351,
         "name": "Epulo Bistro",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "18% gratuity automatically added",
             "Not valid on Tuesday Tasting Menu"
         ],
+        "rating": 4.6,
         "state": "WA",
         "telephone": "(425) 678-8680",
         "zip": "98020"
@@ -1052,15 +1140,17 @@
         "address": "2020 Western Ave.",
         "city": "Seattle",
         "formatted_address": "2020 Western Avenue, Seattle, WA 98121, USA",
+        "gplaces_ref": "CnRpAAAALAGrEfr1Zc4he9EOSdIwQUIDeHCZd9jXndW1DpBJcYjRAcEaPC-8pqS_iBG6uraIAvEECKJre-U-a0ICB9Bc64uAnVcYQ_y3ssZPpJ9qRxdgia_9JP0ue2DlcsrZ_VDni5KB1Gvqcp-bQpqkxEuuFhIQO-UXCwh8kHqSQJR452O3QxoURp7EkJe4arzmYTBlG5i0TI8pk90",
         "id": "ettas-seafood",
-        "lat": 47.6107779,
-        "lng": -122.3438793,
+        "lat": 47.610789,
+        "lng": -122.343871,
         "name": "Ettas Seafood",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "18% gratuity automatically added",
             "Valid at this Tom Douglas restaurant only"
         ],
+        "rating": 4.1,
         "state": "WA",
         "telephone": "(206) 443-6000",
         "zip": "98121"
@@ -1069,13 +1159,15 @@
         "address": "2515 N Proctor St.",
         "city": "Tacoma",
         "formatted_address": "2515 North Proctor Street, Tacoma, WA 98406, USA",
+        "gplaces_ref": "CnRuAAAAStRBAkQkTnRA9uSv_pS1EfY-AIyuzkac3tyX15qT2z5jdWTsWfH9aybiypz_FE4w2aj-5GZK6HTiG0fNJZ-qSBpdZAJGg6rMKEACX3AnWars2NASrNeHroAIEdplMjTNMHI1qOqIo9kAM6oHaxDmqBIQnZNxIxxvjLukIE6mESeyWRoUcgQnj-RYl__aDId4BB2rJan6NMw",
         "id": "europa-bistro",
-        "lat": 47.2707373,
-        "lng": -122.4886483,
+        "lat": 47.270715,
+        "lng": -122.488704,
         "name": "Europa Bistro",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4.2,
         "state": "WA",
         "telephone": "(253) 761-5660",
         "zip": "98406"
@@ -1132,13 +1224,15 @@
         "address": "521 1st Ave.",
         "city": "Seattle",
         "formatted_address": "521 1st Avenue North, Seattle, WA 98109, USA",
+        "gplaces_ref": "CnRvAAAAqqe9S4QeoL9MAmz31lo70YsjI3hnAZqnagd4Rq2BtFdEUr9OBIwDx99Te6Xd1I1tkjRr8nysSsTuErbkbjf_qgXr9sqIcUEpDI6iHAIwydYmEa_d9U3YwUH5SDgYgcDZefgK9me2zMrEMnLDdvRVvxIQv-CqDPyaAPmvVCwLYEJPMRoUarTcvCsUwPWWMYx4Zh3h8h8Hfik",
         "id": "floyds-place",
-        "lat": 47.6239644,
-        "lng": -122.3555259,
+        "lat": 47.623946,
+        "lng": -122.355527,
         "name": "Floyds Place",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(206) 284-3542",
         "zip": "98109"
@@ -1178,15 +1272,17 @@
         "address": "2930 Capital Mall Dr NW",
         "city": "Olympia",
         "formatted_address": "2930 Capital Mall Drive Southwest, Olympia, WA 98502, USA",
+        "gplaces_ref": "CpQBhAAAANVqu1ocF8XInJZOyttM0SUefXZITZeIbSVnLff5X69nhmPdK36L_tKCNPds_sUWMAsN6U_UfonQgrV0G9ONJfY3t0Ax2ywLgnCzDUZJ444QNFmINOOMe75pEQm8ruIKO6d7sa72ZEs6dwk0yEiNBppPU9pdwUzhGQwsg-inroROjcNNeyKYqs3N4QNnDTl39BIQKfUzLqQChe3VD_cpxZV93xoUur2B2vktaREazSgbc4DIG5iC504",
         "id": "fujiyama-japanese-steakhouse",
-        "lat": 47.0399207,
-        "lng": -122.9383345,
+        "lat": 47.040317,
+        "lng": -122.938546,
         "name": "Fujiyama Japanese Steakhouse",
         "promotions": [
             "Lunch Hibachi: $4.50 off 2nd HibachiDinner Hibachi: $10 off 2nd Hibachi",
             "18% gratuity automatically added",
             "Dine-in onlyNot valid on Chef's Special for Two"
         ],
+        "rating": 3.5,
         "state": "WA",
         "telephone": "(360) 352-9888",
         "zip": "98502"
@@ -1195,15 +1291,17 @@
         "address": "9989 Silverdale Way",
         "city": "Silverdale",
         "formatted_address": "9989 Silverdale Way Northwest, Silverdale, WA 98383, USA",
+        "gplaces_ref": "CoQBfQAAAKd3Dh8hz86EPrTPg5hpq3Fc93ZK0_YB0CcxWfVY-mgZmz1-hASX-5JttsdCPCPvaytEExDYqyayzhLjG299Q7biTyXCCJcG7RZZXJ7DNkSrY7lNKyi1bDjYsl0u0hAkbSRAZL-7cRZRhAnY1WfoUSHE_n2VSg0CmnZ3y2cUXJZNEhABmCVexcfHveb0C_XBaXrLGhT2JfHFaNAVGKAKkarwbBW-i6OHNA",
         "id": "fujiyama-japanese-steakhouse-2",
-        "lat": 47.6537397,
-        "lng": -122.6926522,
+        "lat": 47.65352,
+        "lng": -122.690997,
         "name": "Fujiyama Japanese Steakhouse",
         "promotions": [
             "Lunch Hibachi: $4.50 off 2nd HibachiDinner Hibachi: $10 off 2nd Hibachi",
             "18% gratuity automatically added",
             "Dine-in onlyNot valid on Chef's Special for Two"
         ],
+        "rating": null,
         "state": "WA",
         "telephone": "(360) 592-5888",
         "zip": "98383"
@@ -1212,15 +1310,17 @@
         "address": "101 Denny Way",
         "city": "Seattle",
         "formatted_address": "101 Denny Way, Seattle, WA 98109, USA",
+        "gplaces_ref": "CoQBfgAAAIZ9xRpyfsnsJLb-igX-BW8jz5QYry3Tcuc1_ocBPhI7SUT2WeNmTRF2aHeWZ_d5cncVuX5QfjvBp5bjFWR7VBI9-ajzfunsAFWhp0BUoLb5FYme2JpRWkWKJyiM96njMBleGyv8Uz75WE0Nh-RkkzmWIUhIrbPlev8W3eFpEfynEhCiwkTizFMhIJnCl2a-rSOQGhSSrWBIMhAzlagFUIt0IWGL2Jm9ig",
         "id": "fumaca-brazilian-steakhouse",
-        "lat": 47.6184076,
-        "lng": -122.3545667,
+        "lat": 47.618984,
+        "lng": -122.354374,
         "name": "Fumaca Brazilian Steakhouse",
         "promotions": [
             "20% off total guest check(2 - 6 adults)",
             "20% off total bill when dining alone",
             "Lunch Fri-Sun only"
         ],
+        "rating": null,
         "state": "WA",
         "telephone": "(206) 453-4366",
         "zip": "98109"
@@ -1244,13 +1344,15 @@
         "address": "21 Bellwether Way",
         "city": "Bellingham",
         "formatted_address": "21 Bellwether Way, Bellingham, WA 98225, USA",
+        "gplaces_ref": "CpQBiQAAAJ9cWGGPK7kEAf9MJWKQnxgdU9btd1m-JmzZgvXo-WN4m0qxmJjUI3BQltGbDv6BUBi5QgSvEUeqrpmxn0Q539u6mIwLzbCIq4UP039-bIuiClvEFSpLUb0gYum-6c_41oSWEjK_RXXGL2XF6tm1uqtJITPJfl5O57PdmEe-8JY7eGqPHIEdchJvjgKsITs12BIQBQu9hcwSMRrqijbyauo7axoUiNc4_ISf8No9aNqVCojfMYScitM",
         "id": "giuseppes-al-porto-ristorante-italiano",
-        "lat": 48.7553627,
-        "lng": -122.4952786,
+        "lat": 48.754876,
+        "lng": -122.496224,
         "name": "Giuseppes Al Porto Ristorante Italiano",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4,
         "state": "WA",
         "telephone": "(360) 714-8412",
         "zip": "98225"
@@ -1259,13 +1361,15 @@
         "address": "23207 Bothell-Everett Hwy. SE",
         "city": "Bothell",
         "formatted_address": "23207 Bothell Everett Highway, Bothell, WA 98021, USA",
+        "gplaces_ref": "CoQBfQAAAJP9EWnxl9olm1HIfrBEcspqCYIMPuSUCLQEcSRiYTxbA_ROWZqDO9RQVM8O2vYch_M4s23q3Q8PYHE-rqrkZlXJ-goa0JRqknuqgch-gdarPAADCuwuugs2GWMKOm7Fcxjq_QyfHgOXbhhmXbMwMUTVlC3WAuG4-oK6uJpPvrG3EhAeHnupdZfdnwFf97F7vsQSGhRQbLNoI962uvgUteBPWUxawMTI4g",
         "id": "grazie",
-        "lat": 47.787501,
-        "lng": -122.219254,
+        "lat": 47.787084,
+        "lng": -122.21885,
         "name": "Grazie",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4,
         "state": "WA",
         "telephone": "(425) 402-9600",
         "zip": "98021"
@@ -1274,13 +1378,15 @@
         "address": "16943 Southcenter Pkwy.",
         "city": "Tukwila",
         "formatted_address": "16943 Southcenter Parkway, Tukwila, WA 98188, USA",
+        "gplaces_ref": "CoQBcwAAAJPjZB13miU6e0vWC_evrLydwOc6h4B9FcT9kpJg9A-LIzZA_IPD_CKIpVtUtS1yxyhjwvk2IGZQajv4HsHVivEbIXl-cA1g2axTkBHUX5QftuWbBsMJw9ymXEfEI0yCa5SLA5ygcVufdOjG2nNjtxjhg6T7epPGimBH_S5gE0wDEhAmyL_9WkE67ET9RA1xedzPGhStHn_TxzrWycwP8JQ1hE2WG5jMvg",
         "id": "grazie-caffe-italiano",
-        "lat": 47.44948189999999,
-        "lng": -122.2625565,
+        "lat": 47.451029,
+        "lng": -122.263144,
         "name": "Grazie Caffe Italiano",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4.2,
         "state": "WA",
         "telephone": "(206) 575-1606",
         "zip": "98188"
@@ -1289,13 +1395,15 @@
         "address": "16943 Southcenter Pkwy",
         "city": "Tukwila",
         "formatted_address": "16943 Southcenter Parkway, Tukwila, WA 98188, USA",
+        "gplaces_ref": "CoQBdAAAAPsm6B6TqItf5aernf-Sjcf-sOhG7trQv-yCqTvaT8RvtGJ-RwatZct3OdaZzp6D2IfCEfNrE74jlblbI9Q5ZkFEwJfneI32lYD7QB5pp4U9S_rKTo58KKFsH55yAJZhh5THbrBaak3vuPSNdRbolsLEeRfeKZYNzhT02NPHKkmPEhAGUHOgFZNGT14aReiN6ugTGhRSSHh3t1fd9ABmDxxPX6MnpU0SdQ",
         "id": "grazie-caffe-italiano-2",
-        "lat": 47.44948189999999,
-        "lng": -122.2625565,
+        "lat": 47.451029,
+        "lng": -122.263144,
         "name": "Grazie Caffe Italiano",
         "promotions": [
             "Receive the second adult entree of equal or lesser value in the party (party meaning 2 or more people) complimentary.  "
         ],
+        "rating": 4.2,
         "state": "WA",
         "telephone": "(206) 575-1606",
         "zip": "98188"
@@ -1304,13 +1412,15 @@
         "address": "4793 Point Fosdick Dr. NW",
         "city": "Gig Harbor",
         "formatted_address": "4793 Point Fosdick Drive Northwest, Gig Harbor, WA 98335, USA",
+        "gplaces_ref": "CoQBgAAAANUNlILghJdxoW_f2uar04jiUue2NE7DkzPKCRDl6ii5hWEIMHQZaWl_JAlhq7EYmx2ARt6D6NWVAcJzh7pqF_b-hIw67TazcOt1RLhGuXeI5-ymS_rl3x-locSZDwL7oMAjTBttZp1NTw38fpYxrKmgAlH2NSOmiwrbaRcK7QbsEhDTq1urgmH62482KULMLXTkGhQxPCj6DulQNva5OeEgVD8Gcd-3Zg",
         "id": "greenhouse-restaurant",
-        "lat": 47.30165909999999,
-        "lng": -122.5791423,
+        "lat": 47.3018413,
+        "lng": -122.5787906,
         "name": "Green.House Restaurant",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": null,
         "state": "WA",
         "telephone": "(253) 514-6482",
         "zip": "98335"
@@ -1319,14 +1429,16 @@
         "address": "7200 E Greenlake Dr N",
         "city": "Seattle",
         "formatted_address": "7200 East Green Lake Drive North, Seattle, WA 98115, USA",
+        "gplaces_ref": "CoQBeAAAAD3Rn_QK8uOC92OSYb2TLkoC3iAqKAW315E-FdO4xfPBilExoZt4lzxvYtgBqCC3UGtYD4x-jy3pLqvFax4_kcLn9V6jqrjwJvE24Qy1IhAeYGWLuFyVJ1ll2vFq17iCwL5MC-wYXk22EvPfcYKkyM-44W5bRPb0JYsR6gE8njR0EhBnDVKIPqSeCY_-R2TmJ-2eGhS-Dl6dnlKdCDMbM3CIC2TGl1myjQ",
         "id": "greenlake-bar-grill",
-        "lat": 47.6803143,
-        "lng": -122.3258215,
+        "lat": 47.680445,
+        "lng": -122.325731,
         "name": "Greenlake Bar & Grill",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "10% savings on banquets booked"
         ],
+        "rating": 3.7,
         "state": "WA",
         "telephone": "(206) 729-6179",
         "zip": "98115"
@@ -1366,14 +1478,16 @@
         "address": "1933 5th Ave.",
         "city": "Seattle",
         "formatted_address": "1933 5th Avenue, Seattle, WA 98101, USA",
+        "gplaces_ref": "CnRsAAAAPRej75wmWVOr4QDFdRkbd7Fz7CwQ_DS3v-APsCN7n5BHp7ELehetKIqzKgFnCy_XKFeNu7AIDamjIjhVMdU7BZMPCR298IEKKpXrfgyKZF_14kS-P8VLUyiIHfMRUwkKGGdOzYajHQwZJXK-so-nVRIQnqbziMcdgMGuEk5Td5jJ1xoUS-xLlktl6R9BIvD55S-iQIBcE0I",
         "id": "icon-grill",
-        "lat": 47.6135563,
-        "lng": -122.3389919,
+        "lat": 47.613501,
+        "lng": -122.339067,
         "name": "icon Grill",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off total bill when dining alone"
         ],
+        "rating": 4,
         "state": "WA",
         "telephone": "(206) 441-6330",
         "zip": "98101"
@@ -1382,13 +1496,15 @@
         "address": "93 Pike St.",
         "city": "Seattle",
         "formatted_address": "93 Pike Street, Pike Place Market, Seattle, WA 98101, USA",
+        "gplaces_ref": "CnRrAAAAB_RuxKBve6mzu91c1bUdAm3-VX9a8NzG8Kf1aAn5ptH4MA6Ee8TU6da57T5I-BJ8hXBScELIJpVlRbp4bzuoRb7UEi9fFyO0FJnA3JwkOHTT9yi7a12KznRLyriGXDrX_JjuTl0tXfFDPUM99AW-PRIQF4MTyMUs_vQgmiPO7fFJeRoUMZlb4fuP9WLV_j_7PtmuccZ80TA",
         "id": "il-bistro",
-        "lat": 47.6085795,
-        "lng": -122.3402147,
+        "lat": 47.608614,
+        "lng": -122.340281,
         "name": "Il Bistro",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4.2,
         "state": "WA",
         "telephone": "(206) 682-3049",
         "zip": "98101"
@@ -1397,13 +1513,15 @@
         "address": "2902 164th St SW",
         "city": "Lynnwood",
         "formatted_address": "2902 164th Street Southwest, North Pointe Shopping Center, Lynnwood, WA 98087, USA",
+        "gplaces_ref": "CoQBfQAAAFRTQ_gZHAgqXL-GRCMa_j0Y9rFikYfGIkiqlkWn8qOVOn317uQeda54dkAJQNtgOmkZR37lr9xg2lJfzdSl-xjk8hIUnDUfHnJw-KTNSp0oMNDWLqQjpncO64mk11qOouCDC_OSk6D2fI0fIhn_1MA0lHGz3iAy-wSljcDLqayuEhAPoWzgJvXpOb1THT8p0m_wGhQSWYuNLdJcp95YwVo5Xt7shIfXuw",
         "id": "indigo-kitchen-alehouse",
-        "lat": 47.8497754,
-        "lng": -122.2723849,
+        "lat": 47.849345,
+        "lng": -122.272682,
         "name": "Indigo Kitchen & Alehouse",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4.1,
         "state": "WA",
         "telephone": "(425) 741-8770",
         "zip": "98087"
@@ -1412,14 +1530,16 @@
         "address": "17181 Redmond Way",
         "city": "Redmond",
         "formatted_address": "17181 Redmond Way, Redmond, WA 98052, USA",
+        "gplaces_ref": "CoQBcwAAAA_gIPO4KGlnnfBYg7UGKm1YScdgDEoLIlYiLGaKMU5dBuNioveKiIz4K0IidfNPCb1IXyJvjUFLEbQMZC7k-IjM9yQwV1oQPt433hqpThfgelOApsyhF91RNfq75F7CqxdCHGfL6M3itJHqFmu3t-FGXCY2O2a_mEedl6ZiietCEhDx7kYeFCDy1rYGLRd10QD9GhRv6Scg6kgSuXnyJr6Bxhy6iVMAqg",
         "id": "jade-dragon",
-        "lat": 47.6702123,
-        "lng": -122.1109303,
+        "lat": 47.670288,
+        "lng": -122.110981,
         "name": "Jade Dragon",
         "promotions": [
             "20% off total guest check(2 - 6 adults)",
             "10% savings on banquets booked"
         ],
+        "rating": 3.5,
         "state": "WA",
         "telephone": "(425) 883-1828",
         "zip": "98052"
@@ -1428,9 +1548,10 @@
         "address": "4735 University Way NE",
         "city": "Seattle",
         "formatted_address": "4735 University Way Northeast, Seattle, WA 98105, USA",
+        "gplaces_ref": "CnRvAAAAk6tX_Yz9L7oPI2KHsiTDZMU2gwwI5mR-Fxml72-YGLmRJa8M9WJhL6082FfnxnNAFTFwJUdUuDvyNYj08ZMuds19ecj0SJ73ctxrn0XcVHYcAuIOilo2wmWT7ShaFc8WqoazUcZYuDQE6CyoyjdVNRIQEZUjmINrKY6SvE17iPhCKBoUhLaDJqP754ONG09nobO2LyjdixU",
         "id": "jewel-of-india",
-        "lat": 47.6641601,
-        "lng": -122.3131979,
+        "lat": 47.664103,
+        "lng": -122.313197,
         "name": "Jewel of India",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
@@ -1438,6 +1559,7 @@
             "20% off on all 'To Go' orders",
             "10% savings on banquets booked"
         ],
+        "rating": 4.1,
         "state": "WA",
         "telephone": "(206) 523-5275",
         "zip": "98105"
@@ -1446,13 +1568,15 @@
         "address": "2207 N Pearl St.",
         "city": "Tacoma",
         "formatted_address": "2207 North Pearl Street, Tacoma, WA 98406, USA",
+        "gplaces_ref": "CpQBigAAAEVmyUUFHVDza8AtgyNrz4zXeacSj8EjaH0gsOn_8x-R1HLjdLgM1S6GBGjhm5boXpmh8F5FN26YGK4Om5TWTDFKORJreVMHUzjCU39oAgySpRsCra-PGdJZOEBpkXggMZc6p5nEhROLRUmzBgINoAW3qcFNmKx9nSvqbXdEXf0tQ62PVHKSJR_E4T4zJJemmRIQBOvmlUuKf-kCknKZfUIX9xoUdmSLhVkkUU7L091R-1-fYSAn2sY",
         "id": "joeseppis-italian-ristorante",
-        "lat": 47.267759,
-        "lng": -122.513721,
+        "lat": 47.267917,
+        "lng": -122.513888,
         "name": "Joeseppis Italian Ristorante",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 3.8,
         "state": "WA",
         "telephone": "(253) 761-5555",
         "zip": "98406"
@@ -1461,13 +1585,15 @@
         "address": "5211 20th St. E",
         "city": "Fife",
         "formatted_address": "5211 20th Street East, Fife, WA 98424, USA",
+        "gplaces_ref": "CoQBfAAAAIBKoFV9EtCJNs-CcSY_Xsi18p_j7ERsNUQ9GKxNC-Xepgcy-A0YU9HgUCgrPgJam17ShsZ0G7s-qB4HD58fcMTHdnexGRrFUG6anU0NcONjfTetVT7Ekz-L7NGnF9ZHiFll7U87VLR6XIegfx7K3PXziaLLaxd6LB9YinFigB5DEhBJc6SOSmkcrOMwg31I4N7LGhTRpkyJPfBnJn3WWPM-XgXbD7LieQ",
         "id": "johnnys-at-fife",
-        "lat": 47.2398072,
-        "lng": -122.358527,
+        "lat": 47.239774,
+        "lng": -122.358659,
         "name": "Johnnys at Fife",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 3.7,
         "state": "WA",
         "telephone": "(253) 922-6686",
         "zip": "98421"
@@ -1476,14 +1602,16 @@
         "address": "1900 E D St.",
         "city": "Tacoma",
         "formatted_address": "1900 East D Street, Tacoma, WA 98421, USA",
+        "gplaces_ref": "CpQBhAAAACHRtQ6XO9z-ycNIbt2u297Hpd6NujcuTc-xxO7jgE7-uiDR7Bg3Qm-uuT-NdM74YorW3cFfdQjijHlCc5smK3JGNuR2PyMYQiyJnrhfN1FEnSqmt0-Yu-j1Za3xQq8TB0dKuq98VK0X5psHfrulHkqOC9csaVenjpuT6LBsBxpQ9R-Q2YzYpezrmrsN_BTmABIQtIpj5G6xRA7iR65Nwbh0shoUtTvSNU22DjsIG4dj3TwBVfIBpA4",
         "id": "johnnys-dock",
-        "lat": 47.2459697,
-        "lng": -122.430583,
+        "lat": 47.245753,
+        "lng": -122.431113,
         "name": "Johnnys Dock",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off total bill when dining alone"
         ],
+        "rating": 3.8,
         "state": "WA",
         "telephone": "(253) 627-3186",
         "zip": "98421"
@@ -1507,9 +1635,10 @@
         "address": "15130 Main St. Ste 100",
         "city": "Mill Creek",
         "formatted_address": "15130 Main Street #100, Mill Creek, WA 98012, USA",
+        "gplaces_ref": "CnRpAAAAdqTnlXghvugEd9GECHtCyu16ET85NOWg-6_x5lq8d8eM6oD9zLoB6PYog8Ycbx8I-ZITDRTCf89vrbyr4LEALWTo4xyPFSbwDJRbM4ff3K-EY54VSVpn457_hWzfVVuJgvLihcL7-lQflA1plVaj9BIQmLHUzoysBF-3qOeJAcEjZxoUPd0q06yj66ujdXk9tmXjka0mAGg",
         "id": "kaf-neo",
-        "lat": 47.8602356,
-        "lng": -122.2207831,
+        "lat": 47.860286,
+        "lng": -122.220629,
         "name": "Kaf Neo",
         "promotions": [
             "20% off total guest check(2 - 6 adults)",
@@ -1518,6 +1647,7 @@
             "18% gratuity automatically added",
             "This location only"
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(425) 357-0512",
         "zip": "98012"
@@ -1526,13 +1656,15 @@
         "address": "19803 1st Ave. S",
         "city": "Normandy Park",
         "formatted_address": "19803 1st Avenue South, Normandy Park, WA 98148, USA",
+        "gplaces_ref": "CnRnAAAAS4IR190g4RNl3BnoGDoLIPvOfrpYajzfs842hKv56HuHqo5jYW_kgPYwOQO4ZQELsET2Pw5jBnRbCeGQ_zzcsvITo-GSXEZnRU2vvR0o3oJ-BfEypCbL5tyxVbtKNyTLYrpT3z80imodNxldI7QUNhIQwQeGhaHJjmvUWqsZmJtLjxoU7zjHJvSEQhjwkXxhJjjqLnQGodU",
         "id": "kayak-bar-and-grill",
-        "lat": 47.425138,
-        "lng": -122.3358802,
+        "lat": 47.425127,
+        "lng": -122.335616,
         "name": "Kayak Bar and Grill",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": null,
         "state": "WA",
         "telephone": "(206) 429-3145",
         "zip": "98148"
@@ -1541,14 +1673,16 @@
         "address": "11 Bellwether Way",
         "city": "Bellingham",
         "formatted_address": "11 Bellwether Way, Bellingham, WA 98225, USA",
+        "gplaces_ref": "CoQBcQAAANWUdbeCZXD0hrD9YoxN6qNsWYTN8IJXKgs2hXm3518j52G3wk-PkN1iXk7nL0IwHjGFlMuYkp9SFhyN3zVRIYbhF8dpn020JGLYcyEyF5FrhFhl1ng4AJL1JRjw61ekcyGX9GVpiqw9NnlRubZh8UaGYhWIAQjKPq7OokPLeJ9XEhAgHmqKKNRdFFXvAWU2W_X7GhTOnoXHFibYvvINQym9ZTmjB1gJjw",
         "id": "kuru-kuru-sushi",
-        "lat": 48.7545909,
-        "lng": -122.496042,
+        "lat": 48.75556,
+        "lng": -122.494806,
         "name": "Kuru Kuru Sushi",
         "promotions": [
             "20% off total guest check(2 - 6 adults)",
             "20% off total bill when dining alone"
         ],
+        "rating": null,
         "state": "WA",
         "telephone": "(360) 392-8224",
         "zip": "98225"
@@ -1557,15 +1691,17 @@
         "address": "115 N Samish Way",
         "city": "Bellingham",
         "formatted_address": "115 North Samish Way, Bellingham, WA 98225, USA",
+        "gplaces_ref": "CoQBfAAAAG1D0RV7XpkDF_opkPBQ9sNGrIngd1rSVmGMn1UvhK5ymkR7sOceIaP5JAe_Rk3uuhAKbg5swbQJCtT-EAmsQgrW5p6UVyRao9kDrOcezW090I6GykiBch7PIgSxo93zys10ajgl3OOtO-LqnIpkBSR2VbpayQqVoQuwmaeVgwT4EhAPoIlfxX_5Y5uifGiNYQtYGhSeNXUJYDwS7vbu0C-ZJRkPdjffiA",
         "id": "kyoto-japanese-steakhouse",
-        "lat": 48.7364725,
-        "lng": -122.4698799,
+        "lat": 48.736304,
+        "lng": -122.470069,
         "name": "Kyoto Japanese Steakhouse",
         "promotions": [
             "20% off total guest check except when ordering Hibachi (2 - 6 adults)",
             "20% off total bill when dining alone",
             "Hibachi savings $15 off 2 dinner/$5 off 2 lunches"
         ],
+        "rating": 4.1,
         "state": "WA",
         "telephone": "(360) 756-0058",
         "zip": "98225"
@@ -1574,14 +1710,16 @@
         "address": "614 S 1st St",
         "city": "La Conner",
         "formatted_address": "614 1st Street, La Conner, WA 98257, USA",
+        "gplaces_ref": "CpQBhAAAAODJ_q2QTkGOM_bA2iFZ6jdJ07WJDfMWGTeSTjDW7ET_6YkVjos_CXXvn_uREVWh2TepIqOfXlUkcx8Jur4XM7fLkDLPC7GoMJ8O_OhYWsFYEOofQw7UgV-k-5XI94Lltf_Yr1X_9ItTdzIS47fpiaJGJFNiX1Cp6csCIApJAqLxJEHmgrq8c2WkRzHA2iYl6BIQf-9qkk2knoGPJdLJSQyadRoUhtqssp59XBf8JEs_hf3DHmH_Og0",
         "id": "la-conner-seafood-prime",
-        "lat": 48.38993749999999,
-        "lng": -122.4974254,
+        "lat": 48.39008,
+        "lng": -122.497778,
         "name": "La Conner Seafood & Prime",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "18% gratuity automatically added"
         ],
+        "rating": 4.2,
         "state": "WA",
         "telephone": "(360) 466-4014",
         "zip": "98257"
@@ -1590,14 +1728,16 @@
         "address": "546 5th Ave S",
         "city": "Edmonds",
         "formatted_address": "546 5th Avenue South, Edmonds, WA 98020, USA",
+        "gplaces_ref": "CpQBjQAAAJ2menheyndff39Bv7iLDKwNqS5qu123_gTGc6mhSlDWNFKy7_6oa98C-QVh7VWipVXHbUWzRD0YPRBo7CX_wjr--7411dH3bahi9M6PV-wHhaBy4p4Nr18LX64N6c8JaIYneGsrniAECcHRYrSqQPSvO65yx-hxSZB18wKfwo9JkLPRvVV5BhuA2QSSctuI_RIQFSeew8MVqDVtdvkuee14TRoU2HWZ-mYsb8sxbdx6XWi0BMzSmDc",
         "id": "la-galleria",
-        "lat": 47.80642599999999,
-        "lng": -122.3776953,
+        "lat": 47.806388,
+        "lng": -122.378103,
         "name": "La Galleria",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "18% gratuity automatically added"
         ],
+        "rating": 4.1,
         "state": "WA",
         "telephone": "(425) 771-7950",
         "zip": "98020"
@@ -1606,13 +1746,15 @@
         "address": "16505 Redmond Way",
         "city": "Redmond",
         "formatted_address": "16505 Redmond Way, Redmond, WA 98052, USA",
+        "gplaces_ref": "CoQBcQAAAFgnZ_BWg8ifr57izZuJtKk1Ii_3-gi_JTXowrprUQNIaSV0oILTzTvjWZxqroKIdgHYgpCgtsSPLIxr92Pat7SLzMxJXaVFAPU5AwSjOCexbfHWCiW2hf0ZM4Z_G1-eeiToD561fZPiH-EbeB1mCjXkGlUcubfRaoFu61RzLtL8EhC_yMQbhPCxO1u_rcUp1z7EGhQYAnTTa9l4WLn4A6GhvhlAImDO5g",
         "id": "la-isla-redmond",
-        "lat": 47.6731188,
-        "lng": -122.1203048,
+        "lat": 47.67324,
+        "lng": -122.120256,
         "name": "La Isla  Redmond",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4.2,
         "state": "WA",
         "telephone": "(425) 298-0374",
         "zip": "98052"
@@ -1621,13 +1763,15 @@
         "address": "2320 NW Market St",
         "city": "Seattle",
         "formatted_address": "2320 Northwest Market Street, Seattle, WA 98107, USA",
+        "gplaces_ref": "CoQBcgAAAFTMfrjXaTAGstDXifLOBpfON6qpqtOysvk9YvvnCocf1ppCAQIv-IMN6wJRknVYv0CYpPbKzibVBWQavzD-Zl1uN_EVXRoEJ5SlyXrCw7uEkThgcp4ld7PsRiI4O-5Zv0lAbP8sb27rey6zvZjh_fTwCleiGM4X-4v6vOk2fbc9EhA4jv_GO9DR8FuIkRL1tnmQGhQaMaBH5faZC_v0t-AVZrSBMMMXfQ",
         "id": "la-isla-seattle",
-        "lat": 47.6686899,
-        "lng": -122.3864109,
+        "lat": 47.668809,
+        "lng": -122.38718,
         "name": "La Isla  Seattle",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4,
         "state": "WA",
         "telephone": "(206) 789-0516",
         "zip": "98107"
@@ -1636,13 +1780,15 @@
         "address": "5701 Lakewood Town Ctr. Blvd. SW",
         "city": "Lakewood",
         "formatted_address": "5701 Lakewood Towne Center Boulevard Southwest, Lakewood, WA 98499, USA",
+        "gplaces_ref": "CoQBfgAAAIItfY89iMSIl5KJdiegMWSoNCJELLdYyO_rRCto0JSa5YR1rgwP1nBZHIcWfdwzh9HdA7_xr8FitpbADhdg8ChPemc_n5UBImpG-t31rouUW47zvWJ5B67qTR9UwSR9GDLb2Jb8VjQ6uJR2nE1P1K7vXj-NE2Tb-JxwwiOJagU3EhCRH7paC3aaVFWIfrhYbuTsGhS7UEMVLFrTnT5P9VKcjpaXCokMsw",
         "id": "la-palma-family-mexican-restaurant",
-        "lat": 47.1653296,
-        "lng": -122.511899,
+        "lat": 47.165252,
+        "lng": -122.511893,
         "name": "La Palma Family Mexican Restaurant",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 3.5,
         "state": "WA",
         "telephone": "(253) 582-8349",
         "zip": "98499"
@@ -1651,13 +1797,15 @@
         "address": "3456 15th Ave. W",
         "city": "Seattle",
         "formatted_address": "3456 15th Avenue West, Seattle, WA 98119, USA",
+        "gplaces_ref": "CpQBhAAAAPmrnWO-4Y0C-jJHrcqQGZ6KUoAVBBDZBxh5weJ2ryFncUAg23VVjPIC3nXuhze3cok2za0jj2LtMjv2GVM5As_Whp7yD98qw6ZOsoRgfMzEfgGwtZNsdf6gGwDPnzA5Z5ub8oE-zU_qbY0mY-iJbsefPALoWlE15bu2330JnlNRo42ut0f7XUPG7SY1T8m_1hIQ_4fgmz3SL-D1eL5qOD12iRoU3aFBHmOwi0Zw8LWBnHCmvds-nRY",
         "id": "la-palma-mexican-restaurant",
-        "lat": 47.6520058,
-        "lng": -122.3757297,
+        "lat": 47.65204,
+        "lng": -122.375834,
         "name": "La Palma Mexican Restaurant",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4,
         "state": "WA",
         "telephone": "(206) 284-1001",
         "zip": "98119"
@@ -1682,9 +1830,10 @@
         "address": "7825 Evergreen Way Ste. B",
         "city": "Everett",
         "formatted_address": "7825 Evergreen Way, Everett, WA 98203, USA",
+        "gplaces_ref": "CoQBdgAAAGAfpVqnCUJMNe4PC6qZoOo2f5OKxX8XwVkI1ScPf9VICt41Pts2ZPd8bOppXauxn-qnxPlk9qIup8BYwO6-9Hg11xyeIZeFBDQslrFDnAAzRRhRsEnRjxwf0XOb0Rx0RmI_f-atqR3f7RIMbi0oMPrea49dKLyq21MSvnJpaCvYEhB1mkQlajlmybxp-c02hHtNGhSgrRLerCTxSOwETh2PmKTsV3EtTw",
         "id": "lanna-thai",
-        "lat": 47.92671910000001,
-        "lng": -122.222446,
+        "lat": 47.926782,
+        "lng": -122.222342,
         "name": "Lanna Thai",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
@@ -1692,6 +1841,7 @@
             "20% off on all 'To Go' orders",
             "Not valid on Lunch Specials"
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(425) 438-3888",
         "zip": "98203"
@@ -1700,9 +1850,10 @@
         "address": "92 Madison St.",
         "city": "Seattle",
         "formatted_address": "92 Madison Street, Seattle, WA 98104, USA",
+        "gplaces_ref": "CnRvAAAAnYm7FmZozExDt8K7ACdCwV27itX27eaxWvenjvz-FBeJNsgw_KLXPR7mqCbN1EwUGKUwZp4nc_A4Yu5JlmU0D_sHaJRXQdIMhsMG5LOibhqoDjh3mzwRen8iHYVe1ifp5lg6bJDE_8hEkLw5RC5ksBIQcozwDh2Uc3URNIi8nA1P_xoUz5jVcR2pSTxN1Ilf6soS0lxmv1g",
         "id": "library-bistro-and-bookstore-bar",
-        "lat": 47.6045005,
-        "lng": -122.3366775,
+        "lat": 47.604587,
+        "lng": -122.336756,
         "name": "Library Bistro and Bookstore Bar",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
@@ -1710,6 +1861,7 @@
             "20% off total bill when dining alone",
             "20% off on all 'To Go' orders"
         ],
+        "rating": 4,
         "state": "WA",
         "telephone": "(206) 624-3646",
         "zip": "98104"
@@ -1733,15 +1885,17 @@
         "address": "19409 Bothell Everett Hwy",
         "city": "Bothell",
         "formatted_address": "19409 Bothell Everett Highway, Bothell, WA 98012, USA",
+        "gplaces_ref": "CoQBdwAAAPRaBt4riaroqnblyn0KVdk0piKP94b8XedF8DqFuoC76mKjozEm1Wm2NojQcyZaneCyPVUXfNsCu6-PcZzVyGC4rlTPNhgnGFMmK4I5MfSgxT1wyNPa-om95-2J82fYH81fRrX8vRfkhNjl4KNGZl-yjPcuzK37usHJVXtI6ST_EhDA8nLPm4OtAuu68DQAllJuGhTfUcbqGNWtXU85riQ0xrjIN2UoXg",
         "id": "lombardis-italian",
-        "lat": 47.8217776,
-        "lng": -122.207417,
+        "lat": 47.821737,
+        "lng": -122.207257,
         "name": "Lombardis Italian",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "Italian Supper Club $8.50 off 2nd Prixe Fixe when 2 entr\u00c3\u00a9e are not ordered",
             "18% gratuity automatically added"
         ],
+        "rating": 3.4,
         "state": "WA",
         "telephone": "(425) 892-2931",
         "zip": "98012"
@@ -1750,15 +1904,17 @@
         "address": "1620 W Marine View Dr",
         "city": "Everett",
         "formatted_address": "1620 West Marine View Drive, Everett, WA 98201, USA",
+        "gplaces_ref": "CpQBigAAAPspEGWmg7iZH7CXXI_1ZCh8SkR7Otoz4LmGnXNLjPlZsz-9FvJD5ndaafPaymSV0QT3R6aA8hcmID3_RjnEkD0vmT06TQoDPctdL9t-fjgp55R1lBY-YBiRau-owR5tnEfpoL_PEudg4JmWnlQzTRZiNwgJ3PZghRn_X_799ZQOJ2kl9H1ofuPVe05PGHs9DBIQcwtpsNQZF7mQXYN9S_t_tBoUchO20LLILTl7qmBWGmQVM_YB1Oc",
         "id": "lombardis-italian-2",
-        "lat": 47.995566,
-        "lng": -122.2142983,
+        "lat": 47.995774,
+        "lng": -122.213939,
         "name": "Lombardis Italian",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "Italian Supper Club $8.50 off 2nd Prixe Fixe when 2 entr\u00c3\u00a9e are not ordered",
             "18% gratuity automatically added"
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(425) 252-1886",
         "zip": "98201"
@@ -1767,13 +1923,15 @@
         "address": "1253 Thomas St",
         "city": "Seattle",
         "formatted_address": "1253 Thomas Street, Seattle, WA 98109, USA",
+        "gplaces_ref": "CoQBdAAAACccf1Sv--NXQtz6GnHWEM8TbPbj28qi4HdQ9AnF4GWFNwDZ3XGi1hjDxN8ORY8lg7c7sNBUz-r3sUlja0NBERwZZ0thElU6CJEeWAWDkvM6nY1vend1Phg2EKLaVPC1fdxyRC3RGo5GWEUlDi-uI5IPGBJ1IlJ1y3KcvOm_wM8DEhATO9gAjpSaKqwBwwsJWn6ZGhRXc4mbrMW-EO-Jvg5Ex824K29Tew",
         "id": "lunchbox-laboratory",
-        "lat": 47.6206938,
-        "lng": -122.3313401,
+        "lat": 47.620692,
+        "lng": -122.331384,
         "name": "Lunchbox Laboratory",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4,
         "state": "WA",
         "telephone": "(206) 621-1090",
         "zip": "98109"
@@ -1843,15 +2001,17 @@
         "address": "310 Wells Ave S",
         "city": "Renton",
         "formatted_address": "310 Wells Avenue South, Renton, WA 98057, USA",
+        "gplaces_ref": "CnRqAAAAHbz4H7atoubFIWNUnL_7lh0UCZaJcz9nwOtqxArRugWYT7xordmWzwPtvGY1C7wPpZtB3v9xOxwsvwNBKiNPpm_vKwTfahbuvpzlhJF08f4Fu-pYBhwx88sCYy-DyxsEAaayoKTvgAF7I88CkAkntxIQ5hb35cbIIqQjz2u0LtrXohoUFNGtIvdz8K9jkpt4JeWQISidr-4",
         "id": "marianna-ristorante",
-        "lat": 47.47923,
-        "lng": -122.2052153,
+        "lat": 47.479212,
+        "lng": -122.205317,
         "name": "Marianna Ristorante",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off pizza if less than 2 non-pizza entr\u00c3\u00a9es are ordered",
             "18% gratuity automatically added"
         ],
+        "rating": null,
         "state": "WA",
         "telephone": "(425) 271-7042",
         "zip": "98057"
@@ -1876,9 +2036,10 @@
         "address": "507 Northgate Way",
         "city": "Seattle",
         "formatted_address": "507 Northeast Northgate Way, Seattle, WA 98125, USA",
+        "gplaces_ref": "CoQBewAAAG_a5xXbMrFhIMKF9RRTECqQrWIvuSYHLE8OZBoGFcHr2awwyexn3PtYgwTeovnZtdSufvQ7OtJNYSDsve0CETI1xcjFc-UDHpM_-K4yJ3ma5A0jl5d0FD3gbgR-m7X-IpsmBB9iEvQPaOBST6OC3ks9j51XQdI9Dh5Q8wstt3exEhB7VLgYkh4P7vMvjqX-xse3GhRFLnL05n0zZ5hMYdNg8_Sqr1-zpQ",
         "id": "masala-of-india-cuisine",
-        "lat": 47.708068,
-        "lng": -122.322602,
+        "lat": 47.708424,
+        "lng": -122.321902,
         "name": "Masala of India Cuisine",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
@@ -1887,6 +2048,7 @@
             "10% savings on banquets booked",
             "18% gratuity automatically added"
         ],
+        "rating": 3.6,
         "state": "WA",
         "telephone": "(206) 417-1118",
         "zip": "98125"
@@ -1895,13 +2057,15 @@
         "address": "2221 NW Market St.",
         "city": "Seattle",
         "formatted_address": "2221 Northwest Market Street, Seattle, WA 98107, USA",
+        "gplaces_ref": "CpQBgQAAAJt7jsk1Q7NpOQOGeUVcvgCjsUVgZvF_604tyMVRC51GlDvVa_mHM-MfWU1KxaoFQgs8ZCEffsTa3ljYpHmnEkw9WlvOD9nHDDeulJA5ncZxiZXlTynmdCm5lRbRPKCqf0JDjn22haeelV2FXRHxBkYbLP8XAzvrNL3M3TEs2x67lRof-rHyvDA4FL3PxTbu1xIQ2yhLsheejVWOY6XTEi7g8hoUxaUVZHSxso-Om0KWr6KzYL7tsmw",
         "id": "matador-ballard",
-        "lat": 47.6685422,
-        "lng": -122.3859577,
+        "lat": 47.668524,
+        "lng": -122.385902,
         "name": "Matador Ballard",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4.1,
         "state": "WA",
         "telephone": "(206) 297-2855",
         "zip": "98107"
@@ -1985,13 +2149,15 @@
         "address": "4820 Yelm Hwy. SE",
         "city": "Lacey",
         "formatted_address": "4820 Yelm Highway Southeast, Lacey, WA 98503, USA",
+        "gplaces_ref": "CpQBggAAALNOAQ4LbQGAPQzY807e8FzFEAMtwoYfJWnkMuZOnKaJh2ptEqR4ffDGqjvYrslqwE6DFJ5QEInd76f0ZeRx0gHgnEgyRrPYMzn_bUCYvgl2ovOvB2mpq92cSAiYD5cymN3gc2eUDpjXGTuO_TS6ygeXX1QoizftUVbCpUFHb9vpBO1taatsJcD5_EwI_3FV3BIQsqRtayPPLCcHGiVkylB35BoUR-84rRY_6BbujYHfUlsID91kHCQ",
         "id": "mayan-family-mexican-restaurant-2-3",
-        "lat": 46.9962976,
-        "lng": -122.8200639,
+        "lat": 46.9969,
+        "lng": -122.820098,
         "name": "Mayan Family Mexican Restaurant",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4.3,
         "state": "WA",
         "telephone": "(360) 456-0818",
         "zip": "98516"
@@ -2000,13 +2166,15 @@
         "address": "20610 44th Ave. W",
         "city": "Lynnwood",
         "formatted_address": "20610 44th Avenue West, Lynnwood, WA 98036, USA",
+        "gplaces_ref": "CoQBeQAAAOvSTX4qLk8dhlrrG9rwwKzMIxUdM23L_jwNnR-TLzKoO32CwzDQRsc5FE2bV3FWdnPCIr0KhFPjHJQ_ri55ppIUUPV0KZOeGotYmc2lOOyVX8n9U87GhX3jW9-yw1VCI1J6XRGCCei0LMObkY7IGdLGtqNqt0ptf2ApU-qsYQXXEhC-kvFcHlSMYgOkX1SwrML3GhTrRkKpgtSUvUhBetWxcQ14pMx05Q",
         "id": "mccarthys-bar-grille",
-        "lat": 47.811328,
-        "lng": -122.293906,
+        "lat": 47.811108,
+        "lng": -122.293904,
         "name": "McCarthys Bar & Grille",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": null,
         "state": "WA",
         "telephone": "(425) 582-4251",
         "zip": "98036"
@@ -2015,13 +2183,15 @@
         "address": "819 Houser Way S",
         "city": "Renton",
         "formatted_address": "819 Houser Way South, Renton, WA 98057, USA",
+        "gplaces_ref": "CnRwAAAAXsClimy0PBSGpcr0AS5voFuVqxZyKo6BiO6BfZFFopSINwPsCa8coatzf6u_hcZqQ8fum65Sl-Zppo61gIEU5FS9bM0sL-N4SzI-Lz_YKJfniWRPYh0WnIpgpsoV-zQRc7ICyHoJ79xjiTt3Cta8PhIQqx0nkEZagmTvObgXOcJg2hoUINhP7-DJKqOZ9QBi8HnRxZX7GCE",
         "id": "melrose-grill",
-        "lat": 47.4788223,
-        "lng": -122.205629,
+        "lat": 47.478871,
+        "lng": -122.205663,
         "name": "Melrose Grill",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4.4,
         "state": "WA",
         "telephone": "(425) 254-0759",
         "zip": "98057"
@@ -2030,15 +2200,17 @@
         "address": "2019 W Meeker St.",
         "city": "Kent",
         "formatted_address": "2019 West Meeker Street, Kent, WA 98032, USA",
+        "gplaces_ref": "CoQBeAAAAELn_inpY3h0q3knlCWrDUjyjikf5iFjJCIZpFXwU3bW76eEs2B4ICvPrtg7seATzwyExSP2OGwyS0vq-kHRLciB4GCUSjRRjnWl9MkoMtcny1UH7stBfLPGuJU6kaxMv2MZyuSIgzPjGKLxDBgSZLyp1tUlx4ffPuSwSwbSOW_qEhDQTna4xksRrlYugwrvJGcRGhQPysr_wp_Ot0ljGy4C0CWZ-qnpFA",
         "id": "mick-kellys-irish-pub",
-        "lat": 47.380771,
-        "lng": -122.2629587,
+        "lat": 47.380789,
+        "lng": -122.262714,
         "name": "Mick Kellys Irish Pub",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off pizza if less than 2 non-pizza entr\u00c3\u00a9es are ordered",
             "10% savings on banquets booked"
         ],
+        "rating": null,
         "state": "WA",
         "telephone": "(253) 856-6425",
         "zip": "98031"
@@ -2047,15 +2219,17 @@
         "address": "435 SW 152nd St.",
         "city": "Burien",
         "formatted_address": "435 Southwest 152nd Street, Burien, WA 98166, USA",
+        "gplaces_ref": "CoQBeAAAANRHFCOSxRx-uLcG4r9ILfERtEVB1qvNt3zVtnN0ZiAEjWjSkD1WS2rTeF7BWyZAN01czEZ5BLI-x75Johv3typ4DjYY6-4lgjPpmJAe_-O5Cj4DxORLt_sNiv9aizZ1Ipr-KxEn2QO891uVkR6lXekPXTM54Ndpn3HjlwQlCyMOEhCUnO0rioOCZpPq8OFCMqhRGhQpVxGixEw7CYYwfZ_fK-qpNQ_VRw",
         "id": "mick-kellys-irish-pub-2",
-        "lat": 47.466572,
-        "lng": -122.34076,
+        "lat": 47.466703,
+        "lng": -122.340771,
         "name": "Mick Kellys Irish Pub",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "10% savings on banquets booked",
             "18% gratuity automatically added"
         ],
+        "rating": 3.8,
         "state": "WA",
         "telephone": "(206) 246-2473",
         "zip": "98166"
@@ -2064,15 +2238,17 @@
         "address": "2425 33rd Ave. W",
         "city": "Seattle",
         "formatted_address": "2425 33rd Avenue West, Seattle, WA 98199, USA",
+        "gplaces_ref": "CoQBfQAAAF7_aovOTQFUn4AVmlVaOAFPAv2qywJA5eNbxH9SzDayPdhRrK9BLTOUm8A4lbbqYmcppTuyE4LPnWbzk6ztd1FtZsr6I4NSscNkn31ncZnuULfUxuGaI4P3qILAdpJBUSJtHn2fYmuxpvO4rCleTE766CMFnYYR3p7pYh6u-CwnEhAI9fJHUIYXYeOs9bBwxRx7GhSsSvrDlp2-MgHIJcNCEvh9leFt-w",
         "id": "mondello",
-        "lat": 47.6402516,
-        "lng": -122.3999445,
+        "lat": 47.64016,
+        "lng": -122.399784,
         "name": "Mondello",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "18% gratuity automatically added",
             "Not valid on daily specials"
         ],
+        "rating": 4.5,
         "state": "WA",
         "telephone": "(206) 352-8700",
         "zip": "98199"
@@ -2081,9 +2257,10 @@
         "address": "25410 104th Ave. SE",
         "city": "Kent",
         "formatted_address": "25410 104th Avenue Southeast, Kent, WA 98030, USA",
+        "gplaces_ref": "CoQBfAAAAKo1qNiSZOPA2gfKOsSZ4tsn1Fy-ovap4fMvsk4YbhAusHO2YCcuTNSfnTZBw0ZiWY_VMcZcXY5zJwwfKFrRk5dZTzWa8k0vhEbZXK0tpebZSFXcgOYk8cI3QTvXin7D3PzxUR9uYvrCkZJ11xDGQYrwxJRia50moUDoyqbTZFIBEhAOs_YM9Z2y-I1htZ5ylSnVGhRpIBLHhrpV5W4vgQWvkhKiwW-W8A",
         "id": "new-engs-restaurant",
-        "lat": 47.3732358,
-        "lng": -122.202384,
+        "lat": 47.37381,
+        "lng": -122.202055,
         "name": "New Engs Restaurant",
         "promotions": [
             "20% off total guest check(2 - 6 adults)",
@@ -2091,6 +2268,7 @@
             "20% off on all 'To Go' orders",
             "Not valid on Lunch or Dinner specials"
         ],
+        "rating": 4,
         "state": "WA",
         "telephone": "(253) 859-2100",
         "zip": "98051"
@@ -2099,15 +2277,17 @@
         "address": "500 Mercer St",
         "city": "Seattle",
         "formatted_address": "500 Mercer Street, Seattle, WA 98109, USA",
+        "gplaces_ref": "CoQBdgAAAHznzcbgAgCVRfOBwR0vK31lkqti7r6Wd7vHWrITYecY-hOvL3G0WgpBjV3iC6SiLQKVcj7WGND6d3RlYaNvlWpCl8mZ7yLLWesd8YE7jT4Lch824vEEYxC10-D1C6CE1qQstxAd_ZIxO6rfEtT-u_rV5nh0BMhMyYZbs1ZTKeZCEhCIeF9a_AVKsXhqcs8v56PCGhSsRG8q34ZhIc54WMeVu1UOiV4UXg",
         "id": "new-york-pizza-bar",
-        "lat": 47.6247249,
-        "lng": -122.3472194,
+        "lat": 47.625324,
+        "lng": -122.347133,
         "name": "New York Pizza & Bar",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off pizza if less than 2 non-pizza entr\u00c3\u00a9es are ordered",
             "20% off total bill when dining alone"
         ],
+        "rating": 4,
         "state": "WA",
         "telephone": "(206) 913-2565",
         "zip": "98109"
@@ -2133,15 +2313,17 @@
         "address": "902 N State St",
         "city": "Bellingham",
         "formatted_address": "902 North State Street, Bellingham, WA 98225, USA",
+        "gplaces_ref": "CoQBeAAAAGgNhaAX_uLejSDJUicGVMZEUej0-Ujbk42510ArTno_CX4m0Nbay14ciDERjsPmT_0FKzv23JVfH5KkjkpY_8zxl_7gq7nIuE09cW_rJOIq7H5ujLrF0sgUkC-ehVz0NFORm9cdi_Gs1LbknmP40ygbaqwOcxsnwFhH3ehoOsOKEhALMzRflMN_p3a5gaB61X4uGhSbSafb85GOPdf49kMFL62xR8YG-g",
         "id": "new-york-pizza-bar-2-3",
-        "lat": 48.7442809,
-        "lng": -122.4828902,
+        "lat": 48.744105,
+        "lng": -122.483082,
         "name": "New York Pizza & Bar",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off pizza if less than 2 non-pizza entr\u00c3\u00a9es are ordered",
             "20% off total bill when dining alone"
         ],
+        "rating": 3.3,
         "state": "WA",
         "telephone": "(360) 733-3171",
         "zip": "98225"
@@ -2150,13 +2332,15 @@
         "address": "14632 SE Eastgate Way",
         "city": "Bellevue",
         "formatted_address": "14632 Southeast Eastgate Way, Bellevue, WA 98007, USA",
+        "gplaces_ref": "CoQBdQAAAAtg6vMlHbR3JZzhEa8t_EjXO2JAd7BrdBWAuwNFO0C3OixOjFkx8eqgMXYpAbHa8UbvylnIx82Q_XIp7qfsPfLyINpoHBktWDVpPyUG8Humd8goDRsAoxBWRetjOuHzRhNGvYPOGDHA4Pucx5OnVdCv-n_53GjjybgYc1SXZXizEhCvGQJbRpAQpU5ayVefnKaeGhSJ_Hhu6xPF7LFEjQUlNwiR1PHCmQ",
         "id": "nine-o-bar-grill",
-        "lat": 47.580077,
-        "lng": -122.144093,
+        "lat": 47.5799,
+        "lng": -122.144039,
         "name": "Nine O Bar & Grill",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 3.8,
         "state": "WA",
         "telephone": "(425) 214-9000",
         "zip": "98007"
@@ -2165,14 +2349,16 @@
         "address": "1520 NE 177th St.",
         "city": "Shoreline",
         "formatted_address": "1520 Northeast 177th Street, Shoreline, WA 98155, USA",
+        "gplaces_ref": "CoQBfwAAAPe5zXjdex_JBFNIpOu3dj07oFQQAhExdMYKBDbbFs2rWOHFgtB3q4zIIgKbQaEbpo1NKYRPwqt1eTG89RTHyD8ioKEblcM96-PNS4t7yDlSrE4zah9CfkVgH1_kP8jei_mnDCzvZF9_Dh3Jkvs-00_XEJLUvb1Zn9dZeE188_aEEhB_sKQOMQeszySv57w3jIoZGhTam5JmBVG6HszVFzw-cua47GcU8Q",
         "id": "north-city-bistro-wine-shop",
-        "lat": 47.75751520000001,
-        "lng": -122.3125225,
+        "lat": 47.757711,
+        "lng": -122.312631,
         "name": "North City Bistro & Wine Shop",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "10% savings on banquets booked"
         ],
+        "rating": null,
         "state": "WA",
         "telephone": "(206) 365-4447",
         "zip": "98155"
@@ -2196,15 +2382,17 @@
         "address": "1190 Thomas St.",
         "city": "Seattle",
         "formatted_address": "1190 Thomas Street, Seattle, WA 98109, USA",
+        "gplaces_ref": "CoQBeAAAALoNpkd6Jrq5NWhb73ewN-fo7VtkpFlLE403W0IbwmTscpFFcceHbYqdzzjMybPiUYe49YgVlwm-EBKHXeXmuLYU8qIhmvOuf7R9Wl_zvs-76Ct4gz2RybNw4zlLuQUcwdgfQegBlUZvJUuQpuFXAQRYrR8iIFR4iogacrgFoCg4EhDcUS9wCAA2MKV9eRiw_PuOGhRi-aix3wwWKYXweDu3zMuQqXsJ3g",
         "id": "paddy-coynes-irish-pub",
-        "lat": 47.6208375,
-        "lng": -122.3332203,
+        "lat": 47.620894,
+        "lng": -122.33323,
         "name": "Paddy Coynes Irish Pub",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "10% savings on banquets booked",
             "Breakfast served Sat/Sun"
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(206) 405-1548",
         "zip": "98109"
@@ -2213,14 +2401,16 @@
         "address": "2801 Alaskan Way",
         "city": "Seattle",
         "formatted_address": "2801 Alaskan Way, Seattle, WA 98121, USA",
+        "gplaces_ref": "CoQBdwAAADaXxNcfPjFsXjYwm-u7Y1x8liNrUpsHS3FFyF25MgK6KLQAUFLJLcRvNqXc7W_4zG7fyV6aI1nfGU1yJelQO64QaBh7vDn-18nE4kT93hNlDMx0QpNXvHO94PVjtsmB6BG3FIBQIJxAjhu4E8JxtsNv_59COH8uZpZKaJcEhfEfEhA8_bqYZt52XApu1RbYgVsRGhQSqabco051aA9y4f4zYkcBA4nTnA",
         "id": "paddy-coynes-irish-pub-2",
-        "lat": 47.6148141,
-        "lng": -122.3550634,
+        "lat": 47.61471,
+        "lng": -122.354787,
         "name": "Paddy Coynes Irish Pub",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "Breakfast weekends only"
         ],
+        "rating": null,
         "state": "WA",
         "telephone": "(206) 737-8890",
         "zip": "98121"
@@ -2245,15 +2435,17 @@
         "address": "1515 Westlake Ave",
         "city": "Seattle",
         "formatted_address": "1515 Westlake Avenue North, Seattle, WA 98109, USA",
+        "gplaces_ref": "CpQBgQAAAI81Mkx711JBqPMu4_yY73eu3ZrdXXAm-LpQpCmR_m7a0SFKmFMeU41K3sBPim3Q7aVkat7rT0OB-8Bl4OxKXdzEvEosf2ocJ7OqIY6oTH5tfHeFsWdsZ47hYngO8d9xkIpP2Z_nq1GnF15NAHb_zsX66VUOmTAAKQAAnuw7NxCruU4RYG_ghamfCm4G3PkJhxIQg5VDjHHD1hYflHs3e0zlUhoU6S5OG2GmUaM8u3nYqLxjwm3tr0Q",
         "id": "pasta-freska-ristorante",
-        "lat": 47.6329251,
-        "lng": -122.3409196,
+        "lat": 47.632812,
+        "lng": -122.34091,
         "name": "Pasta Freska Ristorante",
         "promotions": [
             "$16 off 2nd Pre-Fixe item",
             "10% savings on banquets booked",
             "(no second entr\u00c3\u00a9e)"
         ],
+        "rating": 4,
         "state": "WA",
         "telephone": "(206) 283-1515",
         "zip": "98109"
@@ -2262,9 +2454,10 @@
         "address": "2770 Alki Ave. SW",
         "city": "Seattle",
         "formatted_address": "2770 Alki Avenue Southwest, Seattle, WA 98116, USA",
+        "gplaces_ref": "CoQBeAAAALV9zq4SqUfSLV8TPrxny3vnfKbDqorfJPWjc1f0XMOx5WpHGBOeVjF2JCBrqDOG0cwcdwVlpLL6o-L-WCg4WjfMErv_r5jrPCwXjFE0CLg8y-6-BjiGKiox_7xx2FFECt0chyXLUTzW1XuUS68cvnKZ4-J0LAob8rSUiwJnYxnPEhCHgxlNqXv2YWLba17CqLrlGhSifihvNv-AkkeP9sc4yzkcLJmAHw",
         "id": "pegasus-pizza",
-        "lat": 47.5784513,
-        "lng": -122.4116997,
+        "lat": 47.578679,
+        "lng": -122.411832,
         "name": "Pegasus Pizza",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
@@ -2272,6 +2465,7 @@
             "18% gratuity automatically added",
             "Not valid on lunch specials menu"
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(206) 932-4849",
         "zip": "98116"
@@ -2280,14 +2474,16 @@
         "address": "114 Cherry St. NE",
         "city": "Olympia",
         "formatted_address": "114 Cherry Street Northeast, Olympia, WA 98501, USA",
+        "gplaces_ref": "CoQBfAAAAHvrouF-AQXugn83r_qIa6Ex703X225nvuUsOv886bBayKuxdYxtQyJZsANmYHC43HKcOg1Cj8zh2rcKFBTtDX1lC8YJxA0JJqqv5DavIJANrm8QNSPJygl7sK5yTj-lIqGJeKF0pYj9OLnsbanIlD9pTr-rlYZ9_WL_v-34pvNxEhAP2QRb0_Pde3jn8Ja3rec9GhQVNr5NHh6dm4FbG-y3ttHk0kn_6A",
         "id": "peppers-mexican-restaurant",
-        "lat": 47.0458825,
-        "lng": -122.8953076,
+        "lat": 47.045871,
+        "lng": -122.895437,
         "name": "Peppers Mexican Restaurant",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "10% savings on banquets booked"
         ],
+        "rating": 3.8,
         "state": "WA",
         "telephone": "(360) 943-1111",
         "zip": "98501"
@@ -2312,14 +2508,16 @@
         "address": "120 NW Gilman",
         "city": "Issaquah",
         "formatted_address": "120 Northwest Gilman Boulevard, Issaquah, WA 98027, USA",
+        "gplaces_ref": "CnRoAAAArPz-ZNUCT0OWnlz3xj8NZ9ckhi2Agflwq8UEHNkrCA_jEUe6A_5eYoLh4Q0LimljQdfMTIFbD4J6CYEto-mruppPYMvIQlJhwrLAnBklTAKUP6tZv9xUhcKiw5OVyh0fPryYotizutaejcnkoJeRXhIQ-uYZICt7a3q-K9qlPCYSPBoUL5e64hLVdz6W1d4SH5Ppzy2buvI",
         "id": "pogacha",
-        "lat": 47.5397225,
-        "lng": -122.0380515,
+        "lat": 47.539745,
+        "lng": -122.038225,
         "name": "Pogacha",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "Excludes family style entr\u00c3\u00a9es."
         ],
+        "rating": 3.3,
         "state": "WA",
         "telephone": "(425) 392-5550",
         "zip": "98027"
@@ -2328,13 +2526,15 @@
         "address": "3014 3rd Ave. N",
         "city": "Seattle",
         "formatted_address": "3014 3rd Avenue North, Seattle, WA 98109, USA",
+        "gplaces_ref": "CoQBdAAAAARFvZw4sFKVGUkbRgnFHu4C55lspUkOJkUhqEAt4gikFjigF6lWjmnMqOZgAjHmgPzIvMKdPgwRaw5bQOyLpxnK_7rzrCivgKXXV3QLib14NBy3IpvQvsdooO1DTumJHzJdsgMVGfZKNzjzKfrXxS6jC2swkXl9phCgCeb8eVLtEhBO5PjMsEYn3_lzadCUgT-_GhS_JxKj44tilzPUruqXnyYWZ6aKuA",
         "id": "ponti-seafood-grill",
-        "lat": 47.647442,
-        "lng": -122.35104,
+        "lat": 47.647386,
+        "lng": -122.351132,
         "name": "Ponti Seafood Grill",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4.2,
         "state": "WA",
         "telephone": "(206) 284-3000",
         "zip": "98109"
@@ -2343,13 +2543,15 @@
         "address": "622 Broadway E",
         "city": "Seattle",
         "formatted_address": "622 Broadway East, Seattle, WA 98102, USA",
+        "gplaces_ref": "CnRmAAAArKt5I4CQKpE-5LHTwn0xTZW9vGghpW7qysBzD1YSyOliYxMVDtGIvXFgZ1PV3VVVqh0GqgUAL4DxuCOkPEvS7ucQxDnEtyXFQr3cin14GYQNeiBLpgMvjrw1GnoDeM3aeQ2P2-bKO-UdIpSw1oltORIQqiGY4IgDvPhy5ttJIKEo7hoU-k-fF-XI6b94vXraWgxlIbA5-Ww",
         "id": "poppy",
-        "lat": 47.62445839999999,
-        "lng": -122.3209249,
+        "lat": 47.624955,
+        "lng": -122.320637,
         "name": "Poppy",
         "promotions": [
             "$12 off 2nd Thali"
         ],
+        "rating": 4.2,
         "state": "WA",
         "telephone": "(206) 324-1108",
         "zip": "98102"
@@ -2389,14 +2591,16 @@
         "address": "3111 W McGraw St.",
         "city": "Seattle",
         "formatted_address": "3111 West McGraw Street, Seattle, WA 98199, USA",
+        "gplaces_ref": "CoQBcQAAAPhHrYDyuBmeYPSqFANx9aSgwSv6p7HK4hkqsHaKN8KAZg-w8uB-WImQl8HMoiD4o7F3WPxIFmD94W6CpL96imjYs2EQ7VY7eI2b4PQC1VWHX2yzFiKS4h4Y9eGoiIvAhzhJ8cPy6rDZ4iwigoNVjOSZbLEgk0GUlxqRF3keCjxdEhAkYICSSLTPJ7W1W2G2pnvQGhQb-zAOddR3jZQ1dtb6ERPYcAxTLw",
         "id": "queen-margherita",
-        "lat": 47.6393028,
-        "lng": -122.397525,
+        "lat": 47.639227,
+        "lng": -122.397621,
         "name": "Queen Margherita",
         "promotions": [
             "20% off total guest check(2 - 6 adults)",
             "10% savings on banquets booked"
         ],
+        "rating": 4.2,
         "state": "WA",
         "telephone": "(206) 548-4908",
         "zip": "98199"
@@ -2436,14 +2640,16 @@
         "address": "13317 NE 175th St.",
         "city": "Woodinville",
         "formatted_address": "13317 Northeast 175th Street, Woodinville, WA 98072, USA",
+        "gplaces_ref": "CoQBcwAAAHAo_RD8XQdCpyB2TVXXPB3NGfnIesnj-Y8-b099Dz1ozsac4RLIc20nJcQvjNs_nGUj_Nd2bxa8aznHGRTJsPDRacnObZ3gKnkOJ87Jh3G3g81quzhmrG62ZsjAhuMjkJes6dbxqyNpKtJFMzXy_0sdSZzgPOuxHCpd3UsoJXOLEhAZRqb9i1Oy-kV9FOEz4cjQGhQt60jZooCQbbt0QZ3AXnWnToJDmg",
         "id": "racha-thai-cuisine",
-        "lat": 47.7541086,
-        "lng": -122.1612414,
+        "lat": 47.753781,
+        "lng": -122.160692,
         "name": "Racha Thai Cuisine",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "18% gratuity automatically added"
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(425) 481-8833",
         "zip": "98072"
@@ -2452,15 +2658,17 @@
         "address": "6049 Seaview Ave. NW",
         "city": "Seattle",
         "formatted_address": "6049 Seaview Avenue Northwest, Seattle, WA 98107, USA",
+        "gplaces_ref": "CoQBcQAAAPkko6MUEyF-z_UF05Q9kFSG9agZrduXW_EBB52En-meyyR2XTTv3597OsyyfX4U5nRnanUpRLK436hU4y8k8WkOG0nmTLciYvueg4BoWx7mLTBu5MpakP3eyFq1b58grD_YeXaQjnQ-nyyIJ6Uy7qZxW1yQF9uUN4SfMKgk0gNyEhDtw2QOO6t_FwTlGc4v9WzxGhRF7hyOPWdTbrfaE2UZ8c1tRZx_wQ",
         "id": "rays-boathouse",
-        "lat": 47.6734435,
-        "lng": -122.4074595,
+        "lat": 47.673476,
+        "lng": -122.407493,
         "name": "Rays Boathouse",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "$30 savings on 5-course Tasting Menu",
             "18% gratuity automatically added"
         ],
+        "rating": 4.3,
         "state": "WA",
         "telephone": "(206) 789-3770",
         "zip": "98107"
@@ -2500,14 +2708,16 @@
         "address": "7979 Leary Way NE",
         "city": "Redmond",
         "formatted_address": "7979 Leary Way Northeast, Redmond, WA 98052, USA",
+        "gplaces_ref": "CoQBeAAAABr53DuAMvWLddKrrpthyknQtlJo3HtYy_7_r5qIpVKzNykrWWLml46Ohgp6xwQvk5dyNQQDpdVycEkAe48_tcYMqZAvFOcKfSkNJ86UiUxdBAxeYKx4jg_xoqPBbqoxbxshbqv41Oncg9QAcahxjdbn6gYC1B62oBmagc1iRThEEhDSrIVvlpzx2XGEcmowgK9nGhSSAZfQ8MkKyW543hWaUPI-_fMzWg",
         "id": "redmonds-bar-grill",
-        "lat": 47.674509,
-        "lng": -122.122918,
+        "lat": 47.674416,
+        "lng": -122.122706,
         "name": "Redmonds Bar & Grill",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "18% gratuity automatically added"
         ],
+        "rating": 4.1,
         "state": "WA",
         "telephone": "(425) 558-9800",
         "zip": "98052"
@@ -2516,13 +2726,15 @@
         "address": "442 Parkplace Ctr.",
         "city": "Kirkland",
         "formatted_address": "442 Parkplace Center, Kirkland Parkplace, Kirkland, WA 98033, USA",
+        "gplaces_ref": "CpQBggAAAKkFHyFWAEXUSKI3WuoMF41lzKFBtoKd1pL7trnmrhTwtdclzKmE10GnzT8idXz4k9JymQ8r5CcE6vlAL9USluf33ZQRjGP5a3CROoIRXV0aYRh0Lwn7Z4Q4U3KGthoHwnP86SlMIWpd3M5DFEXtbQKb1U_AE-3ntmMRM4Xypsn-M3FVMb9a-N0vwPez7Rch9BIQoG1tvAzzRjVlgAbY6J1yGBoUSl_Cqw4tvWeO9weTryTOGp1T-nc",
         "id": "rikki-rikki",
-        "lat": 47.6782062,
-        "lng": -122.1985388,
+        "lat": 47.678169,
+        "lng": -122.198701,
         "name": "Rikki Rikki",
         "promotions": [
             "20% off total guest check(2 - 6 adults)"
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(425) 828-0707",
         "zip": "98033"
@@ -2547,15 +2759,17 @@
         "address": "3305 Monte Villa Pkwy.",
         "city": "Bothell",
         "formatted_address": "3305 Monte Villa Parkway, Bothell, WA 98021, USA",
+        "gplaces_ref": "CnRrAAAApAU8A3rQF2AxSiMiqHnsF5o448KekuHJ4vdsAFn5j1Mv2PxLbK9op_g1nhOn-qREiDKliTofdrdGasz5bLm6t-RLbQKOUdKEcwiPmWXCkyO2JRZCxSavGdW-A-O6-dKDfcsAqTRjBECT5z_hQIf1yhIQikJCLvi-mjPihzDS1FURchoUNWeUtqUMelR_HVncsKpY3XsJt28",
         "id": "russells",
-        "lat": 47.7789311,
-        "lng": -122.1896969,
+        "lat": 47.778911,
+        "lng": -122.188748,
         "name": "Russells",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "10% off in-home catering",
             "Dine-in only"
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(425) 486-4072",
         "zip": "98021"
@@ -2564,15 +2778,17 @@
         "address": "2132 N Northgate Way",
         "city": "Seattle",
         "formatted_address": "2132 North Northgate Way, Seattle, WA 98133, USA",
+        "gplaces_ref": "CnRvAAAA_cD7IQp7fud7khv4h0dZsRmebq6OIv26srQG7rbl_yZJqhAVSwO6YqQFn0T_4uqb6R8iCkiaPuosTAOWlalyY5EP3wdhSZ29wz1nj02VK_w03iEghTh3d76h1K66D5hKOyGIFe0bkgzTdtcyOJ9XdhIQo8i4eC-duwfh8-Adgp6OgBoU2gU0fad7w8qh6ROcHB818jlg3NE",
         "id": "saffron-grill",
-        "lat": 47.708913,
-        "lng": -122.332801,
+        "lat": 47.708772,
+        "lng": -122.332668,
         "name": "Saffron Grill",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off on all 'To Go' orders",
             "10% savings on banquets booked"
         ],
+        "rating": 4.3,
         "state": "WA",
         "telephone": "(206) 417-0707",
         "zip": "98133"
@@ -2597,15 +2813,17 @@
         "address": "122 128th St. SE",
         "city": "Everett",
         "formatted_address": "122 128th Street Southeast, Everett, WA 98208, USA",
+        "gplaces_ref": "CoQBcwAAANpNf3u0TGJdlf1hXuz73WTndwl_l-7k8LaY_C78Uleol4nFKLSY6KPRrIb4n_xlIktW5buMoV_7I-i2kGpUuJzQ6QKrQDlUtx2wgt8jefzy8NaMzCmXkzAILJ8uz_gq0ephmFedaLi4hJTP2anrIpcZ5A-mKovqSlueVLCmTtRgEhAILVMqtiY2QMU4tOUzU4z8GhSyEG9GKSuoYAE3qhO9aGx6HrKllA",
         "id": "shawn-odonnells-american-grill-irish-pub",
-        "lat": 47.88147559999999,
-        "lng": -122.2301279,
+        "lat": 47.881476,
+        "lng": -122.230128,
         "name": "Shawn ODonnells American Grill & Irish Pub",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off total bill when dining alone",
             "10% savings on banquets booked"
         ],
+        "rating": 4.1,
         "state": "WA",
         "telephone": "(425) 338-5700",
         "zip": "98208"
@@ -2614,15 +2832,17 @@
         "address": "3218 Eastlake Ave E",
         "city": "Seattle",
         "formatted_address": "3218 Eastlake Avenue East, Seattle, WA 98102, USA",
+        "gplaces_ref": "CoQBcgAAAIb4zSqyrqeLzoTe-UWMmqGIy-qR_XK3UbGB1P5yJLOwreKj2zADAwoWEfZ99EAri5O8uaKGTXmiQ67BHq51rfd9Tyt1-EITugVsqkuWgg-j0-XYixGc3eZ3mXkClqiM3MUr2xexHgHMUOmA1xb9soIVcdRgPwi1kl6ovov7by0wEhAypGUtTI9-kzADoHuDiY0vGhSkYMkCu9kPPswvtZvkRJccCzIgQg",
         "id": "ship-canal-grill",
-        "lat": 47.650579,
-        "lng": -122.321626,
+        "lat": 47.650641,
+        "lng": -122.321809,
         "name": "Ship Canal Grill",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off total bill when dining alone",
             "10% savings on banquets booked"
         ],
+        "rating": 4,
         "state": "WA",
         "telephone": "(206) 588-8885",
         "zip": "98102"
@@ -2631,14 +2851,16 @@
         "address": "2799 Myhre Rd",
         "city": "Silverdale",
         "formatted_address": "2799 Northwest Myhre Road, Silverdale, WA 98383, USA",
+        "gplaces_ref": "CpQBgwAAAAZgkdU7Bdkxk159R0HEWKyDsEH1DdFOcBV_zC8JyyIntNf3Q8WjT-DPiZZXCwpgrZLDQMZWnYt237rejbM0A6vrqtwMOl7V3clE6H65BVXoqBUxf-JVQ71IE0mo_hmgjKoCt3g6sy3TfdZo709k7oECzs7WESalICdrXO19VVCnF_HMXEGbSJpG-SmX-LKj6BIQOs9wj8BLXX2ITi-2G8DdKhoUTMOYlRyzsXL5nGfxAR4l2sz3izM",
         "id": "silver-city-brewery",
-        "lat": 47.659338,
-        "lng": -122.6873199,
+        "lat": 47.659491,
+        "lng": -122.687293,
         "name": "Silver City Brewery",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "Not valid with Silver City Special Clubs"
         ],
+        "rating": 4.5,
         "state": "WA",
         "telephone": "(360) 698-5879",
         "zip": "98393"
@@ -2663,14 +2885,16 @@
         "address": "400 Broad St.",
         "city": "Seattle",
         "formatted_address": "400 Broad Street, Seattle, WA 98109, USA",
+        "gplaces_ref": "CoQBdAAAALnybbbdptPSwr8ULFb2dFRInQWGQakp946kU9i6XkG5CPzr5s6nbe282XQKy5wUJcpuNbD3zD_AA--b7GBva0K8cmnM_IVBmKhdoETZvm5Rb0ycxBOxuwXeqD4Q9MxWp9vi0ReERmfO0ZbMmt3a81LujbZc0Px_GBjBzesS8d-JEhACKpKQ3CmTK3gmCZd9io0zGhTz0xf6Ff-kIbADLVOzxeI-xlFYyw",
         "id": "skycity-restaurant-at-the-needle",
-        "lat": 47.62049,
-        "lng": -122.349648,
+        "lat": 47.620496,
+        "lng": -122.349737,
         "name": "SkyCity Restaurant at The Needle",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "$25 off 2nd Brunch"
         ],
+        "rating": 4.3,
         "state": "WA",
         "telephone": "(800) 937-9582",
         "zip": "98109"
@@ -2679,13 +2903,15 @@
         "address": "1401 N 45th St",
         "city": "Seattle",
         "formatted_address": "1401 North 45th Street, Seattle, WA 98103, USA",
+        "gplaces_ref": "CoQBeQAAACO-2SRPduo2S3kZdvInTGfekfmOagC23Gwj5Gt_TxE5pdK9CcLeEKWtQdNcgviDNw3DzC0EHvd9JNyaGZ2OjZ1jY5FUSTh3vd9Rx6QdNKVCUkAyktpmqjmGyFQw9RIYXqD9lM9NAZcJVmdrkomXBxrzPO6760-EY8wH_hGJOtkMEhDCEStIznsXdR7KXQlK0ml5GhTSfnkTgCNKWyIZKHOluG_yR0dwaw",
         "id": "smash-wine-bar-bistro",
-        "lat": 47.6611943,
-        "lng": -122.3404236,
+        "lat": 47.661294,
+        "lng": -122.340381,
         "name": "Smash Wine Bar & Bistro",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 4.2,
         "state": "WA",
         "telephone": "(206) 547-3232",
         "zip": "98103"
@@ -2694,15 +2920,17 @@
         "address": "8032 Falls Ave.",
         "city": "Snoqualmie",
         "formatted_address": "8032 Falls Avenue Southeast, Snoqualmie, WA 98065, USA",
+        "gplaces_ref": "CoQBfwAAALlbP2-hHA2bPFKJ9BXdb90zcLo8ChbrDvKkYmqlYrQKivR1C8zjfOjY5KbbllaPimGybjyf-vV7RcyV9eV3TA51I1rReOpqgJXpUM2d0hMxwE9nXB2K7PMqkDvv3jhlkYdzFm2A_rbI2xlf3pPShUHdutKrA6juZA76TkM7g460EhADqmdrw8hfbGfMUcWEX5weGhSFjih03GKulz85oHtd3Wx39MD7JQ",
         "id": "snoqualmie-brewery-and-taproom",
-        "lat": 47.528832,
-        "lng": -121.824017,
+        "lat": 47.528637,
+        "lng": -121.824269,
         "name": "Snoqualmie Brewery and Taproom",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off total bill when dining alone",
             "20% off on all 'To Go' orders"
         ],
+        "rating": 4.1,
         "state": "WA",
         "telephone": "(425) 831-2357",
         "zip": "98065"
@@ -2727,13 +2955,15 @@
         "address": "17620 Pacific Hwy S",
         "city": "Seattle",
         "formatted_address": "17620 Pacific Highway South, Seattle, WA 98188, USA",
+        "gplaces_ref": "CoQBfwAAABsz-jZUPg4opZb8W5XfxEVWmhQEr_lpPc67UdCx-Ihr06lSDnbulhubs9f1usT0dgaqxdHHsaOk20E93TsVwEtHPg13SyOGELR5YauEzVzhi1BiWHvppP2OD3LV2CAzLMxJh0_r-2229inI15Jp946BtIXn2KlHPWRuSJ767-FtEhB4k76qJiQtWKa_rYLOADUFGhSpZRwhOrOmnY-eblwcLMc6p-HkrA",
         "id": "spencers-for-steak-chops",
-        "lat": 47.4445037,
-        "lng": -122.2954627,
+        "lat": 47.444451,
+        "lng": -122.295454,
         "name": "Spencers for Steak & Chops",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary."
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(206) 248-7153",
         "zip": "98188"
@@ -2742,15 +2972,17 @@
         "address": "621 Union St.",
         "city": "Seattle",
         "formatted_address": "621 Union Street, Seattle, WA 98101, USA",
+        "gplaces_ref": "CoQBdgAAAEktjfpF8VNdsAvYrLmdBv4ft7F_QBwW7w7YN98z9a32aaAzUgxdk8h1Tm_vbf71kuKpRATn374FseDt1QPJ7aaO8pX0LttS2vv07Fz_efJZq-AWb5a_DdrjuXm3XuimMT0WSTtHAlohK9giBAH37i5p9nbvNII7a5OuW6TcekBOEhBlP4_LS92Xhv6379mGYc1NGhTPJaPktBerU3NcmALC7XOt-fEvGQ",
         "id": "sullivans-steakhouse-of-wa",
-        "lat": 47.6102375,
-        "lng": -122.3333164,
+        "lat": 47.610065,
+        "lng": -122.332941,
         "name": "Sullivans Steakhouse of WA",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "$20 off 2nd \"The Sure Thing Prix-Fixe Menu\" if less than 2 entr\u00c3\u00a9es are ordered",
             "Dine-in only. Seattle location only."
         ],
+        "rating": 4.3,
         "state": "WA",
         "telephone": "(206) 494-4442",
         "zip": "98101"
@@ -2759,15 +2991,17 @@
         "address": "550 106th Ave. NE #101",
         "city": "Bellevue",
         "formatted_address": "550 106th Avenue Northeast #101, Bellevue, WA 98004, USA",
+        "gplaces_ref": "CnRwAAAA7DwU1umGdaI_KWgNagtaGV1FESK5iFGUwqIEE-E-U-piGRutR_8xDdzxqWOYgYQtM-ahP2NKgBz5oU0KEOm0EsuI4DH2cJ7dS7LdniJcfL4XY9D7qtIOm96OpI1nkg2RK8pXQeMZCR4KtVEAj2EIwBIQG1ACzTNHNmFqETIdf9UZtRoUmkGXuqM7epBbNNw9IYbS3e4T42k",
         "id": "tap-house-grill",
-        "lat": 47.615131,
-        "lng": -122.198058,
+        "lat": 47.615142,
+        "lng": -122.198025,
         "name": "Tap House Grill",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off total bill when dining alone",
             "10% savings on banquets booked"
         ],
+        "rating": 3.8,
         "state": "WA",
         "telephone": "(425) 467-1730",
         "zip": "98004"
@@ -2776,15 +3010,17 @@
         "address": "1300 1st Ave.",
         "city": "Seattle",
         "formatted_address": "1300 1st Avenue, Seattle, WA 98101, USA",
+        "gplaces_ref": "CnRmAAAAjUI5ZmIsEIPpoz9R9wrXbIm_zgJO2m9jkRXH4mTzI2y9mWueEg32kyEjohC9M5knGZz5qtBxG0mkb2Q_U4Agja8M5WPgg76Lrn_5iQz7ClWqKz1IH81h_5CShA-i-X7LXhQ-vsxA_viXV4SuzUgAGBIQUYjaiG6uxv-PzbTWcQcGnBoUBfvv1xoL1hhSI14a4bvKqfqOQ24",
         "id": "taste-restaurant",
-        "lat": 47.60722519999999,
-        "lng": -122.3378069,
+        "lat": 47.60732,
+        "lng": -122.338534,
         "name": "Taste Restaurant",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "10% savings on banquets booked",
             "Sun all day brunch only."
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(206) 903-5291",
         "zip": "98101"
@@ -2793,14 +3029,16 @@
         "address": "15230 NE 24th St",
         "city": "Redmond",
         "formatted_address": "15230 Northeast 24th Street, Redmond, WA 98052, USA",
+        "gplaces_ref": "CoQBegAAAO4T4YZTKodhq0C10k5cEwKgJBgT52pFbJfyFBoC9BJe7ThDMXUW7AV9KRC25IiXBs4khZDiaau4AckzStnGAZh6J6U_b5BcfmqC3e4gHyIi1v4Xs1PlZ3eMw9nXBr0CFvIAKXIQExyZbD9RJL3zoHWzyZl8jv2EgvMinewd62PfEhCsWlBlTVJwi11mgGjReRQ2GhQtci_fK0wB7j8o9lt_MgGYOgnXSA",
         "id": "teapot-vegetarian-house",
-        "lat": 47.6320168,
-        "lng": -122.1362545,
+        "lat": 47.63189,
+        "lng": -122.136659,
         "name": "Teapot Vegetarian House",
         "promotions": [
             "20% off total guest check(2 - 6 adults)",
             "18% gratuity automatically added"
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(425) 373-1888",
         "zip": "98052"
@@ -2809,14 +3047,16 @@
         "address": "15920 NE 8th St.",
         "city": "Bellevue",
         "formatted_address": "15920 Northeast 8th Street, Bellevue, WA 98008, USA",
+        "gplaces_ref": "CoQBcQAAAK3Pkrn2lwAPLNjAu9bGR7lD933tV6uSLQAo8DVbbrzglARFHWYDlP4KybSiKB0QKEPjTw_wqc_8yA6EetGNEyFXNH2bG6iwH-vQ0t1uO6VjCZ_xuDunmoP3sV2Orbz_xhdnvxGQCyRXbFbehN5IdP5_yHbSveHDkjB7whV1g-C6EhDq_MLajRlPQ0TPxgPgoO4YGhS4fxeCxxuGdWm6yDFrReeIECzi6A",
         "id": "thai-vp-cuisine",
-        "lat": 47.6174721,
-        "lng": -122.127837,
+        "lat": 47.617222,
+        "lng": -122.127945,
         "name": "Thai VP Cuisine",
         "promotions": [
             "20% off total guest check(2 - 6 adults)",
             "Not valid on dine-alone"
         ],
+        "rating": 4.5,
         "state": "WA",
         "telephone": "(425) 502-7115",
         "zip": ""
@@ -2840,14 +3080,16 @@
         "address": "452 Central Way",
         "city": "Kirkland",
         "formatted_address": "452 Central Way, Kirkland, WA 98033, USA",
+        "gplaces_ref": "CoQBcwAAAPQnuoe5yirs2QMNMn2opraPNKkBjOX6IKUC1isSN_4uqR80_BnVVAISyM_n5K1_OBCdmTPlFMoFHY1um05UN3ICshrSCXeepCWmRCEERxZdVN8fit6gs49VjzdX0YZBT4OMg_rFFM1S-WSTe7qpqncgLt6qQty0vTlE6VDay6qSEhBMlgTbJRxkEHEbaIgt3PwTGhQaCVpyizMOcJLHfXWDuH3WAJBkRA",
         "id": "the-crab-cracker",
-        "lat": 47.6786386,
-        "lng": -122.2000799,
+        "lat": 47.678583,
+        "lng": -122.19992,
         "name": "The Crab Cracker",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off total bill when dining alone"
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(425) 827-8700",
         "zip": "98033"
@@ -2856,9 +3098,10 @@
         "address": "411 University St.",
         "city": "Seattle",
         "formatted_address": "411 University Street, Seattle, WA 98101, USA",
+        "gplaces_ref": "CnRvAAAApLdeY9zXLLB_LLdGcFKKw5o3F-LAAU8ZVJaolh0s3HrBwrwCujxBDUJP9pB33YrKDZNy0YO_TJ8pxV82xXD9NDIPJXs1-kq1U9U0Ko6Kjf8V7H27pDR5BcnzbN7BrYuo-nQTJ9CZU2MayLgZPB0F3hIQAYbBJgs2OLXgh-6zeCI27xoUKO6CFBXPI_mpwzjB4Og3BQ7YwUw",
         "id": "the-georgian",
-        "lat": 47.6081715,
-        "lng": -122.3340363,
+        "lat": 47.608225,
+        "lng": -122.334085,
         "name": "The Georgian",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
@@ -2866,6 +3109,7 @@
             "20% off total bill when dining alone",
             "Not valid with Afternoon Tea"
         ],
+        "rating": 4.7,
         "state": "WA",
         "telephone": "(206) 621-7889",
         "zip": "98101"
@@ -2874,14 +3118,16 @@
         "address": "14590 NE 145th St.",
         "city": "Woodinville",
         "formatted_address": "14590 Northeast 145th Street, Woodinville, WA 98072, USA",
+        "gplaces_ref": "CnRuAAAAVMoILDtBiz41OxupiDOQKt7BrQPgT19Op7ME0sCbbnbxjamrIfDLpMutRUg119aQSuk5TDYBr7ysmml6wS6Qx3QMJZHfSObfidc6exvw_TkwQNILTiqVhlPQXETUGZL5nqdMYcqLhAjO1IJCeDGCIhIQwmNhymp11wzII7kt7-GPqxoUY_Vfq9sC2fPnFd6tbvHPgDTeh74",
         "id": "the-herbfarm-restaurant",
-        "lat": 47.7328602,
-        "lng": -122.146964,
+        "lat": 47.732984,
+        "lng": -122.14727,
         "name": "The Herbfarm Restaurant",
         "promotions": [
             "When ordering multiple course meals, $30 will be deducted from the bill.",
             "20% off total bill when dining alone"
         ],
+        "rating": 4.7,
         "state": "WA",
         "telephone": "(425) 485-5300",
         "zip": "98072"
@@ -2951,13 +3197,15 @@
         "address": "302 108th Ave. NE",
         "city": "Bellevue",
         "formatted_address": "302 108th Avenue Northeast, Bellevue, WA 98004, USA",
+        "gplaces_ref": "CoQBcgAAAPg0SjTUfA_XVI0lzHANHby5yrJ-vhzDO_3SFP5i-llTVVLIkO0wbeliSpFIueoEEpKapzXtEYn3vHZuJJZk04nOkjggSRq9vi_W1Ac3JBrJHxecg7jXBT4AcjwUTQ5pRFF7lSEITuxS1qG04eafAG7M9kLSwUWGD8rQsLY3AdBaEhB3nb7gdfkAVzgkNF7PibmSGhQhMgew0yG9v2GxnGD3GVD-cGXoWg",
         "id": "the-melting-pot-2-3",
-        "lat": 47.612625,
-        "lng": -122.1958464,
+        "lat": 47.612627,
+        "lng": -122.196039,
         "name": "The Melting Pot",
         "promotions": [
             "20% off total guest check(2 - 6 adults)"
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(425) 646-2744",
         "zip": "98004"
@@ -2966,14 +3214,16 @@
         "address": "22341 Marine View Dr S",
         "city": "Des Moines",
         "formatted_address": "22341 Marine View Drive South, Des Moines, WA 98198, USA",
+        "gplaces_ref": "CoQBdQAAAFLv8PoitBc3AMopzl98dMNBMYN26L_ZhdSLP49YYL9zNkmyVKHe3e9lUUoNC-y_RfXexCOBPd9pM3i0WAoIM3KnxqFu625bypFCmOGv0bNbcoyd573jmrBy5kzfqdhY9JgVMlJsgsE58mfgfBmzhnmLcII1Jwx4GU5w9eYfeiHQEhBasrF7WRmaigNcPNnrdwYRGhR61a0kp6FY86l3BbsZwi4EThGNIw",
         "id": "the-scotch-and-vine",
-        "lat": 47.400611,
-        "lng": -122.324887,
+        "lat": 47.400622,
+        "lng": -122.32474,
         "name": "The Scotch and Vine",
         "promotions": [
             "20% off total guest check(2 - 6 adults)",
             "20% off total bill when dining alone"
         ],
+        "rating": 4.3,
         "state": "WA",
         "telephone": "(206) 592-2139",
         "zip": "98198"
@@ -3015,15 +3265,17 @@
         "address": "909 112th Ave. NE",
         "city": "Bellevue",
         "formatted_address": "909 112th Avenue Northeast, Bellevue, WA 98004, USA",
+        "gplaces_ref": "CoQBcwAAAKzvG1tLKQ8i4KBku2vUu3mmtf8Cb22eoYh9F7A6ZqC8Ulh0-ZBtT9pwarRH1JRb80kJc-50MNV99jN3hdxkknawzwfOh8IFAimaDeSDDSYFzYnNheqhBdeog_jx_hxk48A3dvqKj0c9k8mPm_JraXKWEwuG9cdYy6e-YIvUHPsgEhDnY0sDMUzWa4YWoO0IjRQ3GhSuDCPj7vruYthVymjYskUgDhOlQg",
         "id": "tokyo-steak-house-2",
-        "lat": 47.6185896,
-        "lng": -122.1912704,
+        "lat": 47.618116,
+        "lng": -122.191149,
         "name": "Tokyo Steak House",
         "promotions": [
             "Prix-Fixe: $6 off 2 lunches, $14 off 2 dinners20% off Sushi",
             "20% off total bill when dining alone",
             "Max 2 cards"
         ],
+        "rating": 4.3,
         "state": "WA",
         "telephone": "(425) 449-8567",
         "zip": "98004"
@@ -3032,14 +3284,16 @@
         "address": "21 Mercer St.",
         "city": "Seattle",
         "formatted_address": "21 Mercer Street, Seattle, WA 98109, USA",
+        "gplaces_ref": "CnRvAAAAQ_TOLzZVzxc8Qb5Pw7izQmL4pNJPPblr-MlwzdbGJ8luEFDZB45gVQyZacBgcnyOaB3QtO7zDpM_TJzWFaxnizF9UuCxH1vjwq5yzO6oW3OfsJrh6fVcYkMH9GosvHXmuo9yV_OhUIiMw2mv6iJ_hhIQhzpIkp6fwZvrYjS03DdVfhoUnuGjfxjcxFdvJXOUi1L2exJTs-c",
         "id": "ts-mchughs",
-        "lat": 47.624305,
-        "lng": -122.355884,
+        "lat": 47.624488,
+        "lng": -122.355922,
         "name": "T.S. McHughs",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off total bill when dining alone"
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(206) 282-1910",
         "zip": "98109"
@@ -3063,13 +3317,15 @@
         "address": "7729 Center Blvd. SE",
         "city": "Snoqualmie",
         "formatted_address": "7729 Center Boulevard Southeast, Snoqualmie, WA 98065, USA",
+        "gplaces_ref": "CoQBcgAAAL95jMjzGFpiEi5O6zBYSTGK6srKOnYIO_Rpi5OkXnNyHTDY3S1efl6LF10D3mk52h-Ln9i4xcs8PLn0nigo8WBmVnDZ1GnbUusbVI0l55vM4jE4eG1vQhflSDHC5HbfyAFNcXODJ8bjuhdMIBVE9cVJBUBVuRpYhBqKQaDZuu3-EhDyx4jK-q76AgiY5pQYS-jnGhSKSVZfJT7owSSMFGOs8YDagtoxxQ",
         "id": "uncle-sis-pizza",
-        "lat": 47.5303839,
-        "lng": -121.873312,
+        "lat": 47.5303,
+        "lng": -121.873363,
         "name": "Uncle Sis Pizza",
         "promotions": [
             "20% off total guest check(2 - 6 adults)"
         ],
+        "rating": 3.8,
         "state": "WA",
         "telephone": "(425) 396-7975",
         "zip": "98065"
@@ -3110,13 +3366,15 @@
         "address": "608 S First St",
         "city": "La Conner",
         "formatted_address": "608 1st Street, La Conner, WA 98257, USA",
+        "gplaces_ref": "CpQBgQAAAJRTsd0uB4x2AyXA3NaYYCLB-11SfuoXf5M1LzpwL5QTUsjPdI3jU0D9TOL3Y6AZEuz3ZWN-m3QqiZutR13OFmC5JRLQDYk9FyoY4QPV4EabMEwXhHpzfHWAouw7J2K9UtuOWO2STOqeYwuleGpHBnWWGjUVjhB75GbQ4Xnsi_yG_T9ag6GM3eHgq9WakT1JXBIQ7UIZ0BH_qo8WcvW6oL8UYxoUWNYM1xUMOwxPe4hcO6_xKD1hx9k",
         "id": "washington-sips",
-        "lat": 48.39018369999999,
-        "lng": -122.4972088,
+        "lat": 48.390175,
+        "lng": -122.497167,
         "name": "Washington Sips",
         "promotions": [
             "20% off total guest check(2 - 6 adults)"
         ],
+        "rating": null,
         "state": "WA",
         "telephone": "(360) 399-1037",
         "zip": "98257"
@@ -3141,14 +3399,16 @@
         "address": "111 Central Way",
         "city": "Kirkland",
         "formatted_address": "111 Central Way, Kirkland, WA 98033, USA",
+        "gplaces_ref": "CnRsAAAAwsRltf3im6tCYQKnjU8HooiVkSTl1U-MbTioidYE98vjcFa7cz36q9e9ulaCFoMr4h_x8u8pAanvV9ouzesoCz-vLtRMAyA9VhhwFvJ7Df-oZL9CkpOHcLKb986ATjGOC86hfdCeEAGfx-CJjb3fJRIQGerRRnvnkI5Br84Dh3X8sBoUMQhriubjLw4ZJZMeSceSkAQ2z7g",
         "id": "wilde-rover",
-        "lat": 47.6762704,
-        "lng": -122.2077858,
+        "lat": 47.676313,
+        "lng": -122.207875,
         "name": "Wilde Rover",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off total bill when dining alone"
         ],
+        "rating": 3.8,
         "state": "WA",
         "telephone": "(425) 822-8940",
         "zip": "98033"
@@ -3173,14 +3433,16 @@
         "address": "38601 SE King St.",
         "city": "Snoqualmie",
         "formatted_address": "38601 Southeast King Street, Snoqualmie, WA 98065, USA",
+        "gplaces_ref": "CpQBjQAAAI7vWDpW_xwEFLnkz8v9CeeW0cDvW16kpm5NGA1mDWPNT34g3cVMdNZUaCqYQvHHGM3tukl5YVF2nW3axhMi25xan7LGa6igPlDHDfKUtTXzox8sr_0jNy4M58bROTZyN-cY5NAlcHtWDTxlASYDSklAkHDyKXL3ITNk0Y2UQoXgexjfgyA_-UV-xyYBpIMs4xIQqQ9UuPbNWxuPzgIMXPp_0hoUcgIgHOJCsFeeKb7oMY9X1WNai-E",
         "id": "woodman-lodge-steakhouse-saloon",
-        "lat": 47.5286065,
-        "lng": -121.8260955,
+        "lat": 47.528467,
+        "lng": -121.826161,
         "name": "Woodman Lodge Steakhouse & Saloon",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "10% savings on banquets booked"
         ],
+        "rating": 3.9,
         "state": "WA",
         "telephone": "(425) 888-4441",
         "zip": "98065"
@@ -3189,14 +3451,16 @@
         "address": "2015 Hewitt Ave",
         "city": "Everett",
         "formatted_address": "2015 Hewitt Avenue, Everett, WA 98201, USA",
+        "gplaces_ref": "CoQBdwAAAI2YsD5w3IdLruUJz0h4glqKfQD_-UKm6c7s20yNTKao7FO-ISwhqe343tjiyTTgiz7sWaJO4clZ0SuWeK1jEX-xqiIWtSvIjDcbho3PYes8fC5jYAYeYYuk4iTcvNR8i2jB91Fvgj5ZYe5PxqNiTmNq0iEW8TNykNaJ2EkINq23EhBnsmcxx20Agncy15SOFuheGhRiAAQrpc6PAQyX6U5eVCfPTbDGqw",
         "id": "ynot-sports-grill",
-        "lat": 47.9793452,
-        "lng": -122.2019759,
+        "lat": 47.979346,
+        "lng": -122.202003,
         "name": "Ynot Sports Grill",
         "promotions": [
             "Receive the second adult entr\u00e9e of equal or lesser value in the party (party meaning 2 or more people) complimentary.",
             "20% off total bill when dining alone"
         ],
+        "rating": null,
         "state": "WA",
         "telephone": "(425) 610-4379",
         "zip": "98201"
