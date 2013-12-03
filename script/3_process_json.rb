@@ -52,8 +52,9 @@ fname = ARGV.shift
 json = JSON.parse(File.read(fname))
 
 unless out_fname
-  print "No output specified. JSON will be output in stdout. Are you sure? [yN] "
+  print "No output specified. JSON will be output in stdout. Are you sure? [Yn] "
   ans = gets
+  ans = 'y' if ans == "\n"
   exit unless ans =~ /[yY]/
 end
 
