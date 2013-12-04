@@ -7,7 +7,7 @@ angular.module('googleMaps', [])
     restrict: 'E', // only match element name
     replace: true,
     transclude: true,
-    template: '<div style="height: 100%" ng-transclude></div>',
+    template: '<div style="height: 100%" class="googleMaps" ng-transclude></div>',
     scope: {
       center: '=',
       zoom: '=',
@@ -92,6 +92,12 @@ angular.module('googleMaps', [])
         var bounds = new google.maps.LatLngBounds();
         var lat = $scope.lat || 'lat';
         var lng = $scope.lng || 'lng';
+
+        // if the model has lat and lng, this object is probably what we want
+        // let's encapsulate this
+        if(newO[lat] && newO[lng]) {
+          newO = [newO];
+        }
         // delete all existing markers
         angular.forEach($scope.markers, function (marker) {
           marker.setMap(null);
@@ -106,10 +112,13 @@ angular.module('googleMaps', [])
             map: map
           });
           bounds.extend(latlng);
-      console.log(obj);
-          google.maps.event.addListener(marker, 'click', function() {
-            obj[$scope.click]();
-          });
+
+          if (obj[$scope.click]) {
+            google.maps.event.addListener(marker, 'click', function() {
+              obj[$scope.click]();
+            });
+          }
+
           markers.push(marker);
         });
         $scope.markers = markers;
