@@ -112,9 +112,13 @@ angular.module('googleMaps', [])
             map: map
           });
           bounds.extend(latlng);
-          google.maps.event.addListener(marker, 'click', function() {
-            obj[$scope.click]();
-          });
+
+          if (obj[$scope.click]) {
+            google.maps.event.addListener(marker, 'click', function() {
+              obj[$scope.click]();
+            });
+          }
+
           markers.push(marker);
         });
         $scope.markers = markers;
