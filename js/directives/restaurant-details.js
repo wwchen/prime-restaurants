@@ -11,6 +11,9 @@ angular.module('restaurantDetails', [])
     templateUrl: 'partials/detail.html',
     scope: {
       restaurant: '=model'
+    },
+    link: function ($scope) {
+      $scope.Math = window.Math;
     }
   }
 });
