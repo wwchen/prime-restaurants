@@ -2,15 +2,40 @@
 <p>{{restaurant.formatted_address}}</p>
 <p>{{restaurant.telephone}}</p>
 
-<rating readonly="true" value="restaurant.rating" ng-if="restaurant.rating"></rating>
+<p ng-if="restaurant.rating">
+<rating readonly="true" value="Math.round(restaurant.rating)" ></rating>
 {{restaurant.rating}}
+</p>
+
+<p ng-if='details'>
+<!-- https://developers.google.com/maps/documentation/javascript/reference#PlaceResult -->
+{{details.price_level | dollar }} <br />
+<carousel interval="'5000'" ng-if='details.photos'>
+  <slide ng-repeat='photo in details.photos'>
+    <place-photos model='photo' max-size='300'></place-photos>
+  </slide>
+</carousel>
+<a href="{{details.website}}">website</a> <br />
+<a href="{{details.url}}">Google local</a> <br />
+
+<div ng-repeat="review in details.reviews">
+  <a href="{{review.author_url}}">{{review.author_name}}</a>
+  <div class='review'>
+    <div ng-repeat='aspect in review.aspects'>
+      <span class='reviewAspectType'>{{aspect.type}}</span>
+      <span class='reviewAspectRating'>{{aspect.rating}}</span>
+    </div>
+  </div>
+  <blockquote>{{review.text}}</blockquote>
+</div>
+</p>
 
 <ul>
   <li ng-repeat="promo in restaurant.promotions">{{promo}}</li>
 </ul>
 
 <div style="width: 100%; height: 200px">
-  <google-maps zoom="'15'" center='restaurant'>
+  <google-maps zoom="'15'" center='restaurant' model='mapObject'>
     <markers model='restaurant' ></markers>
   </google-maps>
 </div>

@@ -12,7 +12,8 @@ angular.module('googleMaps', [])
       center: '=',
       zoom: '=',
       fitBounds: '@',
-      boundsChange: '&'
+      boundsChange: '&',
+      model: '='
     },
     controller: function ($scope, $element, $attrs) {
       this.getMap = function() {
@@ -44,6 +45,10 @@ angular.module('googleMaps', [])
 
       var map = new google.maps.Map($element[0], DEFAULT_OPTS);
       $scope.map = map;
+
+      $scope.$watch('model', function(m) {
+        if(m) { $scope.model = $scope.map; }
+       });
 
       $scope.$watch('center', function(center) {
         if(!center || !center.lat || !center.lng) { return; }
