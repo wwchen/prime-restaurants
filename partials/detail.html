@@ -17,7 +17,17 @@
 </carousel>
 <a href="{{details.website}}">website</a> <br />
 <a href="{{details.url}}">Google local</a> <br />
-{{details.reviews}}
+
+<div ng-repeat="review in details.reviews">
+  <a href="{{review.author_url}}">{{review.author_name}}</a>
+  <div class='review'>
+    <div ng-repeat='aspect in review.aspects'>
+      <span class='reviewAspectType'>{{aspect.type}}</span>
+      <span class='reviewAspectRating'>{{aspect.rating}}</span>
+    </div>
+  </div>
+  <blockquote>{{review.text}}</blockquote>
+</div>
 </p>
 
 <ul>
