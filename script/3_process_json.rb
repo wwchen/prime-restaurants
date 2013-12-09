@@ -6,7 +6,7 @@ require 'optparse'
 require 'google_places'
 require './levenshtein_distance'
 
-GEOCODE = false
+GEOCODE = true
 ZAGAT = true
 PREFER_PLACES_LATLNG = true
 DEBUG = false
@@ -70,8 +70,8 @@ end
 output = {}
 count = 0
 # FIXME
-#json.each_with_index do |v, i|
-json.each do |i, v|
+json.each_with_index do |v, i|
+#json.each do |i, v|
   count += 1
   info = json[i]
   puts "== #{count}: #{info['name']} ====".yellow
