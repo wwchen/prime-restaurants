@@ -10,13 +10,25 @@ angular.module('placePhotosDirective', [])
     template: '<img ng-src="{{src}}" />',
     scope: {
       model: '=',
-      maxSize: '@'
+      fitContainer: '@fitContainerClass',
+      maxHeight: '@',
+      maxWidth: '@'
     },
     link: function ($scope) {
       $scope.$watch('model', function(m) {
         if(m) {
-          var size = $scope.maxSize || 300;
-          $scope.src = m.getUrl({maxWidth: size, maxHeight: size});
+          var width = $scope.maxWidth;
+          var height = $scope.maxHeight;
+          var param = {};
+          if (width)  { param.maxWidth = width; }
+          if (height) { param.maxHeight = height; }
+
+          if($scope.fitContainer) {
+            var element = $($scope.fitContainer);
+            param.maxWidth = element.width();
+            param.maxHeight = element.height();
+          }
+          $scope.src = m.getUrl(param);
         }
       });
     }
