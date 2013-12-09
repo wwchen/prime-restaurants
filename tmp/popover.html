@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <a data-toggle="popover" content="test">oaisjfoijasf</a>
+    <a href="#" class="btn btn-lg btn-danger" rel="popover" data-toggle="popover" title="" data-content="And
+      here's some amazing content. It's very engaging. right?" role="button" data-original-title="A
+      Title">Click to toggle popover</a>
+    <a href="#" id="example" class="btn btn-success" rel="popover" data-content="It's so simple to
+      create a tooltop for my website!" data-original-title="Twitter Bootstrap Popover">hover for
+      popover</a>
+    <a data-content="It's so simple to create a tooltop for my website!" >hover for popover</a>
+    <script>
+      $(function ()
+      { $("a").popover();
+      });
+    </script>
+  </body>
+</html>
