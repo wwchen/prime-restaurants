@@ -1,18 +1,18 @@
-<h1>{{restaurant.name}}</h1>
+<h1 ng-if='details.website'>
+  <a ng-href='{{details.website}}'>{{restaurant.name}}</a>
+</h1>
+<h1 ng-if='!details.website'> {{restaurant.name}} </h1>
 
 <div class='blah' style='display: flex; box-align: top; flex-flow: row wrap'>
   <div style='flex: 2'>
     <p>{{restaurant.formatted_address}}</p>
     <p>{{restaurant.telephone}}</p>
-    <p ng-if='details'>
-      <a ng-href="{{details.website}}">website</a> -
-      <a ng-href="{{details.url}}">Google local</a>
-    </p>
 
-
-    <p ng-if="restaurant.rating">
+    <p>
       <rating readonly="true" value="Math.round(restaurant.rating)" ></rating>
-      <span ng-if='details.price_level'> - {{details.price_level | dollar }}</span>
+      <span ng-if='details.price_level'> - 
+        <a ng-href='{{details.url}}'>{{details.price_level | dollar }}</a>
+      </span>
     </p>
   </div>
 
