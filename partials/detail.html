@@ -1,4 +1,4 @@
-<div style='display: flex; box-align: top; flex-flow: row wrap'>
+<div class='blah' style='display: flex; box-align: top; flex-flow: row wrap'>
   <div style='flex: 1'>
     <h1>{{restaurant.name}}</h1>
     <p>{{restaurant.formatted_address}}</p>
@@ -22,7 +22,7 @@
   <div style='flex: 1' ng-if='details.photos'>
     <carousel interval="'5000'">
       <slide ng-repeat='photo in details.photos'>
-        <place-photos model='photo' max-size='300'></place-photos>
+      <place-photos model='photo' fit-container-class='.blah'></place-photos>
       </slide>
     </carousel>
   </div>
