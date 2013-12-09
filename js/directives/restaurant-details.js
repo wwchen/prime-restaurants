@@ -27,6 +27,7 @@ angular.module('restaurantDetails', ['dollarFilter', 'placePhotosDirective'])
       var getPlaceDetails = function() {
         var map = $scope.mapObject;
         var res = $scope.restaurant;
+        $scope.details = null;
         if(map !== -1 && res && res.gplaces_ref) {
           var service = new google.maps.places.PlacesService(map);
           var request = { reference: res.gplaces_ref };
