@@ -1,41 +1,54 @@
-<h1>{{restaurant.name}}</h1>
-<p>{{restaurant.formatted_address}}</p>
-<p>{{restaurant.telephone}}</p>
+<div style='display: flex; box-align: top; flex-flow: row wrap'>
+  <div style='flex: 1'>
+    <h1>{{restaurant.name}}</h1>
+    <p>{{restaurant.formatted_address}}</p>
+    <p>{{restaurant.telephone}}</p>
+    <p>
+      <a href="{{details.website}}">website</a> -
+      <a href="{{details.url}}">Google local</a>
+    </p>
 
-<p ng-if="restaurant.rating">
-<rating readonly="true" value="Math.round(restaurant.rating)" ></rating>
-{{restaurant.rating}}
-</p>
 
-<p ng-if='details'>
-<!-- https://developers.google.com/maps/documentation/javascript/reference#PlaceResult -->
-{{details.price_level | dollar }} <br />
-<carousel interval="'5000'" ng-if='details.photos'>
-  <slide ng-repeat='photo in details.photos'>
-    <place-photos model='photo' max-size='300'></place-photos>
-  </slide>
-</carousel>
-<a href="{{details.website}}">website</a> <br />
-<a href="{{details.url}}">Google local</a> <br />
-
-<div ng-repeat="review in details.reviews">
-  <a href="{{review.author_url}}">{{review.author_name}}</a>
-  <div class='review'>
-    <div ng-repeat='aspect in review.aspects'>
-      <span class='reviewAspectType'>{{aspect.type}}</span>
-      <span class='reviewAspectRating'>{{aspect.rating}}</span>
-    </div>
+    <p ng-if="restaurant.rating">
+      <rating readonly="true" value="Math.round(restaurant.rating)" ></rating>
+      <span ng-if='details.price_level'> - {{details.price_level | dollar }}</span>
+    </p>
   </div>
-  <blockquote>{{review.text}}</blockquote>
-</div>
-</p>
 
+  <google-maps zoom="'15'" center='restaurant' model='mapObject' style='flex: 1'>
+    <markers model='restaurant' ></markers>
+  </google-maps>
+
+  <div style='flex: 1' ng-if='details.photos'>
+    <carousel interval="'5000'">
+      <slide ng-repeat='photo in details.photos'>
+        <place-photos model='photo' max-size='300'></place-photos>
+      </slide>
+    </carousel>
+  </div>
+</div>
+
+<h3>Promotions</h3>
 <ul>
   <li ng-repeat="promo in restaurant.promotions">{{promo}}</li>
 </ul>
 
-<div style="width: 100%; height: 200px">
-  <google-maps zoom="'15'" center='restaurant' model='mapObject'>
-    <markers model='restaurant' ></markers>
-  </google-maps>
+<div ng-if='details.reviews'>
+  <h3>Reviews</h3>
+  <!-- https://developers.google.com/maps/documentation/javascript/reference#PlaceResult -->
+  <accordion>
+    <accordion-group ng-repeat="review in details.reviews">
+      <accordion-heading>
+        {{review.author_name}}
+        <span style='float: right'>
+          <span ng-repeat='aspect in review.aspects'>
+            {{aspect.type}}
+            <rating readonly="true" value="Math.round(aspect.rating)" ></rating>
+          </span>
+        </span>
+      </accordion-heading>
+
+      <blockquote>{{review.text}}</blockquote>
+    </accordion-group>
+  </accordion>
 </div>

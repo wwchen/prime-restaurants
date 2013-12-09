@@ -7,7 +7,7 @@ angular.module('googleMaps', [])
     restrict: 'E', // only match element name
     replace: true,
     transclude: true,
-    template: '<div style="height: 100%" class="googleMaps" ng-transclude></div>',
+    template: '<div class="googleMaps" ng-transclude></div>',
     scope: {
       center: '=',
       zoom: '=',
