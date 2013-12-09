@@ -10,8 +10,8 @@
 
 
     <p ng-if="restaurant.rating">
-      <rating readonly="true" value="Math.round(restaurant.rating)" ></rating> -
-      {{details.price_level | dollar }}
+      <rating readonly="true" value="Math.round(restaurant.rating)" ></rating>
+      <span ng-if='details.price_level'> - {{details.price_level | dollar }}</span>
     </p>
   </div>
 
