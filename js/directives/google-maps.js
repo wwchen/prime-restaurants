@@ -65,7 +65,8 @@ angular.module('googleMaps', [])
         $scope.boundsChange();
       });
       google.maps.event.addListener(map, 'zoom_changed', function() {
-        console.log('fire!');
+        console.log('zoom: ' + map.getZoom());
+        $scope.zoom = map.getZoom();
         $scope.boundsChange();
       });
       // destructor
@@ -83,7 +84,7 @@ angular.module('googleMaps', [])
     restrict: 'E',
     require: '^googleMaps',
     scope: {
-      model: '=',
+      model: '=', // TODO model is misleading. Use case is diff. with google-maps
       lat: '@',
       lng: '@',
       click: '@'

@@ -12,7 +12,8 @@ angular.module('primeRestaurantsApp')
       isPaneCollapsed: true,
       restaurantsByPromo: {},
       restaurants: {},
-      promoSelect: null
+      promoSelect: null,
+      mapObject: {}
     });
 
 
@@ -54,6 +55,11 @@ angular.module('primeRestaurantsApp')
           $scope.filteredRestaurants[id] = $scope.restaurants[id];
         });
       });
+
+      $scope.$watch('mapObject', function (map) {
+        console.log('map');
+        console.log(map);
+      });
     });
 
     var moveToTop = function(anchor) {
@@ -74,5 +80,11 @@ angular.module('primeRestaurantsApp')
       }
       $scope.isPaneCollapsed = collapsePane;
       $scope.r = restaurant;
+      
+      // reset the main map to show only the restaurant
+      // TODO creating another latlng object. can we reuse the one we created for markers?
+      var latlng = new google.maps.LatLng(restaurant.lat, restaurant.lng);
+      $scope.mapObject.setCenter(latlng);
+      $scope.mapObject.setZoom(collapsePane ? 10 : 18);
     };
   });

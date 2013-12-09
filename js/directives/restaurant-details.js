@@ -11,21 +11,17 @@ angular.module('restaurantDetails', ['dollarFilter', 'placePhotosDirective'])
     templateUrl: 'partials/detail.html',
     scope: {
       restaurant: '=model',
+      mapModel: '='
     },
     link: function ($scope) {
       $scope.Math = window.Math;
-      $scope.mapObject = -1;
-
-      $scope.$watch('mapObject', function(map) {
-        getPlaceDetails();
-      });
 
       $scope.$watch('restaurant', function(res) {
         getPlaceDetails();
       });
 
       var getPlaceDetails = function() {
-        var map = $scope.mapObject;
+        var map = $scope.mapModel;
         var res = $scope.restaurant;
         $scope.details = null;
         if(map !== -1 && res && res.gplaces_ref) {
@@ -34,6 +30,7 @@ angular.module('restaurantDetails', ['dollarFilter', 'placePhotosDirective'])
           service.getDetails(request, function(place, status) {
             if (status == google.maps.places.PlacesServiceStatus.OK) {
               // the meat of everything
+              console.log('details gotten');
               $scope.details = place;
             }
           });
